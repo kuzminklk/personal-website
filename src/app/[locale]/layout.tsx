@@ -22,7 +22,7 @@ const amstelvar = localFont({
 	display: "swap",
 })
 
-export async function generateMetadata():Metadata {
+export async function generateMetadata():Promise<Metadata> {
 	const translations = await getTranslations("metadata")
 
 	return {

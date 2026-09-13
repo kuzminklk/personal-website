@@ -60,7 +60,7 @@ html[lang="ru"] {
 
 /* Classes for “next-theme” theme switcher */
 
-html.dark {
+/* html.dark {
 	--primary-color: #04000f;
 	--secondary-color: #fbfbf1;
 }
@@ -68,9 +68,7 @@ html.dark {
 html.light {
 	--primary-color: #fbfbf1;
 	--secondary-color: #04000f;
-}
-
-/* Media queries for system theme controll */
+} */
 
 @media screen and (max-width: 730px) {
 	:root {
@@ -175,7 +173,6 @@ strong {
 em {
 	font-style: italic;
 }
-
 
 @media screen and (max-width: 730px) {
 	main {
