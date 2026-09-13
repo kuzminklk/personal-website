@@ -1,23 +1,44 @@
 
 
+import { getTranslations } from "next-intl/server"
+
 import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css";
 
 
-export default function Home() {
+export default async function Home() {
+	const translations = await getTranslations("connect")
+
   return (
 		<main className={styles.connect}>
 			<section>
 				<p>
-					<Link target="_blank" href="https://t.me/kuzminklk">Telegram</Link> & <Link target="_blank" href="https://t.me/kuzminklkk">Telegram Channel</Link> — quick messaging, photos 📸, sports 💪, social activities 🥰
+					{translations.rich("telegram-and-telegram-channel", { 
+            telegramLink: (chunks) => <Link href="https://t.me/kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>, 
+            telegramChannelLink: (chunks) => <Link target="_blank" href="https://t.me/kuzminklkk" rel="noopener noreferrer">{chunks}</Link>
+          })}
 				</p>
 				<p>
-					<Link target="_blank" href="https://www.tiktok.com/@kuzminklk">Tik-Tok</Link> & <Link target="_blank" href="https://www.instagram.com/kuzminklk/">Instagram</Link> — sports 🏃🏻
+					{translations.rich("tiktok-and-instagram", { 
+            tiktokLink: (chunks) => <Link href="https://www.tiktok.com/@kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>, 
+            instagramLink: (chunks) => <Link href="https://www.youtube.com/@kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>
+          })}
 				</p>
 				<p>
-					<Link target="_blank" href="https://github.com/kuzminklk">GitHub</Link> — projects, skills, workbooks, code… 🧑🏻‍💻
+					{translations.rich("github", { 
+            githubLink: (chunks) => <Link href="https://github.com/kuzminklk" target="blank" rel="noopener noreferrer">{chunks}</Link>
+          })}
 				</p>
-				<p><Link href="https://unsplash.com/@kuzminklk" target="_blank" rel="noopener noreferrer">Unsplash</Link> — photos 📸</p>
+				<p>
+					{translations.rich("unsplash", { 
+						unsplashLink: (chunks) => <Link href="https://unsplash.com/@kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>
+					})}
+				</p>
+				<p>
+					{translations.rich("linkedin", { 
+						linkedinLink: (chunks) => <Link href="https://www.linkedin.com/in/kuzminklk/" target="_blank" rel="noopener noreferrer">{chunks}</Link>
+					})}
+				</p>
 			</section>
 		</main>
 	)

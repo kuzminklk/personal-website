@@ -1,25 +1,31 @@
 
 
+import { getTranslations } from "next-intl/server"
+
 import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 
 
-export default function Books() {
+export default async function Books() {
+	const translations = await getTranslations("books")
+
 	return (
 		<main className={styles.books}>
 			<section className={styles.introduction}>
-				<h2>📖 Introduction</h2>
+				<h2>📖 {translations("introduction.header")}</h2>
 				<p>
-					I read a lot of books!
+					{translations("introduction.books")}
 				</p>
 				<p>
-					I've created <Link href="https://kuzminklk.notion.site/31154d4de0358084adcdf9aca595fa2f?v=31154d4de035802ca521000ca4f6f8f9">database in Notion of books that I've read</Link>. There are some summaries, etc. 📑
+					{translations.rich("introduction.database", { 
+						notionBooksDatabaseLink: (chunks) => <Link href="https://kuzminklk.notion.site/31154d4de0358084adcdf9aca595fa2f?v=31154d4de035802ca521000ca4f6f8f9">{chunks}</Link>  
+          })}
 				</p>
 				<p>
-					<em>Also you can check it right down!</em>
+					<em>{translations("introduction.below")}</em>
 				</p>
 			</section>
-			<h1><span className={styles.emoji}>📕</span> Books</h1>
+			<h1><span className={styles.emoji}>📕</span> {translations("books.header")}</h1>
 			<section className={styles.database}>
 				<iframe src="https://kuzminklk.notion.site/ebd//31154d4de0358084adcdf9aca595fa2f?v=31154d4de035802ca521000ca4f6f8f9" width="100%" height="600" frameBorder="0" allowFullScreen />
 			</section>

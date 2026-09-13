@@ -1,35 +1,51 @@
 
 
+import { getTranslations } from "next-intl/server"
+
 import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 
 
-export default function Sports() {
+export default async function Sports() {
+	const translations = await getTranslations("sports")
+
 	return (
 		<main className={styles.sports}>
 			<section className={styles.introduction}>
-				<h2>💪🏻 Introduction</h2>
+				<h2>💪🏻 {translations("introduction.header")}</h2>
 				<p>
-					Usually I workout outside in sports grounds with bodyweight exercises and in forests with stones and logs… 🌲
+					{translations("introduction.workout")}
 				</p>
 				<p>
-					I do body hardering via cold showers and swimming in cold water even in winter 🧊
+					{translations("introduction.hardering")}
 				</p>
 				<p>
-					I play voleyball, wrestle, swim, run, dive into water, stretch… 🏃🏻
+					{translations("introduction.games")}
 				</p>
 				<p>
-					Record videos of my workouts and share them in my <Link href="https://www.tiktok.com/@kuzminklk" target="_blank" rel="noopener noreferrer">Tik-Tok</Link>, <Link href="https://t.me/kuzminklk" target="_blank" rel="noopener noreferrer">Telegram</Link>, <Link href="https://www.instagram.com/kuzminklk/" target="_blank" rel="noopener noreferrer">Instagram</Link> and <Link href="https://www.youtube.com/@kuzminklk" target="_blank" rel="noopener noreferrer">YouTube<span className="emoji">🎥</span></Link>
+					{translations.rich("introduction.share", { 
+            emoji: (chunks) => <span className="emoji">{chunks}</span>, 
+            tiktokLink: (chunks) => <Link href="https://www.tiktok.com/@kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>, 
+            telegramLink: (chunks) => <Link href="https://t.me/kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>, 
+            instagramLink: (chunks) => <Link href="https://www.youtube.com/@kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>,
+						youtubeLink: (chunks) => <Link href="https://www.youtube.com/@kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>  
+          })}
 				</p>
 			</section>
-			<h1><span className={styles.emoji}>🎯</span> Activities</h1>
+			<h1><span className={styles.emoji}>🎯</span> {translations("activities.header")}</h1>
 			<section className={styles.activities}>
-				<video src="sports/stone.mp4" autoPlay loop muted></video>
-				<video src="sports/boxing.mp4" autoPlay loop muted></video>
-				<video src="sports/push-ups.mp4" autoPlay loop muted></video>
-				<video src="sports/pull-ups.mp4" autoPlay loop muted></video>
-				<video src="sports/power-lift.mp4" autoPlay loop muted></video>
-				<p><em>More you can find at my <Link href="https://www.tiktok.com/@kuzminklk" target="_blank" rel="noopener noreferrer">Tik-Tok</Link></em></p>
+				<video src="/videos/stone.mp4" autoPlay loop muted></video>
+				<video src="/videos/boxing.mp4" autoPlay loop muted></video>
+				<video src="/videos/push-ups.mp4" autoPlay loop muted></video>
+				<video src="/videos/pull-ups.mp4" autoPlay loop muted></video>
+				<video src="/videos/power-lift.mp4" autoPlay loop muted></video>
+				<p>
+					<em>
+					{translations.rich("ending", {
+            tiktokLink: (chunks) => <Link href="https://www.tiktok.com/@kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>
+          })}
+					</em>
+				</p>
 			</section>
 		</main>
 	)

@@ -1,0 +1,47 @@
+
+
+.switcher {
+	font-size: 1rem;
+	border-radius: 100%;
+	width: 2rem;
+	height: 2rem;
+	background-color: var(--primary-color);
+	border: none;
+	cursor: pointer;
+	animation: glowing 5s ease infinite;
+}
+
+
+@keyframes glowing {
+	0% {
+		filter: drop-shadow(0 0 0.125rem var(--primary-color));
+	}
+	50% {
+		filter: drop-shadow(0 0 0.25rem var(--primary-color));
+	}
+	100% {
+		filter: drop-shadow(0 0 0.125rem var(--primary-color));
+	}
+}
+
+
+@media screen and (max-width: 730px) {
+	.switcher {
+		font-size: 1.5rem;
+		border-radius: 100%;
+		width: 3rem;
+		height: 3rem;
+	}
+
+	@keyframes glowing {
+	0% {
+		filter: drop-shadow(0 0 0.25rem var(--primary-color));
+	}
+	50% {
+		filter: drop-shadow(0 0 0.5rem var(--primary-color));
+	}
+	100% {
+		filter: drop-shadow(0 0 0.25rem var(--primary-color));
+	}
+}
+}

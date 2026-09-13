@@ -122,5 +122,47 @@
 			}
 		},
 		"ending": "Больше моих фотографий ты можешь найти на <unsplashLink>Unsplash</unsplashLink> и в моём <telegramChannelLink>Telegram-канале</telegramChannelLink>!"
+	},
+	"sports": {
+		"introduction": {
+			"header": "Вступление",
+			"workout": "Обычно я тренируюсь на турниках со своим весом или в лесу с брёвнами и камнями! 🌲",
+			"hardering": "Закаляюсь холодным душем и купанием в холодной воде (зимой в проруби) 🧊",
+			"games": "Борюсь, играю в волейбол, баскетбол, бегаю, плаваю и ныряю в воду, делаю растяжку… 🏃🏻",
+			"share": "Снимаю как я тренируюсь и выкладываю в <tiktokLink>Tik-Tok</tiktokLink>, <telegramLink>Telegram</telegramLink>, <instagramLink>Instagram</instagramLink> и <youtubeLink>YouTube<emoji>🎥</emoji></youtubeLink>"
+		},
+		"activities": {
+			"header": "Активности"
+		},
+		"ending": "Больше можешь посмотреть в <tiktokLink>Tik-Tok</tiktokLink>"
+	},
+	"books": {
+		"introduction": {
+			"header": "Вступление",
+			"books": "Я читаю много книг!",
+			"database": "Я сделал <notionBooksDatabaseLink>базу данных Notion из прочитанных книг</notionBooksDatabaseLink>. Там конспекты, отзывы и т.д. 📑",
+			"below": "Можешь посмотреть её ниже!"
+		},
+		"books": {
+			"header": "Книги"
+		}
+	},
+	"writings": {
+		"introduction": {
+			"header": "Вступление",
+			"topics": "Я пишу сочинения на стыке философии, математики, физики и биологии… 👨🏻‍🔬",
+			"share": "Ты можешь найти их в <notionBooksDatabaseLink>базе данных Notion<emoji>📝</emoji></notionBooksDatabaseLink>",
+			"below": "Можешь посмотреть её ниже!"
+		},
+		"essays": {
+			"header": "Сочинения"
+		}
+	},
+	"connect": {
+		"telegram-and-telegram-channel": "<telegramLink>Telegram</telegramLink> и <telegramChannelLink>Telegram-канал</telegramChannelLink> — написать мне, фотографии 📸, спорт 💪, интересности 🥰",
+		"tiktok-and-instagram": "<tiktokLink>Tik-Tok</tiktokLink> и <instagramLink>Instagram</instagramLink> — спорт 🏃🏻",
+		"github": "<githubLink>GitHub</githubLink> — проекты, навыки, конспекты, код… 🧑🏻‍💻",
+		"unsplash": "<unsplashLink>Unsplash</unsplashLink> — фотографии 📸",
+		"linkedin": "<linkedinLink>Linkedin</linkedinLink> — профессианальная активность 🛠️"
 	}
 }

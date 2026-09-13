@@ -7,6 +7,8 @@ import { useTranslations } from "next-intl"
 import { Link, usePathname } from "@/i18n/naviagation"
 
 import styles from "./Header.module.css"
+import { ThemeSwitcher } from "@/components/ThemeSwitcher"
+import { LanguageSwitcher } from "@/components/LanguageSwitcher"
 
 
 export function Header() {
@@ -35,6 +37,10 @@ export function Header() {
 					)
 				})}
 			</nav>
+			<section>
+				{/* <ThemeSwitcher/> */}
+				<LanguageSwitcher/>
+			</section>
 		</header>
 	)
 }

@@ -1,12 +1,12 @@
 
 
 import type { Metadata } from "next"
-import Link from "next/link"
 import localFont from "next/font/local"
 import { notFound } from "next/navigation"
-import { Red_Hat_Mono, Lora, Noto_Sans_Mono } from "next/font/google"
+import { Red_Hat_Mono, Noto_Sans_Mono } from "next/font/google"
 import { NextIntlClientProvider, hasLocale, useLocale } from "next-intl"
 import { getTranslations } from "next-intl/server"
+/* import { ThemeProvider } from "next-themes" */
 
 import "./globals.css"
 import { Header } from "@/components/Header"
@@ -15,59 +15,57 @@ import { routing } from "@/i18n/routing"
 
 
 const redHatMono = Red_Hat_Mono({subsets: ["latin"], weight: "400"})
-const lora = Lora({weight: "variable"})
 const notoSansMono = Noto_Sans_Mono({weight: "400"})
 
 const amstelvar = localFont({
-  src: "../../../public/amstelvar.woff2",
-  display: "swap",
+	src: "../../../public/amstelvar.woff2",
+	display: "swap",
 })
 
 export async function generateMetadata():Metadata {
-  const translations = await getTranslations("metadata")
+	const translations = await getTranslations("metadata")
 
-  return {
-    title: "kuzminklk",
-    description: translations("description"),
-    icons: {
-    icon: [
-      {
-        url: "/scroll.svg",
-      }
-    ]
-  }
-  }
+	return {
+		title: "kuzminklk",
+		description: translations("description"),
+		icons: {
+		icon: [
+			{
+				url: "/scroll.svg",
+			}
+		]
+	}
+	}
 }
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}))
+	return routing.locales.map((locale) => ({locale}))
 }
 
 export default async function LocaleLayout({
-  children,
-  params
+	children,
+	params
 }: Readonly<{
-  children: React.ReactNode
-  params: Promise<{locale: string}>
+	children: React.ReactNode
+	params: Promise<{locale: string}>
 }>) {
-  const {locale} = await params
-  const isCyrrilicLocale = ["ru", "by"].includes(locale)
-  const latinFonts = `${amstelvar.className} ${redHatMono.className}`
-  const cyrrilicFonts = `${lora.className} ${notoSansMono.className}`
+	const {locale} = await params
 
-  if(!hasLocale(routing.locales, locale)) {
-    notFound()
-  }
+	if(!hasLocale(routing.locales, locale)) {
+		notFound()
+	}
 
-  return (
-    <html lang={locale} className={ isCyrrilicLocale ? cyrrilicFonts : latinFonts }>
-      <body>
-        <NextIntlClientProvider>
-          <Header/>
-          {children}
-          <Footer/>
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  )
+	return (
+		<html lang={locale} className={`${amstelvar.className} ${redHatMono.className} ${notoSansMono.className}`}>
+			<body>
+{/*      <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
+					<NextIntlClientProvider>
+						<Header/>
+						{children}
+						<Footer/>
+					</NextIntlClientProvider>
+{/*      </ThemeProvider> */}
+			</body>
+		</html>
+	)
 }

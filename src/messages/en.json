@@ -122,5 +122,47 @@
 			}
 		},
 		"ending": "More of my photos you can find at <unsplashLink>Unsplash</unsplashLink> and in my <telegramChannelLink>Telegram-channel</telegramChannelLink>!"
+	},
+	"sports": {
+		"introduction": {
+			"header": "Introduction",
+			"workout": "Usually I workout outside in sports grounds with bodyweight exercises and in forests with stones and logs… 🌲",
+			"hardering": "I do body hardering via cold showers and swimming in cold water even in winter 🧊",
+			"share": "I play voleyball, wrestle, swim, run, dive into water, stretch… 🏃🏻",
+			"videos": "Record videos of my workouts and share them in my <tiktokLink>Tik-Tok</tiktokLink>, <telegramLink>Telegram</telegramLink>, <instagramLink>Instagram</instagramLink> and <youtubeLink>YouTube<emoji>🎥</emoji></youtubeLink>"
+		},
+		"activities": {
+			"header": "Activities"
+		},
+		"ending": "More you can find at my <tiktokLink>Tik-Tok</tiktokLink>"
+	},
+	"books": {
+		"introduction": {
+			"header": "Introduction",
+			"books": "I read a lot of books!",
+			"database": "I've created <notionBooksDatabaseLink>database in Notion of books that I've read</notionBooksDatabaseLink>. There are some summaries, etc. 📑",
+			"below": "Also you can check it right down!"
+		},
+		"books": {
+			"header": "Books"
+		}
+	},
+	"writings": {
+		"introduction": {
+			"header": "Introduction",
+			"topics": "I write some articles on edges of physics, biology, philospophy, and mathematics… 👨🏻‍🔬",
+			"share": "You can find them at <notionBooksDatabaseLink>database in Notion<emoji>📝</emoji></notionBooksDatabaseLink>",
+			"below": "Also you can check it right down!"
+		},
+		"essays": {
+			"header": "Essays"
+		}
+	},
+	"connect": {
+		"telegram-and-telegram-channel": "<telegramLink>Telegram</telegramLink> & <telegramChannelLink>Telegram Channel</telegramChannelLink> — quick messaging, photos 📸, sports 💪, social activities 🥰",
+		"tiktok-and-instagram": "<tiktokLink>Tik-Tok</tiktokLink> & <instagramLink>Instagram</instagramLink> — sports 🏃🏻",
+		"github": "<githubLink>GitHub</githubLink> — projects, skills, workbooks, code… 🧑🏻‍💻",
+		"unsplash": "<unsplashLink>Unsplash</unsplashLink> — photos 📸",
+		"linkedin": "<linkedinLink>Linkedin</linkedinLink> — professional activity 🛠️"
 	}
 }

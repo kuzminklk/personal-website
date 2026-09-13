@@ -58,6 +58,20 @@ html[lang="ru"] {
 	--secondary-font: "Noto Sans Mono", Courier, monospace;
 }
 
+/* Classes for “next-theme” theme switcher */
+
+html.dark {
+	--primary-color: #04000f;
+	--secondary-color: #fbfbf1;
+}
+
+html.light {
+	--primary-color: #fbfbf1;
+	--secondary-color: #04000f;
+}
+
+/* Media queries for system theme controll */
+
 @media screen and (max-width: 730px) {
 	:root {
 		--primary-size: calc(1.5rem + 0.5vw);
@@ -65,17 +79,17 @@ html[lang="ru"] {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-  --primary-color: #fbfbf1;
-  --secondary-color: #04000f;
-  }
+	:root {
+	--primary-color: #fbfbf1;
+	--secondary-color: #04000f;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-  --primary-color: #04000f;
-  --secondary-color: #fbfbf1;
-  }
+	:root {
+	--primary-color: #04000f;
+	--secondary-color: #fbfbf1;
+	}
 }
 
 
