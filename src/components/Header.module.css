@@ -68,6 +68,10 @@ header.primary::selection {
 		flex-direction: column;
 		padding: 3rem 1.5rem;
 		gap: 2.5rem;
+
+		nav {
+			order: 1;
+		}
 	}
 
 	html[lang="ru"] {

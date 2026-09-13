@@ -37,7 +37,7 @@ export function Header() {
 					)
 				})}
 			</nav>
-			<section>
+			<section className={styles.switchers}>
 				{/* <ThemeSwitcher/> */}
 				<LanguageSwitcher/>
 			</section>
