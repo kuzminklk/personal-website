@@ -39,6 +39,12 @@ export default async function Home() {
 						linkedinLink: (chunks) => <Link href="https://www.linkedin.com/in/kuzminklk/" target="_blank" rel="noopener noreferrer">{chunks}</Link>
 					})}
 				</p>
+				<p>
+					{translations.rich("devto-and-farcaster", { 
+						devtoLink: (chunks) => <Link href="https://dev.to/kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>,
+						farcasterLink: (chunks) => <Link href="https://farcaster.xyz/kuzminklk" target="_blank" rel="noopener noreferrer">{chunks}</Link>
+					})}
+				</p>
 			</section>
 		</main>
 	)

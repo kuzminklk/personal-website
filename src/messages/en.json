@@ -166,6 +166,7 @@
 		"tiktok-and-instagram": "<tiktokLink>Tik-Tok</tiktokLink> & <instagramLink>Instagram</instagramLink> — sports 🏃🏻",
 		"github": "<githubLink>GitHub</githubLink> — projects, skills, workbooks, code… 🧑🏻‍💻",
 		"unsplash": "<unsplashLink>Unsplash</unsplashLink> — photos 📸",
-		"linkedin": "<linkedinLink>Linkedin</linkedinLink> — professional activity 🛠️"
+		"linkedin": "<linkedinLink>Linkedin</linkedinLink> — professional activity 🛠️",
+		"devto-and-farcaster": "<devtoLink>Dev.to</devtoLink> & <farcasterLink>Farcaster</farcasterLink> — web and blockchain development 🧰"
 	}
 }
