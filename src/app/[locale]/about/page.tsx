@@ -50,7 +50,7 @@ export default function About() {
           <em>
             {translations.rich("explore", { 
               emoji: (chunks) => <span className="emoji">{chunks}</span>, 
-              scroll: (chunks) => <a href="#" onClick={ (event) => {event.preventDefault(); scrollToTop()}}>{chunks}</a> 
+              scroll: (chunks) => <a href="" onClick={ (event) => {event.preventDefault(); scrollToTop()}}>{chunks}</a> 
             })}
           </em>
         </p>
