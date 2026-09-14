@@ -16,6 +16,9 @@
 		"writings": "Writings",
 		"connect": "Connect"
 	},
+	"LanguageSwitcher": {
+		"title": "Switch to another language"
+	},
 	"about": {
 		"greet": {
 			"hi": "Hi!",

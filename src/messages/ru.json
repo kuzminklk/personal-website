@@ -16,6 +16,9 @@
 		"writings": "Сочинения",
 		"connect": "Связаться со мной"
 	},
+	"LanguageSwitcher": {
+		"title": "Переключить на другой язык"
+	},
 	"about": {
 		"greet": {
 			"hi": "Привет!",
