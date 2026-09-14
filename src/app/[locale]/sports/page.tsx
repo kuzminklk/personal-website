@@ -6,6 +6,8 @@ import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 
 
+const videos = ["stone", "boxing", "push-ups", "pull-ups", "power-lift"]
+
 export default async function Sports() {
 	const translations = await getTranslations("sports")
 
@@ -34,11 +36,9 @@ export default async function Sports() {
 			</section>
 			<h1><span className={styles.emoji}>🎯</span> {translations("activities.header")}</h1>
 			<section className={styles.activities}>
-				<video src="/videos/stone.mp4" autoPlay loop muted></video>
-				<video src="/videos/boxing.mp4" autoPlay loop muted></video>
-				<video src="/videos/push-ups.mp4" autoPlay loop muted></video>
-				<video src="/videos/pull-ups.mp4" autoPlay loop muted></video>
-				<video src="/videos/power-lift.mp4" autoPlay loop muted></video>
+				{videos.map((video) => (
+					<video key={video} src={`/videos/${video}.mp4`} poster={`/videos/${video}-blurred.webp`} autoPlay loop muted></video>
+				))}	
 				<p>
 					<em>
 					{translations.rich("ending", {
