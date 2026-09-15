@@ -40,13 +40,13 @@ export function ProjectCard({project}: {project: Project}) {
         <Image
           className={styles.desktop}
           src={project.desktopImage}
-          /* placeholder="blur" */
+          placeholder="blur"
           alt={project.imageAlternative}
         />
         <Image
           className={styles.mobile}
           src={project.mobileImage}
-          /* placeholder="blur" */
+          placeholder="blur"
           alt={project.imageAlternative}
         />
       </Link>
