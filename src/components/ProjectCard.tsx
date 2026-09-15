@@ -1,21 +1,26 @@
 
 
-import Image, { type StaticImageData } from "next/image"
+import type { ReactNode } from "react"
+import Image, {type StaticImageData} from "next/image"
 import Link from "next/link"
+
+import styles from "./ProjectCard.module.css"
 
 
 export type Project = {
-  title: string
-  description: string
+  title: string | ReactNode | undefined
+  description: string | ReactNode | undefined
   github: string
   deployment: string
-  image: StaticImageData
+  desktopImage: StaticImageData
+  mobileImage: StaticImageData
   imageAlternative: string
 }
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({project}: {project: Project}) {
+
   return (
-    <section>
+    <section className={styles.projectCard}>
       <Link
         href={project.github}
         target="_blank"
@@ -31,9 +36,17 @@ export function ProjectCard({ project }: { project: Project }) {
         target="_blank"
         rel="noopener noreferrer"
       >
+        {/* One of the images will be not displayed via CSS rule based on media query */}
         <Image
-          src={project.image}
-          placeholder="blur"
+          className={styles.desktop}
+          src={project.desktopImage}
+          /* placeholder="blur" */
+          alt={project.imageAlternative}
+        />
+        <Image
+          className={styles.mobile}
+          src={project.mobileImage}
+          /* placeholder="blur" */
           alt={project.imageAlternative}
         />
       </Link>

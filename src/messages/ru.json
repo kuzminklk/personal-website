@@ -59,26 +59,41 @@
 			"header": "Проекты",
 			"explore": "<emphasize>Больше проектов ты можешь найти в моём <githubLink>GitHub<emoji>👀</emoji></githubLink>, здесь только некоторые!</emphasize>",
 			"web-interfaces": {
-				"header": "Веб-интерфейсы",
+				"header": "Вебсайты",
+				"cosmos-company": {
+					"title": "Компания Cosmo",
+					"description": "Технологическая компания",
+					"image-alternative": "Снимок вебсайта"
+				},
+				"central-park": {
+					"title": "Центальный Парк",
+					"description": "Кафе в парке",
+					"image-alternative": "Снимок вебсайта"
+				},
+				"belarus-digital": {
+					"title": "Цифровая Беларусь",
+					"description": "Проект по разработке программного обеспечения",
+					"image-alternative": "Снимок вебсайта"
+				},
 				"strawberry-vendor": {
-					"title": "Продавец клубники",
-					"description": "Продавец клубничного токена (ERC-20). Полностью работает на Ethereum Sepolia",
-					"image-alternative": "Снимок сайта"
+					"title": "Клубничный токен",
+					"description": "Покупка клубничного токена на Ethereum",
+					"image-alternative": "Снимок вебсайта"
 				},
 				"buy-me-a-coffee": {
 					"title": "Купи мне кофе!",
-					"description": "Донат. Полностью работает на Ethereum Sepolia",
-					"image-alternative": "Снимок сайта"
+					"description": "Поддержка автора деньгами",
+					"image-alternative": "Снимок вебсайта"
 				},
 				"moby-dick": {
-					"title": "Моби Дик",
+					"title": "Моби Дик, или Белый кит",
 					"description": "Электронная книга",
-					"image-alternative": "Снимок сайта"
+					"image-alternative": "Снимок вебсайта"
 				},
 				"tsender": {
 					"title": "Отправитель аирдропа",
 					"description": "Эффективный раздатчик аирдропа",
-					"image-alternative": "Снимок сайта"
+					"image-alternative": "Снимок вебсайта"
 				}
 			}
 		}

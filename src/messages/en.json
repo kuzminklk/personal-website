@@ -60,20 +60,35 @@
 			"explore": "<emphasize>All the projects you can explore in my <githubLink>GitHub<emoji>👀</emoji></githubLink>, here are the favorite ones!</emphasize>",
 			"web-interfaces": {
 				"header": "Web Interfaces",
+				"cosmos-company": {
+					"title": "Cosmo's Company",
+					"description": "Technological company",
+					"image-alternative": "Website screenshot"
+				},
+				"central-park": {
+					"title": "Central Park",
+					"description": "Park cafe",
+					"image-alternative": "Website screenshot"
+				},
+				"belarus-digital": {
+					"title": "Belarus Digital",
+					"description": "Software development project",
+					"image-alternative": "Website screenshot"
+				},
 				"strawberry-vendor": {
-					"title": "Strawberry Vendor",
-					"description": "Vendor for Strawberry token (ERC-20). Fully works in Ethereum Sepolia",
-					"image-alternative": "Strawberry vendor website screenshot"
+					"title": "Strawberry Token",
+					"description": "Buy Strawberry on Ethereum",
+					"image-alternative": "Website screenshot"
 				},
 				"buy-me-a-coffee": {
 					"title": "Buy me a coffee!",
-					"description": "Donation interface.  Fully works in Ethereum Sepolia",
-					"image-alternative": "Buy me a coffe donation website screenshot"
+					"description": "Donate to the author on Ethereum",
+					"image-alternative": "Website screenshot"
 				},
 				"moby-dick": {
 					"title": "Moby-Dick",
-					"description": "Site, where you can read such an intresting book",
-					"image-alternative": "Moby-Dick web-book screenshot"
+					"description": "Digital book",
+					"image-alternative": "Website screenshot"
 				},
 				"tsender": {
 					"title": "Efficient airdrop sender",
