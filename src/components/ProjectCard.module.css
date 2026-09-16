@@ -7,20 +7,17 @@ section.projectCard {
 	.desktop {
 		display: block;
 	}
+}
 
-	@media screen and (max-width: 730px) {
-		section.projectCard {
-			margin-bottom: 2.5rem;
-			div.grid {
-				gap: 1rem;
-			}
+@media screen and (max-width: 730px) {
+	section.projectCard {
+		margin-bottom: 1.5rem;
 
-			.mobile {
-				display: block;
-			}
-			.desktop {
-				display: none;
-			}
+		.mobile {
+			display: block;
+		}
+		.desktop {
+			display: none;
 		}
 	}
 }

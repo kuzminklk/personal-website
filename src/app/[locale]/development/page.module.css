@@ -1,4 +1,16 @@
 main.development {
+	> section {
+		margin-bottom: 5rem;
+
+		> div.grid {
+			display: flex;
+			flex-flow: row;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			gap: 2.5rem;
+		}
+	}
+
 	img {
 		flex: auto;
 		max-width: 100%;
@@ -11,18 +23,6 @@ main.development {
 
 	img:hover {
 		filter: drop-shadow(0 0 1.5rem var(--secondary-color));
-	}
-
-	section {
-		margin-bottom: 5rem;
-
-		div.grid {
-			display: flex;
-			flex-flow: row;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-			gap: 2.5rem;
-		}
 	}
 
 	h1 {
@@ -53,5 +53,9 @@ main.development {
 @media screen and (max-width: 730px) {
 	main.development {
 		padding: 2.5rem 1.5rem;
+
+		div.grid {
+			gap: 1rem;
+		}
 	}
 }
