@@ -60,6 +60,12 @@ export async function generateMetadata(): Promise<Metadata> {
 				},
 			],
 		},
+		twitter: {
+			title: "Daniel Cosmo's personal websit",
+			description:
+				"Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
+			images: ["/open-graph.png"],
+		},
 	}
 }
 
