@@ -24,10 +24,6 @@ main.development {
 			flex-wrap: wrap;
 			justify-content: space-evenly;
 			gap: 2.5rem;
-
-			section {
-				max-width: 20rem;
-			}
 		}
 	}
 
@@ -61,12 +57,6 @@ main.development {
 @media screen and (max-width: 730px) {
 	main.development {
 		padding: 2.5rem 1.5rem;
-		
-		section {
-			margin-bottom: 2.5rem;
-			div.grid {
-				gap: 1rem;
-			}
-		}
+	
 	}
 }

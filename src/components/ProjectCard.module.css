@@ -1,5 +1,7 @@
 
 section.projectCard {
+	max-width: 20rem;
+
 	.mobile {
 		display: none;
 	}
@@ -8,11 +10,18 @@ section.projectCard {
 	}
 
 	@media screen and (max-width: 730px) {
-		.mobile {
-			display: block;
-		}
-		.desktop {
-			display: none;
+		section.projectCard {
+			margin-bottom: 2.5rem;
+			div.grid {
+				gap: 1rem;
+			}
+
+			.mobile {
+				display: block;
+			}
+			.desktop {
+				display: none;
+			}
 		}
 	}
 }

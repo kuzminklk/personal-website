@@ -7,7 +7,6 @@ import { useTranslations } from "next-intl"
 import { Link, usePathname } from "@/i18n/naviagation"
 
 import styles from "./Header.module.css"
-import { ThemeSwitcher } from "@/components/ThemeSwitcher"
 import { LanguageSwitcher } from "@/components/LanguageSwitcher"
 
 
@@ -31,14 +30,13 @@ export function Header() {
 				{ navigation.map((item) => {
 					const isActive = pathname === item.href
 					return (
-						<h3 key={item.name} className={isActive ? styles.active : ""}>
-							<Link href={item.href}>{item.name}<span className="emoji">{item.emoji}</span></Link>
+						<h3 key={ item.name } className={ isActive ? styles.active : "" }>
+							<Link href={ item.href }>{ item.name }<span className="emoji">{ item.emoji }</span></Link>
 						</h3>
 					)
 				})}
 			</nav>
-			<section className={styles.switchers}>
-				{/* <ThemeSwitcher/> */}
+			<section className={ styles.switchers }>
 				<LanguageSwitcher/>
 			</section>
 		</header>

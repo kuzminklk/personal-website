@@ -47,9 +47,9 @@ export default async function LocaleLayout({
 	params
 }: Readonly<{
 	children: React.ReactNode
-	params: Promise<{locale: string}>
+	params: Promise<{ locale: string }>
 }>) {
-	const {locale} = await params
+	const { locale } = await params
 
 	if(!hasLocale(routing.locales, locale)) {
 		notFound()
@@ -58,13 +58,11 @@ export default async function LocaleLayout({
 	return (
 		<html lang={locale} className={`${amstelvar.className} ${redHatMono.className} ${notoSansMono.className}`}>
 			<body>
-{/*      <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
 					<NextIntlClientProvider>
 						<Header/>
 						{children}
 						<Footer/>
 					</NextIntlClientProvider>
-{/*      </ThemeProvider> */}
 			</body>
 		</html>
 	)

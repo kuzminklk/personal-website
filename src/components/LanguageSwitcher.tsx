@@ -27,8 +27,8 @@ export function LanguageSwitcher() {
 	}
 
 	return (
-		<button onClick={switchLanguage} className={styles.switcher} title={title} aria-label={title}>
-			{locale === "en" ? "🇺🇸" : "🇷🇺"}
+		<button onClick={switchLanguage} className={ styles.switcher } title={ title } aria-label={ title }>
+			{ locale === "en" ? "🇺🇸" : "🇷🇺" }
 		</button>
 	)
-}
+ }

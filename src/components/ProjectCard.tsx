@@ -17,37 +17,37 @@ export type Project = {
   imageAlternative: string
 }
 
-export function ProjectCard({project}: {project: Project}) {
+export function ProjectCard({ project }: { project: Project }) {
 
   return (
-    <section className={styles.projectCard}>
+    <section className={styles.projectCard }>
       <Link
-        href={project.github}
+        href={ project.github }
         target="_blank"
         rel="noopener noreferrer"
       >
-        <h3>{project.title}</h3>
+        <h3>{ project.title }</h3>
       </Link>
 
-      <p>{project.description}</p>
+      <p>{ project.description }</p>
 
       <Link
-        href={project.deployment}
+        href={ project.deployment }
         target="_blank"
         rel="noopener noreferrer"
       >
         {/* One of the images will be not displayed via CSS rule based on media query */}
         <Image
-          className={styles.desktop}
-          src={project.desktopImage}
+          className={ styles.desktop }
+          src={ project.desktopImage }
           placeholder="blur"
-          alt={project.imageAlternative}
+          alt={ project.imageAlternative }
         />
         <Image
-          className={styles.mobile}
-          src={project.mobileImage}
+          className={ styles.mobile }
+          src={ project.mobileImage }
           placeholder="blur"
-          alt={project.imageAlternative}
+          alt={ project.imageAlternative }
         />
       </Link>
     </section>
