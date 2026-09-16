@@ -47,7 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
 		openGraph: {
 			type: "website",
 			siteName: "kuzminklk",
-			title: "Daniel Cosmo's personal websit",
+			title: "Daniel Cosmo's personal website",
 			description:
 				"Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
 			url: "https://kuzminklk.vercel.app/",
@@ -56,13 +56,13 @@ export async function generateMetadata(): Promise<Metadata> {
 					url: "/open-graph.png",
 					width: 1200,
 					height: 640,
-					alt: "Man running in mountains",
+					alt: "Man are running in mountains",
 				},
 			],
 		},
 		twitter: {
 			card: "summary_large_image",
-			title: "Daniel Cosmo's personal websit",
+			title: "Daniel Cosmo's personal website",
 			description:
 				"Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
 			images: ["/open-graph.png"],
