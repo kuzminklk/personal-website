@@ -1,6 +1,9 @@
 {
 	"metadata": {
-		"description": "Daniel Cosmo's (kuzminklk) personal website"
+		"description": "Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
+		"authors": {
+			"daniel-cosmo": "Daniel Cosmo"
+		}
 	},
 	"Footer": {
 		"madeBy": "Made by Daniel Cosmo",
@@ -49,7 +52,7 @@
 				"back-end": "<strong>Back-end</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
 				"blockchain": "<strong>Blockchain</strong>: Solidity, Foundry, Hardhat, Chainlink",
 				"web-3-front-end": "<strong>Web-3 Front-end</strong>: viem, wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
-				"tools": "<strong>Tools</strong>: Docker, Git, GitHub, Notion, Visual Studio Code",
+				"tools": "<strong>Tools</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, ESLint, Prettier",
 				"artificial-intellegence": "<strong>Artificial Intellegence</strong>: LLMs (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
 				"soft-skills": "<strong>Soft-skills</strong>: Communication, Discipline, Education, Health and Activity, Information Diving",
 				"additional": "<emphasize><strong>Additional</strong>: Design → Photos, Web-design, Drawing; Music → Guitar; Sports → Wrestling; Writing → Poetry, Philosophy essays</emphasize>"

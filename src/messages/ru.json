@@ -1,6 +1,6 @@
 {
 	"metadata": {
-		"description": "Личный сайт Кузьмина Даниила (kuzminklk)"
+		"description": "Личный сайт Кузьмина Даниила (kuzminklk) о программировании, фотографии и спорте…"
 	},
 	"Footer": {
 		"madeBy": "Сделал Кузьмин Даниил",
@@ -49,7 +49,7 @@
 				"back-end": "<strong>Логика веб-приложения</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
 				"blockchain": "<strong>Блокчейн</strong>: Solidity, Foundry, Hardhat, Chainlink",
 				"web-3-front-end": "<strong>Веб-интерфейс для блокчейн-приложения</strong>: viem, wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
-				"tools": "<strong>Инструменты</strong>: Docker, Git, GitHub, Notion, Visual Studio Code",
+				"tools": "<strong>Инструменты</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, ESLint, Prettier",
 				"artificial-intellegence": "<strong>Искуственный интеллект</strong>: Языковые модели (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
 				"soft-skills": "<strong>Мягкие</strong>: Коммуникация, Дисциплина, Самообразование, Здоровье и Активность, Погружение в информацию",
 				"additional": "<emphasize><strong>Дополнительно</strong>: Дизайн → Фотографирование, Веб-дизайн, Рисование; Музыка → Гитара; Спорт → Борьба; Писательство → Стихи, Философские сочинения</emphasize>"
@@ -82,7 +82,7 @@
 				},
 				"buy-me-a-coffee": {
 					"title": "Купи мне кофе!",
-					"description": "Поддержка автора деньгами",
+					"description": "Поддержи автора деньгами",
 					"image-alternative": "Снимок вебсайта"
 				},
 				"moby-dick": {

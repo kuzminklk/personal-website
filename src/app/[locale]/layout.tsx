@@ -22,12 +22,41 @@ export async function generateMetadata(): Promise<Metadata> {
 	const translations = await getTranslations("metadata")
 
 	return {
-		title: "kuzminklk",
+		title: {
+			default: "kuzminklk",
+			template: "%s | kuzminklk",
+		},
 		description: translations("description"),
+		authors: [
+			{
+				name: translations("authors.daniel-cosmo"),
+			},
+		],
+		creator: translations("authors.daniel-cosmo"),
+		robots: {
+			index: true,
+			follow: true,
+		},
 		icons: {
 			icon: [
 				{
 					url: "/scroll.svg",
+				},
+			],
+		},
+		openGraph: {
+			type: "website",
+			siteName: "kuzminklk",
+			title: "Daniel Cosmo's personal websit",
+			description:
+				"Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
+			url: "https://kuzminklk.vercel.app/",
+			images: [
+				{
+					url: "/open-graph.png",
+					width: 1200,
+					height: 640,
+					alt: "Man running in mountains",
 				},
 			],
 		},
