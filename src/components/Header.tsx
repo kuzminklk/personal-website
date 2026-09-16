@@ -1,14 +1,10 @@
-
-
 "use client"
-
 
 import { useTranslations } from "next-intl"
 import { Link, usePathname } from "@/i18n/naviagation"
 
 import styles from "./Header.module.css"
 import { LanguageSwitcher } from "@/components/LanguageSwitcher"
-
 
 export function Header() {
 	const translations = useTranslations("Header")
@@ -27,17 +23,20 @@ export function Header() {
 		<header className={styles.primary}>
 			<h3 className={styles.title}>📜 kuzminklk</h3>
 			<nav>
-				{ navigation.map((item) => {
+				{navigation.map((item) => {
 					const isActive = pathname === item.href
 					return (
-						<h3 key={ item.name } className={ isActive ? styles.active : "" }>
-							<Link href={ item.href }>{ item.name }<span className="emoji">{ item.emoji }</span></Link>
+						<h3 key={item.name} className={isActive ? styles.active : ""}>
+							<Link href={item.href}>
+								{item.name}
+								<span className="emoji">{item.emoji}</span>
+							</Link>
 						</h3>
 					)
 				})}
 			</nav>
-			<section className={ styles.switchers }>
-				<LanguageSwitcher/>
+			<section className={styles.switchers}>
+				<LanguageSwitcher />
 			</section>
 		</header>
 	)

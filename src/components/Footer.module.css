@@ -1,5 +1,3 @@
-
-
 footer.primary {
 	display: flex;
 	flex-flow: row;
@@ -25,7 +23,6 @@ footer.primary::selection {
 	background: var(--primary-color);
 	color: var(--secondary-color);
 }
-
 
 @media screen and (max-width: 730px) {
 	footer.primary {

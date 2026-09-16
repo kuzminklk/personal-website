@@ -1,10 +1,9 @@
-
-
 ### Description
+
 My personal website project
 
-
 ### Branches
+
 - **main—production ready for Vercel**
 - **typescript-next—Next.js and TypeScript implementation**
 - javascript-express-vite-react—Express as a server and React plus Vite as front-end implementation
@@ -13,6 +12,7 @@ My personal website project
 - python-flask—Python plus Flask as a server with static front-end implementation
 
 ### Development path
+
 1. Develop with Python and Flask
 2. Implement with Express
 3. Implement with React and Vite

@@ -1,14 +1,10 @@
-
-
 "use client"
-
 
 import { useLocale } from "next-intl"
 import { useTranslations } from "next-intl"
 
 import { usePathname, useRouter } from "@/i18n/naviagation"
 import styles from "./LanguageSwitcher.module.css"
-
 
 export function LanguageSwitcher() {
 	const locale = useLocale()
@@ -22,13 +18,13 @@ export function LanguageSwitcher() {
 
 	function switchLanguage() {
 		router.replace(pathname, {
-			"locale": nextLocale
+			locale: nextLocale,
 		})
 	}
 
 	return (
-		<button onClick={switchLanguage} className={ styles.switcher } title={ title } aria-label={ title }>
-			{ locale === "en" ? "🇺🇸" : "🇷🇺" }
+		<button onClick={switchLanguage} className={styles.switcher} title={title} aria-label={title}>
+			{locale === "en" ? "🇺🇸" : "🇷🇺"}
 		</button>
 	)
- }
+}

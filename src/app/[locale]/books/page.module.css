@@ -1,5 +1,3 @@
-
-
 main.books {
 	h1 {
 		span.emoji {
@@ -8,7 +6,6 @@ main.books {
 		}
 	}
 }
-
 
 @keyframes waving {
 	0% {
@@ -21,7 +18,6 @@ main.books {
 		transform: rotate(-7.5deg);
 	}
 }
-
 
 @media screen and (max-width: 730px) {
 	main.books {

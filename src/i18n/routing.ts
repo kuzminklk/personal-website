@@ -1,39 +1,36 @@
-
-
 import { defineRouting } from "next-intl/routing"
 
-
 export const routing = defineRouting({
-	locales: ["en", "ru"/* , "pl", "by" */],
+	locales: ["en", "ru" /* , "pl", "by" */],
 	defaultLocale: "en",
 	pathnames: {
 		"/about": {
 			en: "/about",
-			ru: "/обо-мне"
+			ru: "/обо-мне",
 		},
 		"/development": {
 			en: "/development",
-			ru: "/программирование"
+			ru: "/программирование",
 		},
 		"/photography": {
 			en: "/photography",
-			ru: "/фотографии"
+			ru: "/фотографии",
 		},
 		"/sports": {
 			en: "/sports",
-			ru: "/спорт"
+			ru: "/спорт",
 		},
 		"/books": {
 			en: "/books",
-			ru: "/книги"
+			ru: "/книги",
 		},
 		"/writings": {
 			en: "/writings",
-			ru: "/сочинения"
+			ru: "/сочинения",
 		},
 		"/connect": {
 			en: "/connect",
-			ru: "/связаться-со-мной"
-		}
-	}
+			ru: "/связаться-со-мной",
+		},
+	},
 })

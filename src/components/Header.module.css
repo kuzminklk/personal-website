@@ -1,5 +1,3 @@
-
-
 header.primary {
 	display: flex;
 	align-items: center;
@@ -49,7 +47,6 @@ header.primary::selection {
 	color: var(--secondary-color);
 }
 
-
 @keyframes glowing {
 	0% {
 		filter: drop-shadow(0 0 0.25rem var(--primary-color));
@@ -61,7 +58,6 @@ header.primary::selection {
 		filter: drop-shadow(0 0 0.25rem var(--primary-color));
 	}
 }
-
 
 @media screen and (max-width: 730px) {
 	header.primary {

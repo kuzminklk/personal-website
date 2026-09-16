@@ -1,5 +1,3 @@
-
-
 import natasha from "@/assets/photos/natasha.jpg"
 import asyaAtFall from "@/assets/photos/asya-at-fall.jpg"
 import springFlowers from "@/assets/photos/spring.jpg"
@@ -11,7 +9,6 @@ import misha from "@/assets/photos/misha.jpg"
 import anya from "@/assets/photos/anya.jpg"
 import asya from "@/assets/photos/asya.jpg"
 
-
 export const photos = [
 	{ source: asya, id: "asya", orientation: "portrait" },
 	{ source: springFlowers, id: "spring-flowers", orientation: "landscape" },
@@ -22,5 +19,5 @@ export const photos = [
 	{ source: dasha, id: "dasha", orientation: "portrait" },
 	{ source: dashaAtNight, id: "dasha-at-night", orientation: "portrait" },
 	{ source: misha, id: "misha", orientation: "portrait" },
-	{ source: anya, id: "anya", orientation: "portrait" }
+	{ source: anya, id: "anya", orientation: "portrait" },
 ]

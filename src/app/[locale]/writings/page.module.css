@@ -1,5 +1,3 @@
-
-
 main.writings {
 	h1 {
 		span.emoji {
@@ -8,7 +6,6 @@ main.writings {
 		}
 	}
 }
-
 
 @keyframes moving {
 	0% {
@@ -21,8 +18,6 @@ main.writings {
 		transform: translateX(-0.25rem);
 	}
 }
-
-
 
 @media screen and (max-width: 730px) {
 	main.writings {
