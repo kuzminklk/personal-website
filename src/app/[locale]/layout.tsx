@@ -67,6 +67,9 @@ export async function generateMetadata(): Promise<Metadata> {
 				"Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
 			images: ["/open-graph.png"],
 		},
+		verification: {
+			google: "Lhm9hi-5ff4o9Inx9OTOaQzlnoxhvPpdFW6HJcwk__c",
+		},
 	}
 }
 
