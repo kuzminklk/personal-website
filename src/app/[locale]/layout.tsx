@@ -10,8 +10,7 @@ import { globalStructuredData } from "@/data/structured-data"
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { routing } from "@/i18n/routing"
-
-const websiteURL = "https://kuzminklk.vercel.app"
+import { websiteURL } from "@/data/search-engine-optimization"
 
 const redHatMono = Red_Hat_Mono({ subsets: ["latin"], weight: "400" })
 const notoSansMono = Noto_Sans_Mono({ weight: "400" })
@@ -36,10 +35,6 @@ export async function generateMetadata(): Promise<Metadata> {
 			},
 		],
 		creator: translations("authors.daniel-cosmo"),
-		robots: {
-			index: true,
-			follow: true,
-		},
 		icons: {
 			icon: [
 				{
