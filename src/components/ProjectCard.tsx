@@ -1,6 +1,5 @@
 import type { ReactNode } from "react"
 import Image, { type StaticImageData } from "next/image"
-import Link from "next/link"
 
 import styles from "./ProjectCard.module.css"
 
@@ -17,13 +16,13 @@ export type Project = {
 export function ProjectCard({ project }: { project: Project }) {
 	return (
 		<section className={styles.projectCard}>
-			<Link href={project.github} target="_blank" rel="noopener noreferrer">
+			<a href={project.github} target="_blank" rel="noopener noreferrer">
 				<h3>{project.title}</h3>
-			</Link>
+			</a>
 
 			<p>{project.description}</p>
 
-			<Link href={project.deployment} target="_blank" rel="noopener noreferrer">
+			<a href={project.deployment} target="_blank" rel="noopener noreferrer">
 				{/* One of the images will be not displayed via CSS rule based on media query */}
 				<Image
 					className={styles.desktop}
@@ -37,7 +36,7 @@ export function ProjectCard({ project }: { project: Project }) {
 					placeholder="blur"
 					alt={project.imageAlternative}
 				/>
-			</Link>
+			</a>
 		</section>
 	)
 }

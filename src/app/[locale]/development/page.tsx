@@ -1,7 +1,6 @@
 import { getTranslations, getMessages } from "next-intl/server"
 
 import type { Project } from "@/components/ProjectCard"
-import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 import { projects } from "@/data/projects"
 import { ProjectCard } from "@/components/ProjectCard"
@@ -20,13 +19,13 @@ export default async function Home() {
 					{translations.rich("introduction.curricullum", {
 						emoji: (chunks) => <span className="emoji">{chunks}</span>,
 						curriculumLink: (chunks) => (
-							<Link
+							<a
 								href="https://kuzminklk.notion.site/31154d4de03580d7b5ceca5b187846be"
 								target="blank"
 								rel="noopener noreferrer"
 							>
 								{chunks}
-							</Link>
+							</a>
 						),
 					})}
 				</p>
@@ -35,9 +34,9 @@ export default async function Home() {
 					{translations.rich("introduction.github", {
 						emoji: (chunks) => <span className="emoji">{chunks}</span>,
 						githubLink: (chunks) => (
-							<Link href="https://github.com/kuzminklk" target="blank" rel="noopener noreferrer">
+							<a href="https://github.com/kuzminklk" target="blank" rel="noopener noreferrer">
 								{chunks}
-							</Link>
+							</a>
 						),
 					})}
 				</p>
@@ -63,9 +62,9 @@ export default async function Home() {
 					emphasize: (chunks) => <em>{chunks}</em>,
 					emoji: (chunks) => <span className="emoji">{chunks}</span>,
 					githubLink: (chunks) => (
-						<Link href="https://github.com/kuzminklk" target="blank" rel="noopener noreferrer">
+						<a href="https://github.com/kuzminklk" target="blank" rel="noopener noreferrer">
 							{chunks}
-						</Link>
+						</a>
 					),
 				})}
 			</p>

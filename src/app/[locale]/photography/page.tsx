@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { getTranslations } from "next-intl/server"
 
-import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 import { photos } from "@/data/photos"
 
@@ -21,18 +20,14 @@ export default async function Home() {
 					{translations.rich("introduction.share", {
 						emphasize: (chunks) => <em>{chunks}</em>,
 						unsplashLink: (chunks) => (
-							<Link
-								href="https://unsplash.com/@kuzminklk"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a href="https://unsplash.com/@kuzminklk" target="_blank" rel="noopener noreferrer">
 								{chunks}
-							</Link>
+							</a>
 						),
 						telegramChannelLink: (chunks) => (
-							<Link href="https://t.me/kuzminklkk" target="_blank" rel="noopener noreferrer">
+							<a href="https://t.me/kuzminklkk" target="_blank" rel="noopener noreferrer">
 								{chunks}
-							</Link>
+							</a>
 						),
 					})}
 				</p>
@@ -56,18 +51,14 @@ export default async function Home() {
 					<em>
 						{translations.rich("ending", {
 							unsplashLink: (chunks) => (
-								<Link
-									href="https://unsplash.com/@kuzminklk"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<a href="https://unsplash.com/@kuzminklk" target="_blank" rel="noopener noreferrer">
 									{chunks}
-								</Link>
+								</a>
 							),
 							telegramChannelLink: (chunks) => (
-								<Link href="https://t.me/kuzminklkk" target="_blank" rel="noopener noreferrer">
+								<a href="https://t.me/kuzminklkk" target="_blank" rel="noopener noreferrer">
 									{chunks}
-								</Link>
+								</a>
 							),
 						})}
 					</em>

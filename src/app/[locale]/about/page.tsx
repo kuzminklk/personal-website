@@ -1,6 +1,5 @@
 "use client"
 
-import type { Metadata } from "next"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 

@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { getTranslations } from "next-intl/server"
 
 import styles from "./Footer.module.css"
@@ -12,25 +11,25 @@ export async function Footer() {
 				<em>{translations("madeBy")}</em>
 			</h3>
 			<h3>
-				<Link
+				<a
 					target="_blank"
 					rel="noopener noreferrer"
 					href="https://github.com/kuzminklk/personal-website"
 				>
 					{translations("source")}
-				</Link>
+				</a>
 			</h3>
 			<h3>
 				{translations.has("contactFull") ? (
-					<Link target="_blank" rel="noopener noreferrer" href="https://t.me/kuzminklk">
+					<a target="_blank" rel="noopener noreferrer" href="https://t.me/kuzminklk">
 						{translations("contactFull")}
-					</Link>
+					</a>
 				) : (
 					<>
 						{translations("contactStripped")}
-						<Link target="_blank" rel="noopener noreferrer" href="https://t.me/kuzminklk">
+						<a target="_blank" rel="noopener noreferrer" href="https://t.me/kuzminklk">
 							Telegram
-						</Link>
+						</a>
 					</>
 				)}
 			</h3>

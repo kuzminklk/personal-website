@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server"
 
-import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 
 const videos = ["stone", "boxing", "push-ups", "pull-ups", "power-lift"]
@@ -19,36 +18,32 @@ export default async function Sports() {
 					{translations.rich("introduction.share", {
 						emoji: (chunks) => <span className="emoji">{chunks}</span>,
 						tiktokLink: (chunks) => (
-							<Link
-								href="https://www.tiktok.com/@kuzminklk"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a href="https://www.tiktok.com/@kuzminklk" target="_blank" rel="noopener noreferrer">
 								{chunks}
-							</Link>
+							</a>
 						),
 						telegramLink: (chunks) => (
-							<Link href="https://t.me/kuzminklk" target="_blank" rel="noopener noreferrer">
+							<a href="https://t.me/kuzminklk" target="_blank" rel="noopener noreferrer">
 								{chunks}
-							</Link>
+							</a>
 						),
 						instagramLink: (chunks) => (
-							<Link
+							<a
 								href="https://www.youtube.com/@kuzminklk"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								{chunks}
-							</Link>
+							</a>
 						),
 						youtubeLink: (chunks) => (
-							<Link
+							<a
 								href="https://www.youtube.com/@kuzminklk"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								{chunks}
-							</Link>
+							</a>
 						),
 					})}
 				</p>
@@ -71,13 +66,13 @@ export default async function Sports() {
 					<em>
 						{translations.rich("ending", {
 							tiktokLink: (chunks) => (
-								<Link
+								<a
 									href="https://www.tiktok.com/@kuzminklk"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									{chunks}
-								</Link>
+								</a>
 							),
 						})}
 					</em>

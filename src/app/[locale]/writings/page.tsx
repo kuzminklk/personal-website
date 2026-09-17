@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server"
 
-import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 
 export default async function Books() {
@@ -15,9 +14,9 @@ export default async function Books() {
 					{translations.rich("introduction.share", {
 						emoji: (chunks) => <span className="emoji">{chunks}</span>,
 						notionBooksDatabaseLink: (chunks) => (
-							<Link href="https://kuzminklk.notion.site/31e54d4de03580fda758ff9cd469a547?v=31e54d4de035806b95ac000c27c46c11&source=copy_link">
+							<a href="https://kuzminklk.notion.site/31e54d4de03580fda758ff9cd469a547?v=31e54d4de035806b95ac000c27c46c11&source=copy_link">
 								{chunks}
-							</Link>
+							</a>
 						),
 					})}
 				</p>

@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server"
 
-import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 
 export default async function Books() {
@@ -14,9 +13,9 @@ export default async function Books() {
 				<p>
 					{translations.rich("introduction.database", {
 						notionBooksDatabaseLink: (chunks) => (
-							<Link href="https://kuzminklk.notion.site/31154d4de0358084adcdf9aca595fa2f?v=31154d4de035802ca521000ca4f6f8f9">
+							<a href="https://kuzminklk.notion.site/31154d4de0358084adcdf9aca595fa2f?v=31154d4de035802ca521000ca4f6f8f9">
 								{chunks}
-							</Link>
+							</a>
 						),
 					})}
 				</p>

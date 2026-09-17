@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image"
 import cosmosCompanyDesktop from "@/assets/projects/cosmos-company-desktop.png"
 import centralParkDesktop from "@/assets/projects/central-park-desktop.png"
 import belarusDigitalDesktop from "@/assets/projects/belarus-digital-desktop.png"
@@ -11,7 +12,15 @@ import strawberryVendorMobile from "@/assets/projects/strawberry-token-mobile.jp
 import buyMeACoffeeMobile from "@/assets/projects/buy-me-a-coffee-mobile.jpg"
 import mobyDickMobile from "@/assets/projects/moby-dick-mobile.jpg"
 
-export const projects = [
+type Project = {
+	id: string
+	github: string
+	deployment: string
+	desktopImage: StaticImageData
+	mobileImage: StaticImageData
+}
+
+export const projects: Project[] = [
 	{
 		id: "cosmos-company",
 		github: "https://github.com/kuzminklk/cosmos-company",
