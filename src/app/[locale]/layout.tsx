@@ -6,9 +6,12 @@ import { NextIntlClientProvider, hasLocale } from "next-intl"
 import { getTranslations } from "next-intl/server"
 
 import "./globals.css"
+import { globalStructuredData } from "@/data/structured-data"
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { routing } from "@/i18n/routing"
+
+const websiteURL = "https://kuzminklk.vercel.app"
 
 const redHatMono = Red_Hat_Mono({ subsets: ["latin"], weight: "400" })
 const notoSansMono = Noto_Sans_Mono({ weight: "400" })
@@ -83,6 +86,7 @@ export default async function LocaleLayout({
 	params: Promise<{ locale: string }>
 }>) {
 	const { locale } = await params
+	const structuredData = globalStructuredData(websiteURL)
 
 	if (!hasLocale(routing.locales, locale)) {
 		notFound()
@@ -94,6 +98,12 @@ export default async function LocaleLayout({
 			className={`${amstelvar.className} ${redHatMono.className} ${notoSansMono.className}`}
 		>
 			<body>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(structuredData),
+					}}
+				/>
 				<NextIntlClientProvider>
 					<Header />
 					{children}
