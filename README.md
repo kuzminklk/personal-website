@@ -10,6 +10,10 @@ TypeScript, Next.js → next-intl, Husky…
 
 ## State
 
+### Code quality
+
+Uses Prettier with Husky and lint-staged for commit and development, also ESLint and TypeScript checks…
+
 ### Branches
 
 - **main—production ready for Vercel**
