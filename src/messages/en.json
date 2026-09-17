@@ -1,8 +1,14 @@
 {
 	"metadata": {
+		"title": "Daniel Cosmo's personal website",
 		"description": "Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
 		"authors": {
 			"daniel-cosmo": "Daniel Cosmo"
+		},
+		"images": {
+			"open-graph": {
+				"alternative": "Man are running in mountains during sunrise"
+			}
 		}
 	},
 	"Footer": {

@@ -47,24 +47,22 @@ export async function generateMetadata(): Promise<Metadata> {
 		openGraph: {
 			type: "website",
 			siteName: "kuzminklk",
-			title: "Daniel Cosmo's personal website",
-			description:
-				"Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
+			title: translations("title"),
+			description: translations("description"),
 			url: "https://kuzminklk.vercel.app/",
 			images: [
 				{
 					url: "/open-graph.png",
 					width: 1200,
 					height: 640,
-					alt: "Man are running in mountains",
+					alt: translations("images.open-graph.alternative"),
 				},
 			],
 		},
 		twitter: {
 			card: "summary_large_image",
-			title: "Daniel Cosmo's personal website",
-			description:
-				"Daniel Cosmo's (kuzminklk) personal website about development, photography, sport…",
+			title: translations("title"),
+			description: translations("description"),
 			images: ["/open-graph.png"],
 		},
 		verification: {
