@@ -8,11 +8,19 @@ Daniel Cosmo's (me) personal website project
 
 TypeScript, Next.js → next-intl, Husky…
 
+### Architecture
+
+Programming language: JavaScript → TypeScript
+Environment: Node.js → pnpm
+Framework: React → Next.js (app router, “/src” directory)
+Internationalization: next-intl
+Design: Dark & Light Theme, Animations, Variable Font (Amstervar)
+Code formating: Prettier, Husky, lint-staged, “.editorconfig”
+Code quality: ESLint, TypeScript checks
+Search Engine and Social Media Optimization: Open Graph metadata, Twitter (X) metadata, Structured Data, Sitemap
+Version Control: Git, GitHub
+
 ## State
-
-### Code quality
-
-Uses Prettier with Husky and lint-staged for commit and development, also ESLint and TypeScript checks…
 
 ### Branches
 
@@ -41,6 +49,8 @@ Uses Prettier with Husky and lint-staged for commit and development, also ESLint
 ### To-dos
 
 - Review Search Engine Optimization and Open Graph
+- Add Notion databases to connect section
+- Add extra links to appropriate section
 
 ## Usage
 
