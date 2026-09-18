@@ -54,11 +54,12 @@
 			"header": "Skills",
 			"skills": {
 				"fundamentals": "<strong>Fundamentals</strong>: C, Operational Systems (Windows, Linux, Android), Algorithms, Data Structures, Web (IP/TCP, HTTPS), Hardware",
-				"front-end": "<strong>Front-end</strong>: HTML, CSS, JavaScript → React, TypeScript, Tailwind, Next.js, Playwright",
+				"front-end": "<strong>Front-end</strong>: HTML, CSS, JavaScript → React, TypeScript, Tailwind, Next.js, Playwright, ESLint",
 				"back-end": "<strong>Back-end</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
 				"blockchain": "<strong>Blockchain</strong>: Solidity, Foundry, Hardhat, Chainlink",
-				"web-3-front-end": "<strong>Web-3 Front-end</strong>: viem, wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
-				"tools": "<strong>Tools</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, ESLint, Prettier",
+				"web-3-front-end": "<strong>Web-3 Front-end</strong>: Viem, Wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
+				"deployment": "<strong>Deployment</strong>: Vercel, Husky, lint-staged, Open Graph, Search Engine Optimization",
+				"tools": "<strong>Tools</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, Prettier",
 				"artificial-intellegence": "<strong>Artificial Intellegence</strong>: LLMs (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
 				"soft-skills": "<strong>Soft-skills</strong>: Communication, Discipline, Education, Health and Activity, Information Diving",
 				"additional": "<emphasize><strong>Additional</strong>: Design → Photos, Web-design, Drawing; Music → Guitar; Sports → Wrestling; Writing → Poetry, Philosophy essays</emphasize>"

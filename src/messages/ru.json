@@ -54,10 +54,11 @@
 			"header": "Навыки",
 			"skills": {
 				"fundamentals": "<strong>Основы</strong>: C, Операционные системы (Windows, Linux, Android), Алгоритмы, Структуры данных, Интернет (IP/TCP, HTTP…), Аппаратное обеспечение",
-				"front-end": "<strong>Веб-интерфейс</strong>: HTML, CSS, JavaScript → React, TypeScript, Tailwind, Next.js, Playwright",
+				"front-end": "<strong>Веб-интерфейс</strong>: HTML, CSS, JavaScript → React, TypeScript, Tailwind, Next.js, Playwright, ESLint",
 				"back-end": "<strong>Логика веб-приложения</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
 				"blockchain": "<strong>Блокчейн</strong>: Solidity, Foundry, Hardhat, Chainlink",
-				"web-3-front-end": "<strong>Веб-интерфейс для блокчейн-приложения</strong>: viem, wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
+				"web-3-front-end": "<strong>Веб-интерфейс для блокчейн-приложения</strong>: Viem, Wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
+				"deployment": "<strong>Deployment</strong>: Vercel, Husky, lint-staged, Open Graph, Оптимизация Поиска",
 				"tools": "<strong>Инструменты</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, ESLint, Prettier",
 				"artificial-intellegence": "<strong>Искуственный интеллект</strong>: Языковые модели (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
 				"soft-skills": "<strong>Мягкие</strong>: Коммуникация, Дисциплина, Самообразование, Здоровье и Активность, Погружение в информацию",

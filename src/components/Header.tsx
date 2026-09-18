@@ -9,14 +9,14 @@ import { LanguageSwitcher } from "@/components/LanguageSwitcher"
 export function Header() {
 	const translations = useTranslations("Header")
 	const navigation = [
-		{ name: translations("about"), href: "/about" as const, emoji: "🧑‍🚀" },
-		{ name: translations("development"), href: "/development" as const, emoji: "💻" },
-		{ name: translations("photography"), href: "/photography" as const, emoji: "📸" },
-		{ name: translations("sports"), href: "/sports" as const, emoji: "💪" },
-		{ name: translations("books"), href: "/books" as const, emoji: "📚" },
-		{ name: translations("writings"), href: "/writings" as const, emoji: "📒" },
-		{ name: translations("connect"), href: "/connect" as const, emoji: "🤝" },
-	]
+		{ name: translations("about"), href: "/about", emoji: "🧑‍🚀" },
+		{ name: translations("development"), href: "/development", emoji: "💻" },
+		{ name: translations("photography"), href: "/photography", emoji: "📸" },
+		{ name: translations("sports"), href: "/sports", emoji: "💪" },
+		{ name: translations("books"), href: "/books", emoji: "📚" },
+		{ name: translations("writings"), href: "/writings", emoji: "📒" },
+		{ name: translations("connect"), href: "/connect", emoji: "🤝" },
+	] as const
 	const pathname = usePathname()
 
 	return (
