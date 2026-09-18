@@ -135,18 +135,6 @@ html[lang="ru"] {
 	--secondary-font: "Noto Sans Mono", Courier, monospace;
 }
 
-/* Classes for “next-theme” theme switcher */
-
-/* html.dark {
-	--primary-color: #04000f;
-	--secondary-color: #fbfbf1;
-}
-
-html.light {
-	--primary-color: #fbfbf1;
-	--secondary-color: #04000f;
-} */
-
 @media screen and (max-width: 730px) {
 	:root {
 		--primary-size: calc(1.5rem + 0.5vw);

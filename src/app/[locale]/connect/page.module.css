@@ -1,2 +1,5 @@
 main.connect {
+	> section {
+		margin-bottom: 5rem;
+	}
 }

@@ -186,11 +186,22 @@
 		}
 	},
 	"connect": {
-		"telegram-and-telegram-channel": "<telegramLink>Telegram</telegramLink> и <telegramChannelLink>Telegram-канал</telegramChannelLink> — написать мне, фотографии 📸, спорт 💪, интересности 🥰",
-		"tiktok-and-instagram": "<tiktokLink>Tik-Tok</tiktokLink> и <instagramLink>Instagram</instagramLink> — спорт 🏃🏻",
-		"github": "<githubLink>GitHub</githubLink> — проекты, навыки, конспекты, код… 🧑🏻‍💻",
-		"unsplash": "<unsplashLink>Unsplash</unsplashLink> — фотографии 📸",
-		"linkedin": "<linkedinLink>Linkedin</linkedinLink> — профессианальная активность 🛠️",
-		"devto-and-farcaster": "<devtoLink>Dev.to</devtoLink> и <farcasterLink>Farcaster</farcasterLink> — программирование и разработка 🧰"
+		"messaging": {
+			"header": "Сообщения",
+			"telegram": "<telegramLink>Telegram</telegramLink> — быстро написать мне, интересности 🥰",
+			"email": "<emailLink>Электронная почта</emailLink> (kuzminkdk@gmail.com) — для больших сообщений 📝"
+		},
+		"social-media": {
+			"header": "Социальные сети",
+			"telegram-channel": "<telegramChannelLink>Telegram Channel</telegramChannelLink> — фотографии 📸, спорт 💪, книги 📚",
+			"tiktok-and-instagram-and-youtube": "<tiktokLink>Tik-Tok</tiktokLink> & <instagramLink>Instagram</instagramLink> <youtubeLink>YouTube</youtubeLink> — спорт 🏃🏻",
+			"linkedin": "<linkedinLink>Linkedin</linkedinLink> — профессианальная активность 🛠️",
+			"dev-and-farcaster": "<devLink>DEV</devLink> & <farcasterLink>Farcaster</farcasterLink> — программирование и разработка 🧰"
+		},
+		"creations": {
+			"header": "Созидание",
+			"github": "<githubLink>GitHub</githubLink> — проекты, навыки, конспекты, код… 🧑🏻‍💻",
+			"unsplash-and-pixabay": "<unsplashLink>Unsplash</unsplashLink> и <pixabayLink>Pixabay</pixabayLink> — фотогрфии 📸"
+		}
 	}
 }
