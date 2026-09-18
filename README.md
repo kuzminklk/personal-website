@@ -35,6 +35,12 @@ Uses Prettier with Husky and lint-staged for commit and development, also ESLint
    2. Develop mobile layout
    3. Translate with next-intl
    4. Improve code formatting with Prettier, ESLint, Husky, lint-staged
+   5. Add Open Graph metadata and do Search Engine Optimization
+   6. Improve code quality via TypeScipt
+
+### To-dos
+
+- Review Search Engine Optimization and Open Graph
 
 ## Usage
 
