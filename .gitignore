@@ -1,7 +1,7 @@
 
 # Dependencies
-/node_modules
-/.pnp
+/node_modules/
+/.pnp/
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -10,14 +10,14 @@
 !.yarn/versions
 
 # Testing
-/coverage
+/coverage/
 
 # Next.js
 /.next/
 /out/
 
 # Production
-/build
+/build/
 
 # Misc
 .DS_Store
