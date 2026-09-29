@@ -6,18 +6,14 @@ Daniel Cosmo's (me) personal website project
 
 ### Technologies
 
-TypeScript, Next.js → next-intl, Husky…
-
-### Architecture
-
-Programming language: JavaScript → TypeScript
-Environment: Node.js → pnpm
-Framework: React → Next.js (app router, “/src” directory)
-Internationalization: next-intl
-Design: Dark & Light Theme, Animations, Variable Font (Amstervar)
-Code formating: Prettier, Husky, lint-staged, “.editorconfig”
-Code quality: ESLint, TypeScript checks
-Search Engine and Social Media Optimization: Open Graph metadata, Twitter (X) metadata, Structured Data, Sitemap
+Programming language: JavaScript → TypeScript  
+Environment: Node.js → pnpm  
+Framework: React → Next.js (app router, “/src” directory)  
+Internationalization: next-intl  
+Design: Dark & Light Theme, Animations, Variable Font (Amstervar)  
+Formatting: Prettier, Husky, lint-staged, “.editorconfig”  
+Linting: ESLint, TypeScript checks  
+Search Engine and Social Media Optimization: Open Graph metadata, Twitter (X) metadata, Structured Data, Sitemap  
 Version Control: Git, GitHub
 
 ## State
