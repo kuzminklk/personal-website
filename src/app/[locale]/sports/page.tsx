@@ -28,20 +28,12 @@ export default async function Sports() {
 							</a>
 						),
 						instagramLink: (chunks) => (
-							<a
-								href="https://www.youtube.com/@kuzminklk"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a href="https://www.youtube.com/@kuzminklk" target="_blank" rel="noopener noreferrer">
 								{chunks}
 							</a>
 						),
 						youtubeLink: (chunks) => (
-							<a
-								href="https://www.youtube.com/@kuzminklk"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a href="https://www.youtube.com/@kuzminklk" target="_blank" rel="noopener noreferrer">
 								{chunks}
 							</a>
 						),
@@ -66,11 +58,7 @@ export default async function Sports() {
 					<em>
 						{translations.rich("ending", {
 							tiktokLink: (chunks) => (
-								<a
-									href="https://www.tiktok.com/@kuzminklk"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<a href="https://www.tiktok.com/@kuzminklk" target="_blank" rel="noopener noreferrer">
 									{chunks}
 								</a>
 							),

@@ -11,11 +11,7 @@ export async function Footer() {
 				<em>{translations("madeBy")}</em>
 			</h3>
 			<h3>
-				<a
-					target="_blank"
-					rel="noopener noreferrer"
-					href="https://github.com/kuzminklk/personal-website"
-				>
+				<a target="_blank" rel="noopener noreferrer" href="https://github.com/kuzminklk/personal-website">
 					{translations("source")}
 				</a>
 			</h3>

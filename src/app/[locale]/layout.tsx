@@ -88,10 +88,7 @@ export default async function LocaleLayout({
 	}
 
 	return (
-		<html
-			lang={locale}
-			className={`${amstelvar.className} ${redHatMono.className} ${notoSansMono.className}`}
-		>
+		<html lang={locale} className={`${amstelvar.className} ${redHatMono.className} ${notoSansMono.className}`}>
 			<body>
 				<script
 					type="application/ld+json"

@@ -43,11 +43,7 @@ export default async function Home() {
 							</a>
 						),
 						youtubeLink: (chunks) => (
-							<a
-								href="https://www.youtube.com/@kuzminklk"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a href="https://www.youtube.com/@kuzminklk" target="_blank" rel="noopener noreferrer">
 								{chunks}
 							</a>
 						),
@@ -65,11 +61,7 @@ export default async function Home() {
 				<p>
 					{translations.rich("social-media.linkedin", {
 						linkedinLink: (chunks) => (
-							<a
-								href="https://www.linkedin.com/in/kuzminklk/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a href="https://www.linkedin.com/in/kuzminklk/" target="_blank" rel="noopener noreferrer">
 								{chunks}
 							</a>
 						),

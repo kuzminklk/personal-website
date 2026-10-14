@@ -78,9 +78,7 @@ export default async function Home() {
 								emphasize: (chunks) => <em>{chunks}</em>,
 								break: () => <br />,
 							}),
-							imageAlternative: translations(
-								`projects.web-interfaces.${project.id}.image-alternative`,
-							),
+							imageAlternative: translations(`projects.web-interfaces.${project.id}.image-alternative`),
 							github: project.github,
 							deployment: project.deployment,
 							desktopImage: project.desktopImage,

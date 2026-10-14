@@ -30,12 +30,7 @@ export function ProjectCard({ project }: { project: Project }) {
 					placeholder="blur"
 					alt={project.imageAlternative}
 				/>
-				<Image
-					className={styles.mobile}
-					src={project.mobileImage}
-					placeholder="blur"
-					alt={project.imageAlternative}
-				/>
+				<Image className={styles.mobile} src={project.mobileImage} placeholder="blur" alt={project.imageAlternative} />
 			</a>
 		</section>
 	)
