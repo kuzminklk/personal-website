@@ -6,13 +6,14 @@ Daniel Cosmo's (me) personal website project
 
 ### Technologies
 
-Development: Visual Studio Code, Artificial intelligence assisatance
+Development: Visual Studio Code, Artificial intelligence assistance  
 Programming language: JavaScript → TypeScript  
 Environment: Node.js → pnpm  
 Framework: React → Next.js (app router, “/src” directory)  
 Internationalization: next-intl  
+Markup languages: HTML, CSS  
 Design: Dark & Light Theme, Animations, Variable Font (Amstervar)  
-Formatting: Prettier, Husky, lint-staged, “.editorconfig”  
+Formatting: “.editorconfig”, “.vscode/…”, Prettier, Husky, lint-staged  
 Linting: ESLint, TypeScript checks  
 Search Engine and Social Media Optimization: Open Graph metadata, Twitter (X) metadata, Structured Data, Sitemap  
 Version Control: Git, GitHub
