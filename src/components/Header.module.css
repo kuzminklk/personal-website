@@ -1,4 +1,5 @@
 header.primary {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -6,6 +7,22 @@ header.primary {
 	padding: 1.5rem 3rem;
 	background: var(--secondary-color);
 	color: var(--primary-color);
+
+	.skipLink {
+		position: absolute;
+		top: 0.5rem;
+		left: 0.5rem;
+		z-index: 1;
+		padding: 0.5rem 0.75rem;
+		transform: translateY(-150%);
+		border-radius: 0.25rem;
+		background: var(--primary-color);
+		color: var(--secondary-color);
+
+		&:focus {
+			transform: translateY(0);
+		}
+	}
 
 	h3.title {
 		white-space: nowrap;
@@ -56,6 +73,12 @@ header.primary::selection {
 	}
 	100% {
 		filter: drop-shadow(0 0 0.25rem var(--primary-color));
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	header.primary nav h3.active a {
+		animation: none;
 	}
 }
 

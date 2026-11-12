@@ -21,13 +21,16 @@ export function Header() {
 
 	return (
 		<header className={styles.primary}>
+			<a href="#main-content" className={styles.skipLink}>
+				{translations("skipToContent")}
+			</a>
 			<h3 className={styles.title}>📜 kuzminklk</h3>
-			<nav>
+			<nav aria-label={translations("primaryNavigation")}>
 				{navigation.map((link) => {
 					const isActive = pathname === link.href
 					return (
 						<h3 key={link.name} className={isActive ? styles.active : ""}>
-							<Link href={link.href}>
+							<Link href={link.href} aria-current={isActive ? "page" : undefined}>
 								{link.name}
 								<span className="emoji">{link.emoji}</span>
 							</Link>

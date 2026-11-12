@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server"
 
 import styles from "./page.module.css"
+import { WorkoutVideo } from "@/components/WorkoutVideo"
 
 const videos = ["stone", "boxing", "push-ups", "pull-ups", "power-lift"]
 
@@ -8,7 +9,7 @@ export default async function Sports() {
 	const translations = await getTranslations("sports")
 
 	return (
-		<main className={styles.sports}>
+		<main id="main-content" tabIndex={-1} className={styles.sports}>
 			<section className={styles.introduction}>
 				<h2>💪🏻 {translations("introduction.header")}</h2>
 				<p>{translations("introduction.workout")}</p>
@@ -45,14 +46,7 @@ export default async function Sports() {
 			</h1>
 			<section className={styles.activities}>
 				{videos.map((video) => (
-					<video
-						key={video}
-						src={`/videos/${video}.mp4`}
-						poster={`/videos/${video}-blurred.webp`}
-						autoPlay
-						loop
-						muted
-					></video>
+					<WorkoutVideo key={video} src={`/videos/${video}.mp4`} poster={`/videos/${video}-blurred.webp`} />
 				))}
 				<p>
 					<em>

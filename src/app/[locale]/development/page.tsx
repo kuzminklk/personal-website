@@ -11,7 +11,7 @@ export default async function Home() {
 	const skills = Object.keys(messages.development.skills.skills)
 
 	return (
-		<main className={styles.development}>
+		<main id="main-content" tabIndex={-1} className={styles.development}>
 			<h2>👨🏻‍💻 {translations("introduction.header")}</h2>
 			<section>
 				<p>{translations("introduction.fields")}</p>

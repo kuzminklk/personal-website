@@ -8,7 +8,7 @@ export default async function Home() {
 	const translations = await getTranslations("photography")
 
 	return (
-		<main className={styles.photography}>
+		<main id="main-content" tabIndex={-1} className={styles.photography}>
 			<section className={styles.introduction}>
 				<h2>🎨 {translations("introduction.header")}</h2>
 				<p>

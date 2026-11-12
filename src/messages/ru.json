@@ -17,6 +17,8 @@
 		"contactFull": "Написать мне в Telegram"
 	},
 	"Header": {
+		"skipToContent": "Перейти к основному содержимому",
+		"primaryNavigation": "Основная навигация",
 		"about": "Обо мне",
 		"development": "Программирование",
 		"photography": "Фотографии",

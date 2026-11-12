@@ -24,6 +24,7 @@ Version Control: Git, GitHub
 
 - **main—production ready for Vercel**
 - **typescript-next—Next.js and TypeScript implementation**
+- **typescript-next-copilot—accessibility and navigation improvements**
 - javascript-express-vite-react—Express as a server and React plus Vite as front-end implementation
 - javascript-express—Express as a server and static front-end implementation
 - javascript-vite-react—React and Vite front-end implementation
@@ -43,6 +44,7 @@ Version Control: Git, GitHub
    4. Improved code formatting with Prettier, ESLint, Husky, lint-staged
    5. Added Open Graph metadata and do Search Engine Optimization
    6. Improved code quality via TypeScipt
+   7. Improved keyboard navigation, focus visibility, and reduced-motion support
 
 ### To-dos
 
@@ -50,6 +52,11 @@ Version Control: Git, GitHub
 - Change emoji appearance so it is the same between different operating systems
 - Add Notion databases to connect section
 - Add extra links to appropriate section
+
+## Documentation
+
+- [Accessibility improvements](docs/accessibility.md)
+- [Accessible navigation specification](docs/specs/accessible-navigation.md)
 
 ## Usage
 

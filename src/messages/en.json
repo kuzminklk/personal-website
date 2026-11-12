@@ -17,6 +17,8 @@
 		"contactStripped": "Contact me — "
 	},
 	"Header": {
+		"skipToContent": "Skip to main content",
+		"primaryNavigation": "Primary navigation",
 		"about": "About",
 		"development": "Development",
 		"photography": "Photography",

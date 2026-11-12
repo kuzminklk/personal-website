@@ -6,7 +6,7 @@ export default async function Books() {
 	const translations = await getTranslations("writings")
 
 	return (
-		<main className={styles.writings}>
+		<main id="main-content" tabIndex={-1} className={styles.writings}>
 			<section className={styles.introduction}>
 				<h2>✒️ {translations("introduction.header")}</h2>
 				<p>{translations("introduction.topics")}</p>

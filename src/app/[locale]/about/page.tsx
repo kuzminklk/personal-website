@@ -15,7 +15,7 @@ export default function About() {
 	const translations = useTranslations("about")
 
 	return (
-		<main className={styles.about}>
+		<main id="main-content" tabIndex={-1} className={styles.about}>
 			<section className={styles.greet}>
 				<h1>
 					<span className={styles.emoji}>👋</span> {translations("greet.hi")}

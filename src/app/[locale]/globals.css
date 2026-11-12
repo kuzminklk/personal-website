@@ -185,6 +185,12 @@ button {
 	-webkit-tap-highlight-color: color-mix(in srgb, var(--primary-color) 25%, transparent);
 }
 
+a:focus-visible,
+button:focus-visible {
+	outline: 0.15rem solid currentColor;
+	outline-offset: 0.2rem;
+}
+
 main a,
 main button {
 	-webkit-tap-highlight-color: color-mix(in srgb, var(--secondary-color) 25%, transparent);
@@ -256,5 +262,20 @@ em {
 	h1 {
 		font-size: 2.5rem;
 		margin: 5rem 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
 	}
 }

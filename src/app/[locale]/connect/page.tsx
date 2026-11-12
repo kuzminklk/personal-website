@@ -6,7 +6,7 @@ export default async function Home() {
 	const translations = await getTranslations("connect")
 
 	return (
-		<main className={styles.connect}>
+		<main id="main-content" tabIndex={-1} className={styles.connect}>
 			<h2>📫 {translations("messaging.header")}</h2>
 			<section>
 				<p>
