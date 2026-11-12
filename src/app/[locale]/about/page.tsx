@@ -7,10 +7,6 @@ import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 import Me from "@/public/me.jpg"
 
-function scrollToTop() {
-	window.scrollTo({ top: 0, behavior: "smooth" })
-}
-
 export default function About() {
 	const translations = useTranslations("about")
 
@@ -22,9 +18,9 @@ export default function About() {
 					<br />
 					<em>{translations("greet.introduction")}</em>
 				</h1>
-				<Image src={Me} alt={translations("greet.photo")} placeholder="blur"></Image>
+				<Image src={Me} alt={translations("greet.photo")} placeholder="blur" priority />
 			</section>
-			<section className={styles.about}>
+			<section className={styles.introduction}>
 				<p>
 					{translations.rich("about.role", {
 						strong: (chunks) => <strong>{chunks}</strong>,
@@ -45,25 +41,43 @@ export default function About() {
 				</p>
 				<p>{translations("about.languages")}</p>
 			</section>
-			<section className={styles.explore}>
-				<p>
-					<em>
-						{translations.rich("explore", {
-							emoji: (chunks) => <span className="emoji">{chunks}</span>,
-							scroll: (chunks) => (
-								<a
-									href=""
-									onClick={(event) => {
-										event.preventDefault()
-										scrollToTop()
-									}}
-								>
-									{chunks}
-								</a>
-							),
-						})}
-					</em>
-				</p>
+			<section className={styles.explore} aria-label={translations("explore.heading")}>
+				<h2>{translations("explore.heading")}</h2>
+				<div className={styles.cards}>
+					<Link href="/development" className={styles.card}>
+						<span className={styles.cardIcon} aria-hidden="true">
+							⌘
+						</span>
+						<span className={styles.cardTitle}>{translations("explore.development")}</span>
+						<span className={styles.cardDescription}>{translations("explore.developmentDescription")}</span>
+						<span className={styles.cardArrow} aria-hidden="true">
+							↗
+						</span>
+					</Link>
+					<Link href="/photography" className={styles.card}>
+						<span className={styles.cardIcon} aria-hidden="true">
+							◎
+						</span>
+						<span className={styles.cardTitle}>{translations("explore.photography")}</span>
+						<span className={styles.cardDescription}>{translations("explore.photographyDescription")}</span>
+						<span className={styles.cardArrow} aria-hidden="true">
+							↗
+						</span>
+					</Link>
+					<Link href="/sports" className={styles.card}>
+						<span className={styles.cardIcon} aria-hidden="true">
+							↗
+						</span>
+						<span className={styles.cardTitle}>{translations("explore.sports")}</span>
+						<span className={styles.cardDescription}>{translations("explore.sportsDescription")}</span>
+						<span className={styles.cardArrow} aria-hidden="true">
+							↗
+						</span>
+					</Link>
+				</div>
+				<Link href="/connect" className={styles.contactLink}>
+					{translations("explore.contact")} <span aria-hidden="true">→</span>
+				</Link>
 			</section>
 		</main>
 	)

@@ -42,7 +42,16 @@
 			"activities": "Also <sportsLink>I do sports<emoji>💪</emoji></sportsLink>, <photographyLink>take photos<emoji>📸</emoji></photographyLink> and <booksLink>read a lot of books<emoji>📚</emoji></booksLink> (from Dawkins to Noah Harari, from Tolstoy to Xunzi)!",
 			"languages": "Speak three languages: English, Russian, Belarussian"
 		},
-		"explore": "You can explore more of my activities in the sections of <scroll>navigation menu<emoji>🧭</emoji></scroll>"
+		"explore": {
+			"heading": "A few things I’m into",
+			"development": "Building for the web",
+			"developmentDescription": "Interfaces, experiments, and the projects behind them.",
+			"photography": "Looking closer",
+			"photographyDescription": "Small moments, changing light, familiar faces.",
+			"sports": "Getting outside",
+			"sportsDescription": "Training, forests, cold water, and moving often.",
+			"contact": "Have something in mind? Let’s talk"
+		}
 	},
 	"development": {
 		"introduction": {

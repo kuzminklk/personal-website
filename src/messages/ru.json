@@ -42,7 +42,16 @@
 			"activities": "Также <sportsLink>занимаюсь cпортом<emoji>💪</emoji></sportsLink>, <photographyLink>фотографирую<emoji>📸</emoji></photographyLink> и <booksLink>читаю много книг<emoji>📚</emoji></booksLink> (от Докинза до Юваля Ноя Харари, от Толстого до Сунь-Цзы)!",
 			"languages": "Говорю на трёх языках: русском, английском, белорусском"
 		},
-		"explore": "Ты можешь узнать больше о моих активностиях в <scroll>верхнем меню<emoji>🧭</emoji></scroll>"
+		"explore": {
+			"heading": "Чем я увлекаюсь",
+			"development": "Создаю для веба",
+			"developmentDescription": "Интерфейсы, эксперименты и проекты, стоящие за ними.",
+			"photography": "Замечаю детали",
+			"photographyDescription": "Мгновения, меняющийся свет и знакомые лица.",
+			"sports": "Выбираюсь на природу",
+			"sportsDescription": "Тренировки, леса, холодная вода и движение.",
+			"contact": "Есть идея? Давай обсудим"
+		}
 	},
 	"development": {
 		"introduction": {

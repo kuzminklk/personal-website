@@ -18,6 +18,9 @@ Linting: ESLint, TypeScript checks
 Search Engine and Social Media Optimization: Open Graph metadata, Twitter (X) metadata, Structured Data, Sitemap  
 Version Control: Git, GitHub
 
+The active locale configuration supports English and Russian. The Polish and
+Belarusian message files are currently empty and are not enabled locales.
+
 ## State
 
 ### Branches
@@ -45,6 +48,8 @@ Version Control: Git, GitHub
    5. Added Open Graph metadata and do Search Engine Optimization
    6. Improved code quality via TypeScipt
    7. Improved keyboard navigation, focus visibility, and reduced-motion support
+   8. Reworked the About page into an editorial landing page with direct links to
+      development, photography, sports, and contact
 
 ### To-dos
 
@@ -57,6 +62,7 @@ Version Control: Git, GitHub
 
 - [Accessibility improvements](docs/accessibility.md)
 - [Accessible navigation specification](docs/specs/accessible-navigation.md)
+- [Editorial homepage specification](docs/specs/editorial-homepage.md)
 
 ## Usage
 
