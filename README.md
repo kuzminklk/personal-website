@@ -46,7 +46,8 @@ Version Control: Git, GitHub
 
 ### To-dos
 
-- Review Search Engine Optimization and Open Graph
+- Review Search Engine Optimization and Open Graph (works badly in Telegram)
+- Change emoji appearance so it is the same between different operating systems
 - Add Notion databases to connect section
 - Add extra links to appropriate section
 
