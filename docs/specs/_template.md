@@ -17,4 +17,6 @@ Inputs, outputs, edge cases, error handling.
 
 Modules touched, data shapes, constraints.
 
-## Open questions
+## Acceptance criteria
+
+- ...
