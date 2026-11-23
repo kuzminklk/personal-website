@@ -7,14 +7,57 @@
 		},
 		"images": {
 			"open-graph": {
-				"alternative": "Man are running in mountains during sunrise"
+				"alternative": "Cream editorial plate with the pixel kuzminklk wordmark and a localized tagline"
+			}
+		},
+		"pages": {
+			"about": {
+				"title": "About",
+				"description": "Daniel Cosmo (kuzminklk) — computer-science engineer focused on web development, Web3 and artificial intelligence."
+			},
+			"development": {
+				"title": "Development",
+				"description": "Web interfaces, smart contracts and the technologies Daniel Cosmo works with."
+			},
+			"photography": {
+				"title": "Photography",
+				"description": "Photography by Daniel Cosmo: nature and people, available for free on Unsplash."
+			},
+			"sports": {
+				"title": "Sports",
+				"description": "Sports by Daniel Cosmo: bodyweight workouts, wrestling, cold hardening and videos."
+			},
+			"books": {
+				"title": "Books",
+				"description": "Books Daniel Cosmo has read, with a public Notion database and summaries."
+			},
+			"writings": {
+				"title": "Writings",
+				"description": "Essays by Daniel Cosmo on physics, biology, philosophy and mathematics."
+			},
+			"connect": {
+				"title": "Connect",
+				"description": "Ways to contact Daniel Cosmo: Telegram, email, GitHub, social media and creative platforms."
 			}
 		}
+	},
+	"common": {
+		"skip-to-content": "Skip to content",
+		"back-to-top": "Back to top",
+		"visit-site": "Visit site",
+		"view-source": "Source code",
+		"open-in-notion": "Open in Notion",
+		"new-tab": "opens in a new tab",
+		"loading": "Loading…"
 	},
 	"Footer": {
 		"madeBy": "Made by Daniel Cosmo",
 		"source": "Source code at GitHub",
-		"contactStripped": "Contact me — "
+		"contact": "Contact me on Telegram",
+		"sections": "Sections",
+		"elsewhere": "Elsewhere",
+		"note": "Personal archive of Daniel Cosmo: development, photography, sport, books and writing.",
+		"backToTop": "Back to top"
 	},
 	"Header": {
 		"about": "About",
@@ -23,22 +66,45 @@
 		"sports": "Sports",
 		"books": "Books",
 		"writings": "Writings",
-		"connect": "Connect"
+		"connect": "Connect",
+		"menu": "Open menu",
+		"close": "Close menu",
+		"navigation": "Primary navigation",
+		"home": "kuzminklk — home"
+	},
+	"ThemeToggle": {
+		"switchToDark": "Switch to dark theme",
+		"switchToLight": "Switch to light theme",
+		"light": "Light",
+		"dark": "Dark"
 	},
 	"LanguageSwitcher": {
-		"title": "Switch to another language"
+		"title": "Language",
+		"switch": "Switch language"
 	},
 	"about": {
+		"hero": {
+			"kicker": "Personal archive · index 00",
+			"photo": "Pixel-art portrait of Daniel Cosmo",
+			"tagsLabel": "Areas of focus"
+		},
 		"greet": {
 			"hi": "Hi!",
 			"introduction": "I'm Daniel",
 			"photo": "Me in yellow jacket"
 		},
-		"about": {
+		"dossier": "Dossier",
+		"facts": {
+			"labels": {
+				"role": "Role",
+				"aliases": "Aliases",
+				"languages": "Languages",
+				"activities": "Activities"
+			},
 			"role": "<strong>Computer-science engineer</strong> currently focused in Web3, Front-end and AI",
-			"names": "You may know me as <emphasize>Daniel Cosmo</emphasize>, <emphasize>Даниил Кузьмин</emphasize> or <emphasize>kuzminklk</emphasize>",
+			"aliases": "You may know me as <emphasize>Daniel Cosmo</emphasize>, <emphasize>Даниил Кузьмин</emphasize> or <emphasize>kuzminklk</emphasize>",
 			"activities": "Also <sportsLink>I do sports<emoji>💪</emoji></sportsLink>, <photographyLink>take photos<emoji>📸</emoji></photographyLink> and <booksLink>read a lot of books<emoji>📚</emoji></booksLink> (from Dawkins to Noah Harari, from Tolstoy to Xunzi)!",
-			"languages": "Speak three languages: English, Russian, Belarussian"
+			"languages": "Speak three languages: English, Russian, Belarusian"
 		},
 		"explore": "You can explore more of my activities in the sections of <scroll>navigation menu<emoji>🧭</emoji></scroll>"
 	},
@@ -46,7 +112,7 @@
 		"introduction": {
 			"header": "Introduction",
 			"fields": "I study computer-science and science in general for few years by myself. I learn from AIs, courses, books, curriculums, documentations…",
-			"curricullum": "I've built <curriculumLink>cool study structure in Notion<emoji>📔</emoji></curriculumLink> which includes curriculum, study materials, workbooks, etc",
+			"curriculum": "I've built <curriculumLink>cool study structure in Notion<emoji>📔</emoji></curriculumLink> which includes curriculum, study materials, workbooks, etc",
 			"practice": "I develop web interfaces, applications, smart-contracts…",
 			"github": "You could explore my <githubLink>GitHub<emoji>👀</emoji></githubLink>"
 		},
@@ -60,7 +126,7 @@
 				"web-3-front-end": "<strong>Web-3 Front-end</strong>: Viem, Wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
 				"deployment": "<strong>Deployment</strong>: Vercel, Husky, lint-staged, Open Graph, Search Engine Optimization",
 				"tools": "<strong>Tools</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, Prettier",
-				"artificial-intellegence": "<strong>Artificial Intellegence</strong>: LLMs (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
+				"artificial-intelligence": "<strong>Artificial Intelligence</strong>: LLMs (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
 				"soft-skills": "<strong>Soft-skills</strong>: Communication, Discipline, Education, Health and Activity, Information Diving",
 				"additional": "<emphasize><strong>Additional</strong>: Design → Photos, Web-design, Drawing; Music → Guitar; Sports → Wrestling; Writing → Poetry, Philosophy essays</emphasize>"
 			}
@@ -102,7 +168,7 @@
 				},
 				"tsender": {
 					"title": "Efficient airdrop sender",
-					"description": "Web-interface for efficient airdrop sender smart-contract ineractions",
+					"description": "Web-interface for efficient airdrop sender smart-contract interactions",
 					"image-alternative": "Efficient airdrop sender website screenshot"
 				}
 			}
@@ -111,11 +177,12 @@
 	"photography": {
 		"introduction": {
 			"header": "Introduction",
-			"objects": "I take photos of nature 🌿 and of people 🧘🏻 <emphasize>(usually my friends)</emphasize>",
+			"objects": "I take photos of nature <emoji>🌿</emoji> and of people <emoji>🧘🏻</emoji> <emphasize>(usually my friends)</emphasize>",
 			"share": "Upload at <unsplashLink>Unsplash</unsplashLink> <emphasize>(there you can use my photos for free for any project)</emphasize> and in my <telegramChannelLink>Telegram-channel</telegramChannelLink>"
 		},
 		"gallery": {
 			"header": "Gallery",
+			"hint": "Select a photo to view it larger",
 			"photos": {
 				"asya": {
 					"image-alternative": "Asya in the forest"
@@ -145,22 +212,37 @@
 					"image-alternative": "Misha with guitar"
 				},
 				"anya": {
-					"image-alternative": "Sexy Anya with glasses"
+					"image-alternative": "Anya with glasses"
 				}
 			}
+		},
+		"lightbox": {
+			"close": "Close photo",
+			"next": "Next photo",
+			"previous": "Previous photo",
+			"counter": "{current} / {total}"
 		},
 		"ending": "More of my photos you can find at <unsplashLink>Unsplash</unsplashLink> and in my <telegramChannelLink>Telegram-channel</telegramChannelLink>!"
 	},
 	"sports": {
 		"introduction": {
 			"header": "Introduction",
-			"workout": "Usually I workout outside in sports grounds with bodyweight exercises and in forests with stones and logs… 🌲",
-			"hardering": "I do body hardering via cold showers and swimming in cold water even in winter 🧊",
-			"games": "I play voleyball, wrestle, swim, run, dive into water, stretch… 🏃🏻",
+			"workout": "Usually I workout outside in sports grounds with bodyweight exercises and in forests with stones and logs… <emoji>🌲</emoji>",
+			"hardening": "I do body hardening via cold showers and swimming in cold water even in winter <emoji>🧊</emoji>",
+			"games": "I play volleyball, wrestle, swim, run, dive into water, stretch… <emoji>🏃🏻</emoji>",
 			"share": "Record videos of my workouts and share them in my <tiktokLink>Tik-Tok</tiktokLink>, <telegramLink>Telegram</telegramLink>, <instagramLink>Instagram</instagramLink> and <youtubeLink>YouTube<emoji>🎥</emoji></youtubeLink>"
 		},
 		"activities": {
-			"header": "Activities"
+			"header": "Activities",
+			"play": "Play video",
+			"pause": "Pause video",
+			"videos": {
+				"stone": "Lifting a stone in the forest",
+				"boxing": "Boxing training",
+				"push-ups": "Push-ups outdoors",
+				"pull-ups": "Pull-ups on a bar",
+				"power-lift": "Power-lifting training"
+			}
 		},
 		"ending": "More you can find at my <tiktokLink>Tik-Tok</tiktokLink>"
 	},
@@ -168,41 +250,43 @@
 		"introduction": {
 			"header": "Introduction",
 			"books": "I read a lot of books!",
-			"database": "I've created <notionBooksDatabaseLink>database in Notion of books that I've read</notionBooksDatabaseLink>. There are some summaries, etc. 📑",
+			"database": "I've created <notionBooksDatabaseLink>database in Notion of books that I've read</notionBooksDatabaseLink>. There are some summaries, etc. <emoji>📑</emoji>",
 			"below": "Also you can check it right down!"
 		},
 		"books": {
 			"header": "Books"
-		}
+		},
+		"embed-title": "Notion database of books read by Daniel Cosmo"
 	},
 	"writings": {
 		"introduction": {
 			"header": "Introduction",
-			"topics": "I write some articles on edges of physics, biology, philospophy, and mathematics… 👨🏻‍🔬",
+			"topics": "I write some articles on edges of physics, biology, philosophy, and mathematics… <emoji>👨🏻‍🔬</emoji>",
 			"share": "You can find them at <notionBooksDatabaseLink>database in Notion<emoji>📝</emoji></notionBooksDatabaseLink>",
 			"below": "Also you can check it right down!"
 		},
 		"essays": {
 			"header": "Essays"
-		}
+		},
+		"embed-title": "Notion database of essays by Daniel Cosmo"
 	},
 	"connect": {
 		"messaging": {
 			"header": "Messaging",
-			"telegram": "<telegramLink>Telegram</telegramLink> — quick messaging, social activities 🥰",
-			"email": "<emailLink>Email</emailLink> (kuzminkdk@gmail.com) — for heavy converstion 📝"
+			"telegram": "<telegramLink>Telegram</telegramLink> — quick messaging, social activities <emoji>🥰</emoji>",
+			"email": "<emailLink>Email</emailLink> (kuzminkdk@gmail.com) — for heavy conversation <emoji>📝</emoji>"
 		},
 		"social-media": {
 			"header": "Social Media",
-			"telegram-channel": "<telegramChannelLink>Telegram Channel</telegramChannelLink> — photos 📸, sports 💪, books 📚",
-			"tiktok-and-instagram-and-youtube": "<tiktokLink>Tik-Tok</tiktokLink> & <instagramLink>Instagram</instagramLink> <youtubeLink>YouTube</youtubeLink> — sports 🏃🏻",
-			"linkedin": "<linkedinLink>Linkedin</linkedinLink> — professional activity 🛠️",
-			"dev-and-farcaster": "<devLink>DEV</devLink> & <farcasterLink>Farcaster</farcasterLink> — web and blockchain development 🧰"
+			"telegram-channel": "<telegramChannelLink>Telegram Channel</telegramChannelLink> — photos <emoji>📸</emoji>, sports <emoji>💪</emoji>, books <emoji>📚</emoji>",
+			"tiktok-and-instagram-and-youtube": "<tiktokLink>Tik-Tok</tiktokLink> & <instagramLink>Instagram</instagramLink> <youtubeLink>YouTube</youtubeLink> — sports <emoji>🏃🏻</emoji>",
+			"linkedin": "<linkedinLink>LinkedIn</linkedinLink> — professional activity <emoji>🛠️</emoji>",
+			"dev-and-farcaster": "<devLink>DEV</devLink> & <farcasterLink>Farcaster</farcasterLink> — web and blockchain development <emoji>🧰</emoji>"
 		},
 		"creations": {
 			"header": "Creation",
-			"github": "<githubLink>GitHub</githubLink> — projects, skills, workbooks, code… 🧑🏻‍💻",
-			"unsplash-and-pixabay": "<unsplashLink>Unsplash</unsplashLink> & <pixabayLink>Pixabay</pixabayLink> — photos 📸"
+			"github": "<githubLink>GitHub</githubLink> — projects, skills, workbooks, code… <emoji>🧑🏻‍💻</emoji>",
+			"unsplash-and-pixabay": "<unsplashLink>Unsplash</unsplashLink> & <pixabayLink>Pixabay</pixabayLink> — photos <emoji>📸</emoji>"
 		}
 	}
 }

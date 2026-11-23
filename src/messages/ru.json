@@ -7,14 +7,57 @@
 		},
 		"images": {
 			"open-graph": {
-				"alternative": "Бегущий человек в горах на фоне рассвета"
+				"alternative": "Кремовая обложка с пиксельным логотипом kuzminklk и подписью на языке сайта"
+			}
+		},
+		"pages": {
+			"about": {
+				"title": "Обо мне",
+				"description": "Даниил Кузьмин (kuzminklk) — инженер информационных технологий, сфокусированный на веб-разработке, Web3 и искусственном интеллекте."
+			},
+			"development": {
+				"title": "Программирование",
+				"description": "Веб-интерфейсы, смарт-контракты и технологии, с которыми работает Даниил Кузьмин."
+			},
+			"photography": {
+				"title": "Фотографии",
+				"description": "Фотографии Даниила Кузьмина: природа и люди, доступные бесплатно на Unsplash."
+			},
+			"sports": {
+				"title": "Спорт",
+				"description": "Спорт Даниила Кузьмина: тренировки с собственным весом, борьба, закаливание и видео."
+			},
+			"books": {
+				"title": "Книги",
+				"description": "Книги, которые прочитал Даниил Кузьмин, с публичной базой данных и конспектами в Notion."
+			},
+			"writings": {
+				"title": "Сочинения",
+				"description": "Сочинения Даниила Кузьмина на стыке философии, математики, физики и биологии."
+			},
+			"connect": {
+				"title": "Связаться со мной",
+				"description": "Как связаться с Даниилом Кузьминым: Telegram, электронная почта, GitHub, социальные сети и творческие платформы."
 			}
 		}
+	},
+	"common": {
+		"skip-to-content": "Перейти к содержимому",
+		"back-to-top": "Наверх",
+		"visit-site": "Открыть сайт",
+		"view-source": "Исходный код",
+		"open-in-notion": "Открыть в Notion",
+		"new-tab": "откроется в новой вкладке",
+		"loading": "Загрузка…"
 	},
 	"Footer": {
 		"madeBy": "Сделал Кузьмин Даниил",
 		"source": "Исходный код на GitHub",
-		"contactFull": "Написать мне в Telegram"
+		"contact": "Написать мне в Telegram",
+		"sections": "Разделы",
+		"elsewhere": "Другие платформы",
+		"note": "Личный архив Даниила Кузьмина: программирование, фотографии, спорт, книги и сочинения.",
+		"backToTop": "Наверх"
 	},
 	"Header": {
 		"about": "Обо мне",
@@ -23,31 +66,54 @@
 		"sports": "Спорт",
 		"books": "Книги",
 		"writings": "Сочинения",
-		"connect": "Связаться со мной"
+		"connect": "Связаться со мной",
+		"menu": "Открыть меню",
+		"close": "Закрыть меню",
+		"navigation": "Основная навигация",
+		"home": "kuzminklk — на главную"
+	},
+	"ThemeToggle": {
+		"switchToDark": "Переключить на тёмную тему",
+		"switchToLight": "Переключить на светлую тему",
+		"light": "Светлая",
+		"dark": "Тёмная"
 	},
 	"LanguageSwitcher": {
-		"title": "Переключить на другой язык"
+		"title": "Язык",
+		"switch": "Переключить язык"
 	},
 	"about": {
+		"hero": {
+			"kicker": "Личный архив · индекс 00",
+			"photo": "Пиксельный портрет Даниила Кузьмина",
+			"tagsLabel": "Сферы интересов"
+		},
 		"greet": {
 			"hi": "Привет!",
 			"introduction": "Я — Даниил",
 			"photo": "Я в жёлтой куртке"
 		},
-		"about": {
+		"dossier": "Досье",
+		"facts": {
+			"labels": {
+				"role": "Роль",
+				"aliases": "Имена",
+				"languages": "Языки",
+				"activities": "Занятия"
+			},
 			"role": "<strong>Инженер информационных технологий</strong>, сфокусированный на блокчейн- и веб-разработке, а также искусственном интеллекте…",
-			"names": "Ты можешь знать меня как: <emphasize>Даниил Кузьмин</emphasize>, <emphasize>Daniel Cosmo</emphasize> или <emphasize>kuzminklk</emphasize>",
-			"activities": "Также <sportsLink>занимаюсь cпортом<emoji>💪</emoji></sportsLink>, <photographyLink>фотографирую<emoji>📸</emoji></photographyLink> и <booksLink>читаю много книг<emoji>📚</emoji></booksLink> (от Докинза до Юваля Ноя Харари, от Толстого до Сунь-Цзы)!",
+			"aliases": "Ты можешь знать меня как: <emphasize>Даниил Кузьмин</emphasize>, <emphasize>Daniel Cosmo</emphasize> или <emphasize>kuzminklk</emphasize>",
+			"activities": "Также <sportsLink>занимаюсь спортом<emoji>💪</emoji></sportsLink>, <photographyLink>фотографирую<emoji>📸</emoji></photographyLink> и <booksLink>читаю много книг<emoji>📚</emoji></booksLink> (от Докинза до Юваля Ноя Харари, от Толстого до Сунь-Цзы)!",
 			"languages": "Говорю на трёх языках: русском, английском, белорусском"
 		},
-		"explore": "Ты можешь узнать больше о моих активностиях в <scroll>верхнем меню<emoji>🧭</emoji></scroll>"
+		"explore": "Ты можешь узнать больше о моих занятиях в разделах <scroll>верхнего меню<emoji>🧭</emoji></scroll>"
 	},
 	"development": {
 		"introduction": {
 			"header": "Вступление",
-			"fields": "Я изучаю информатику самостоятельно около года по книгам, курсам, учебным программам, документациям, а также при помощи иcкуственного интеллекта и практики!",
-			"curricullum": "Сделал <curriculumLink>крутой учебный план в Notion<emoji>📔</emoji></curriculumLink>, в котором много конспектов, учебных материалов и т.д.",
-			"practice": "Разрабатываю вебсайты, приложения, смарт-контракты…",
+			"fields": "Я изучаю информатику самостоятельно уже несколько лет — по книгам, курсам, учебным программам и документациям, а также при помощи искусственного интеллекта и практики!",
+			"curriculum": "Сделал <curriculumLink>крутой учебный план в Notion<emoji>📔</emoji></curriculumLink>, в котором много конспектов, учебных материалов и т.д.",
+			"practice": "Разрабатываю веб-сайты, приложения, смарт-контракты…",
 			"github": "Ты можешь изучить мой <githubLink>GitHub<emoji>👀</emoji></githubLink>"
 		},
 		"skills": {
@@ -58,10 +124,10 @@
 				"back-end": "<strong>Логика веб-приложения</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
 				"blockchain": "<strong>Блокчейн</strong>: Solidity, Foundry, Hardhat, Chainlink",
 				"web-3-front-end": "<strong>Веб-интерфейс для блокчейн-приложения</strong>: Viem, Wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
-				"deployment": "<strong>Deployment</strong>: Vercel, Husky, lint-staged, Open Graph, Оптимизация Поиска",
-				"tools": "<strong>Инструменты</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, ESLint, Prettier",
-				"artificial-intellegence": "<strong>Искуственный интеллект</strong>: Языковые модели (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
-				"soft-skills": "<strong>Мягкие</strong>: Коммуникация, Дисциплина, Самообразование, Здоровье и Активность, Погружение в информацию",
+				"deployment": "<strong>Развёртывание</strong>: Vercel, Husky, lint-staged, Open Graph, поисковая оптимизация",
+				"tools": "<strong>Инструменты</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, Prettier",
+				"artificial-intelligence": "<strong>Искусственный интеллект</strong>: Языковые модели (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
+				"soft-skills": "<strong>Гибкие навыки</strong>: Коммуникация, Дисциплина, Самообразование, Здоровье и активность, Погружение в информацию",
 				"additional": "<emphasize><strong>Дополнительно</strong>: Дизайн → Фотографирование, Веб-дизайн, Рисование; Музыка → Гитара; Спорт → Борьба; Писательство → Стихи, Философские сочинения</emphasize>"
 			}
 		},
@@ -69,41 +135,41 @@
 			"header": "Проекты",
 			"explore": "<emphasize>Больше проектов ты можешь найти в моём <githubLink>GitHub<emoji>👀</emoji></githubLink>, здесь только некоторые!</emphasize>",
 			"web-interfaces": {
-				"header": "Вебсайты",
+				"header": "Веб-сайты",
 				"cosmos-company": {
 					"title": "Компания Cosmo",
 					"description": "Технологическая компания",
-					"image-alternative": "Снимок вебсайта"
+					"image-alternative": "Снимок веб-сайта"
 				},
 				"central-park": {
-					"title": "Центальный Парк",
+					"title": "Центральный Парк",
 					"description": "Кафе в парке",
-					"image-alternative": "Снимок вебсайта"
+					"image-alternative": "Снимок веб-сайта"
 				},
 				"belarus-digital": {
 					"title": "Цифровая Беларусь",
 					"description": "Проект по разработке программного обеспечения",
-					"image-alternative": "Снимок вебсайта"
+					"image-alternative": "Снимок веб-сайта"
 				},
 				"strawberry-vendor": {
 					"title": "Клубничный токен",
 					"description": "Покупка клубничного токена на Ethereum",
-					"image-alternative": "Снимок вебсайта"
+					"image-alternative": "Снимок веб-сайта"
 				},
 				"buy-me-a-coffee": {
 					"title": "Купи мне кофе!",
 					"description": "Поддержи автора деньгами",
-					"image-alternative": "Снимок вебсайта"
+					"image-alternative": "Снимок веб-сайта"
 				},
 				"moby-dick": {
 					"title": "Моби Дик, или Белый кит",
 					"description": "Электронная книга",
-					"image-alternative": "Снимок вебсайта"
+					"image-alternative": "Снимок веб-сайта"
 				},
 				"tsender": {
 					"title": "Отправитель аирдропа",
 					"description": "Эффективный раздатчик аирдропа",
-					"image-alternative": "Снимок вебсайта"
+					"image-alternative": "Снимок веб-сайта"
 				}
 			}
 		}
@@ -111,11 +177,12 @@
 	"photography": {
 		"introduction": {
 			"header": "Вступление",
-			"objects": "Я снимаю природу 🌿 и людей 🧘🏻 <emphasize>(обычно друзей)</emphasize>",
+			"objects": "Я снимаю природу <emoji>🌿</emoji> и людей <emoji>🧘🏻</emoji> <emphasize>(обычно друзей)</emphasize>",
 			"share": "Загружаю на <unsplashLink>Unsplash</unsplashLink> <emphasize>(там ты можешь использовать мои фотографии для любых своих проектов)</emphasize> и в мой <telegramChannelLink>Telegram-канал</telegramChannelLink>"
 		},
 		"gallery": {
-			"header": "Галлерея",
+			"header": "Галерея",
+			"hint": "Нажми на фотографию, чтобы рассмотреть её",
 			"photos": {
 				"asya": {
 					"image-alternative": "Ася в лесу"
@@ -145,22 +212,37 @@
 					"image-alternative": "Миша с гитарой"
 				},
 				"anya": {
-					"image-alternative": "Сексуальная Аня в очках"
+					"image-alternative": "Аня в очках"
 				}
 			}
+		},
+		"lightbox": {
+			"close": "Закрыть фотографию",
+			"next": "Следующая фотография",
+			"previous": "Предыдущая фотография",
+			"counter": "{current} / {total}"
 		},
 		"ending": "Больше моих фотографий ты можешь найти на <unsplashLink>Unsplash</unsplashLink> и в моём <telegramChannelLink>Telegram-канале</telegramChannelLink>!"
 	},
 	"sports": {
 		"introduction": {
 			"header": "Вступление",
-			"workout": "Обычно я тренируюсь на турниках со своим весом или в лесу с брёвнами и камнями! 🌲",
-			"hardering": "Закаляюсь холодным душем и купанием в холодной воде (зимой в проруби) 🧊",
-			"games": "Борюсь, играю в волейбол, баскетбол, бегаю, плаваю и ныряю в воду, делаю растяжку… 🏃🏻",
-			"share": "Снимаю как я тренируюсь и выкладываю в <tiktokLink>Tik-Tok</tiktokLink>, <telegramLink>Telegram</telegramLink>, <instagramLink>Instagram</instagramLink> и <youtubeLink>YouTube<emoji>🎥</emoji></youtubeLink>"
+			"workout": "Обычно я тренируюсь на турниках со своим весом или в лесу с брёвнами и камнями! <emoji>🌲</emoji>",
+			"hardening": "Закаляюсь холодным душем и купанием в холодной воде (зимой в проруби) <emoji>🧊</emoji>",
+			"games": "Борюсь, играю в волейбол, баскетбол, бегаю, плаваю и ныряю в воду, делаю растяжку… <emoji>🏃🏻</emoji>",
+			"share": "Снимаю, как я тренируюсь, и выкладываю в <tiktokLink>Tik-Tok</tiktokLink>, <telegramLink>Telegram</telegramLink>, <instagramLink>Instagram</instagramLink> и <youtubeLink>YouTube<emoji>🎥</emoji></youtubeLink>"
 		},
 		"activities": {
-			"header": "Активности"
+			"header": "Активности",
+			"play": "Воспроизвести видео",
+			"pause": "Приостановить видео",
+			"videos": {
+				"stone": "Поднятие камня в лесу",
+				"boxing": "Тренировка по боксу",
+				"push-ups": "Отжимания на улице",
+				"pull-ups": "Подтягивания на турнике",
+				"power-lift": "Пауэрлифтинг"
+			}
 		},
 		"ending": "Больше можешь посмотреть в <tiktokLink>Tik-Tok</tiktokLink>"
 	},
@@ -168,41 +250,43 @@
 		"introduction": {
 			"header": "Вступление",
 			"books": "Я читаю много книг!",
-			"database": "Я сделал <notionBooksDatabaseLink>базу данных Notion из прочитанных книг</notionBooksDatabaseLink>. Там конспекты, отзывы и т.д. 📑",
+			"database": "Я сделал <notionBooksDatabaseLink>базу данных Notion из прочитанных книг</notionBooksDatabaseLink>. Там конспекты, отзывы и т.д. <emoji>📑</emoji>",
 			"below": "Можешь посмотреть её ниже!"
 		},
 		"books": {
 			"header": "Книги"
-		}
+		},
+		"embed-title": "База данных прочитанных книг Даниила Кузьмина в Notion"
 	},
 	"writings": {
 		"introduction": {
 			"header": "Вступление",
-			"topics": "Я пишу сочинения на стыке философии, математики, физики и биологии… 👨🏻‍🔬",
+			"topics": "Я пишу сочинения на стыке философии, математики, физики и биологии… <emoji>👨🏻‍🔬</emoji>",
 			"share": "Ты можешь найти их в <notionBooksDatabaseLink>базе данных Notion<emoji>📝</emoji></notionBooksDatabaseLink>",
 			"below": "Можешь посмотреть её ниже!"
 		},
 		"essays": {
 			"header": "Сочинения"
-		}
+		},
+		"embed-title": "База данных сочинений Даниила Кузьмина в Notion"
 	},
 	"connect": {
 		"messaging": {
 			"header": "Сообщения",
-			"telegram": "<telegramLink>Telegram</telegramLink> — быстро написать мне, интересности 🥰",
-			"email": "<emailLink>Электронная почта</emailLink> (kuzminkdk@gmail.com) — для больших сообщений 📝"
+			"telegram": "<telegramLink>Telegram</telegramLink> — быстро написать мне, интересности <emoji>🥰</emoji>",
+			"email": "<emailLink>Электронная почта</emailLink> (kuzminkdk@gmail.com) — для больших сообщений <emoji>📝</emoji>"
 		},
 		"social-media": {
 			"header": "Социальные сети",
-			"telegram-channel": "<telegramChannelLink>Telegram Channel</telegramChannelLink> — фотографии 📸, спорт 💪, книги 📚",
-			"tiktok-and-instagram-and-youtube": "<tiktokLink>Tik-Tok</tiktokLink> & <instagramLink>Instagram</instagramLink> <youtubeLink>YouTube</youtubeLink> — спорт 🏃🏻",
-			"linkedin": "<linkedinLink>Linkedin</linkedinLink> — профессианальная активность 🛠️",
-			"dev-and-farcaster": "<devLink>DEV</devLink> & <farcasterLink>Farcaster</farcasterLink> — программирование и разработка 🧰"
+			"telegram-channel": "<telegramChannelLink>Telegram Channel</telegramChannelLink> — фотографии <emoji>📸</emoji>, спорт <emoji>💪</emoji>, книги <emoji>📚</emoji>",
+			"tiktok-and-instagram-and-youtube": "<tiktokLink>Tik-Tok</tiktokLink> & <instagramLink>Instagram</instagramLink> <youtubeLink>YouTube</youtubeLink> — спорт <emoji>🏃🏻</emoji>",
+			"linkedin": "<linkedinLink>LinkedIn</linkedinLink> — профессиональная активность <emoji>🛠️</emoji>",
+			"dev-and-farcaster": "<devLink>DEV</devLink> & <farcasterLink>Farcaster</farcasterLink> — программирование и разработка <emoji>🧰</emoji>"
 		},
 		"creations": {
 			"header": "Созидание",
-			"github": "<githubLink>GitHub</githubLink> — проекты, навыки, конспекты, код… 🧑🏻‍💻",
-			"unsplash-and-pixabay": "<unsplashLink>Unsplash</unsplashLink> и <pixabayLink>Pixabay</pixabayLink> — фотографии 📸"
+			"github": "<githubLink>GitHub</githubLink> — проекты, навыки, конспекты, код… <emoji>🧑🏻‍💻</emoji>",
+			"unsplash-and-pixabay": "<unsplashLink>Unsplash</unsplashLink> и <pixabayLink>Pixabay</pixabayLink> — фотографии <emoji>📸</emoji>"
 		}
 	}
 }

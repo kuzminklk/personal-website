@@ -1,12 +1,63 @@
-/* ——— Reset ——— */
+/* =========================================================================
+   kuzminklk — global stylesheet
+   -------------------------------------------------------------------------
+   Design direction: an "observatory archive" — warm book paper, deep
+   blue-black ink, a light-blue annotation accent and pixel-art details.
+   Three typefaces do the work:
+     • Amstelvar (variable serif) — display headings and body copy;
+     • Pixelify Sans (pixel font)      — wordmark, indices, tiny labels;
+     • Red Hat Mono / Noto Sans Mono   — secondary text and HUD metadata.
+   The palette is driven by two looks (light paper / dark ink) that follow
+   the operating system and can be overridden by the in-page theme toggle.
+   ========================================================================= */
+
+/* ——— Fonts ——————————————————————————————————————————————————————————— */
+
+/* Pixelify Sans is self-hosted so social-preview generation and the site
+   itself always render the same pixels (SIL OFL, see public/fonts/OFL.txt). */
+@font-face {
+	font-family: "Pixelify Sans";
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	src: url("/fonts/pixelify-sans-cyrillic.woff2") format("woff2");
+	unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+	font-family: "Pixelify Sans";
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	src: url("/fonts/pixelify-sans-latin-ext.woff2") format("woff2");
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+		U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: "Pixelify Sans";
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	src: url("/fonts/pixelify-sans-latin.woff2") format("woff2");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC,
+		U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ——— Reset ——————————————————————————————————————————————————————————— */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 html,
 body,
 div,
 span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
@@ -18,13 +69,9 @@ blockquote,
 pre,
 a,
 abbr,
-acronym,
 address,
-big,
 cite,
 code,
-del,
-dfn,
 em,
 img,
 ins,
@@ -33,16 +80,13 @@ q,
 s,
 samp,
 small,
-strike,
 strong,
 sub,
 sup,
-tt,
 var,
 b,
 u,
 i,
-center,
 dl,
 dt,
 dd,
@@ -63,18 +107,13 @@ th,
 td,
 article,
 aside,
-canvas,
-details,
-embed,
 figure,
 figcaption,
 footer,
 header,
 hgroup,
-menu,
+main,
 nav,
-output,
-ruby,
 section,
 summary,
 time,
@@ -89,172 +128,533 @@ video {
 	vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
-details,
 figcaption,
 figure,
 footer,
 header,
 hgroup,
-menu,
+main,
 nav,
 section {
 	display: block;
 }
 
-blockquote,
-q {
-	quotes: none;
+ul,
+ol {
+	list-style: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
+img,
+video,
+svg {
+	display: block;
+	max-width: 100%;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+button,
+input,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
 }
 
-/* ——— Variables ——— */
+/* ——— Palette ————————————————————————————————————————————————————————— */
 
+/*
+ * Each theme is described once as a set of "raw" values, then mapped to the
+ * semantic tokens used by every component. This keeps the light/dark variants
+ * in one place and makes it hard to leak a raw hex value into a component.
+ */
 :root {
-	--primary-font: Amstelvar, Lora, Georgia, serif;
-	--secondary-font: "Red Hat Mono", "Noto Sans Mono", Courier, monospace;
-	--primary-size: calc(1rem + 0.5vw);
-	--accent-color: #fbff00;
+	/* raw light palette */
+	--light-paper: #f2ecdb;
+	--light-paper-soft: #e9e2cf;
+	--light-surface: #f8f4e8;
+	--light-ink: #050310;
+	--light-ink-soft: #56505f;
+	--light-line: #0503102e;
+	--light-line-strong: #05031070;
+	--light-sky: #9fb9d9;
+	--light-sky-text: #3d618c;
+	--light-marker: #d9c978;
+
+	/* raw dark palette */
+	--dark-paper: #050310;
+	--dark-paper-soft: #0a0818;
+	--dark-surface: #0e0b1e;
+	--dark-ink: #f2ecdb;
+	--dark-ink-soft: #a7a0b4;
+	--dark-line: #f2ecdb2e;
+	--dark-line-strong: #f2ecdb70;
+	--dark-sky: #a9c6ea;
+	--dark-sky-text: #b9d4f4;
+	--dark-marker: #e2d18a;
+
+	/* semantic tokens — light by default */
+	--bg: var(--light-paper);
+	--bg-soft: var(--light-paper-soft);
+	--surface: var(--light-surface);
+	--text: var(--light-ink);
+	--text-soft: var(--light-ink-soft);
+	--line: var(--light-line);
+	--line-strong: var(--light-line-strong);
+	--sky: var(--light-sky);
+	--sky-text: var(--light-sky-text);
+	--marker: var(--light-marker);
+
+	/* aliases kept for older modules and third-party embeds */
+	--primary-color: var(--bg);
+	--secondary-color: var(--text);
+	--accent-color: var(--sky);
+	--primary-font: var(--font-display);
+	--secondary-font: var(--font-mono);
+
+	/* type */
+	--font-display: var(--font-amstelvar), "Lora", "Georgia", serif;
+	--font-pixel: "Pixelify Sans", var(--font-mono);
+	--font-mono: var(--font-red-hat-mono), var(--font-noto-sans-mono), ui-monospace, "Courier New", monospace;
+
+	/* layout */
+	--page-padding-inline: clamp(1.25rem, 5vw, 4.5rem);
+	--content-max: 78rem;
+	--header-height: 4.25rem;
+	--section-gap: clamp(4rem, 8vw, 7.5rem);
+	--radius: 2px;
+
+	/* motion */
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	--ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+	/* base font size scales a little with the viewport, but stays readable */
+	font-size: clamp(1rem, 0.94rem + 0.25vw, 1.125rem);
+	line-height: 1.5;
+	color-scheme: light dark;
 }
 
-html[lang="ru"] {
-	--secondary-font: "Noto Sans Mono", Courier, monospace;
-}
-
-@media screen and (max-width: 730px) {
-	:root {
-		--primary-size: calc(1.5rem + 0.5vw);
+/* OS-level dark mode (only while the visitor has not chosen a theme). */
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme]) {
+		--bg: var(--dark-paper);
+		--bg-soft: var(--dark-paper-soft);
+		--surface: var(--dark-surface);
+		--text: var(--dark-ink);
+		--text-soft: var(--dark-ink-soft);
+		--line: var(--dark-line);
+		--line-strong: var(--dark-line-strong);
+		--sky: var(--dark-sky);
+		--sky-text: var(--dark-sky-text);
+		--marker: var(--dark-marker);
 	}
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		--primary-color: #fbfbf1;
-		--secondary-color: #04000f;
-	}
+/* Explicit choice made with the header theme toggle. */
+:root[data-theme="light"] {
+	--bg: var(--light-paper);
+	--bg-soft: var(--light-paper-soft);
+	--surface: var(--light-surface);
+	--text: var(--light-ink);
+	--text-soft: var(--light-ink-soft);
+	--line: var(--light-line);
+	--line-strong: var(--light-line-strong);
+	--sky: var(--light-sky);
+	--sky-text: var(--light-sky-text);
+	--marker: var(--light-marker);
+	color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+	--bg: var(--dark-paper);
+	--bg-soft: var(--dark-paper-soft);
+	--surface: var(--dark-surface);
+	--text: var(--dark-ink);
+	--text-soft: var(--dark-ink-soft);
+	--line: var(--dark-line);
+	--line-strong: var(--dark-line-strong);
+	--sky: var(--dark-sky);
+	--sky-text: var(--dark-sky-text);
+	--marker: var(--dark-marker);
+	color-scheme: dark;
+}
+
+/* Russian and Belarusian monospace text has to use a font with Cyrillic. */
+html[lang="ru"],
+html[lang="be"] {
+	--font-mono: var(--font-noto-sans-mono), var(--font-red-hat-mono), ui-monospace, "Courier New", monospace;
+}
+
+/* ——— Base ————————————————————————————————————————————————————————————— */
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: calc(var(--header-height) + 1.5rem);
+}
+
+body {
+	min-height: 100vh;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-display);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	transition:
+		background-color 180ms linear,
+		color 180ms linear;
+}
+
+/* Fine paper grain. Fixed, non-interactive, and very subtle — it should be
+   felt rather than seen. Dark ink gets a faint star-dust tint instead. */
+body::after {
+	content: "";
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	pointer-events: none;
+	opacity: 0.055;
+	mix-blend-mode: multiply;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--primary-color: #04000f;
-		--secondary-color: #fbfbf1;
+	:root:not([data-theme]) body::after {
+		mix-blend-mode: screen;
+		opacity: 0.035;
 	}
 }
 
-/* ——— Global styles ——— */
-
-:root {
-	font-family: var(--primary-font);
-	font-size: var(--primary-size);
-	line-height: 1.1;
-	scroll-behavior: smooth;
+:root[data-theme="dark"] body::after {
+	mix-blend-mode: screen;
+	opacity: 0.035;
 }
 
-* {
-	box-sizing: border-box;
+::selection {
+	background: var(--text);
+	color: var(--bg);
 }
 
-main {
-	padding: 5rem 2.5rem;
-	min-height: 125vh;
-	background: var(--primary-color);
-	color: var(--secondary-color);
+:focus-visible {
+	outline: 2px solid var(--sky-text);
+	outline-offset: 3px;
 }
 
-main::selection {
-	background: var(--secondary-color);
-	color: var(--primary-color);
+/* Scrollbar — a hairline in the margin rather than a chrome-coloured bar. */
+@supports (scrollbar-width: thin) {
+	html {
+		scrollbar-width: thin;
+		scrollbar-color: var(--line-strong) transparent;
+	}
 }
 
-a,
-button {
-	-webkit-tap-highlight-color: color-mix(in srgb, var(--primary-color) 25%, transparent);
-}
+/* ——— Typography ——————————————————————————————————————————————————————— */
 
-main a,
-main button {
-	-webkit-tap-highlight-color: color-mix(in srgb, var(--secondary-color) 25%, transparent);
+h1,
+h2,
+h3 {
+	font-family: var(--font-display);
+	text-wrap: balance;
 }
 
 h1 {
-	text-align: center;
-	font-size: 3.125rem;
+	font-size: clamp(2.75rem, 1.5rem + 5.2vw, 6rem);
 	font-stretch: 75%;
-	font-weight: 450;
-	margin: 5rem 0;
-	line-height: 1.05;
+	font-weight: 500;
+	line-height: 0.94;
+	letter-spacing: -0.025em;
+	text-transform: uppercase;
 }
 
 h2 {
-	text-align: center;
-	font-size: 1.5rem;
-	font-stretch: 80%;
+	font-size: clamp(1.5rem, 1.2rem + 1vw, 2.1rem);
+	font-stretch: 82%;
 	font-weight: 550;
-	margin: 2.5rem 0;
-	letter-spacing: 0.025rem;
 	line-height: 1.05;
+	letter-spacing: -0.01em;
 }
 
 h3 {
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	font-stretch: 90%;
-	font-weight: 500;
-	letter-spacing: 0.025rem;
+	font-weight: 550;
+	letter-spacing: 0.005em;
+	line-height: 1.2;
 }
 
 p {
-	word-spacing: 0.05rem;
-	letter-spacing: 0.05rem;
-	line-height: 1.15;
-	margin: 1.25rem 0;
-}
-
-a {
-	text-decoration: underline;
-	transition: text-decoration-color 0.075s linear;
-	font-family: var(--secondary-font);
-	color: var(--secondary-color);
-	cursor: pointer;
-}
-
-a:hover {
-	text-decoration-color: rgba(0, 0, 0, 0);
-}
-
-a span.emoji {
-	display: inline-block;
-	margin-left: 0.5em;
+	max-width: 68ch;
+	line-height: 1.55;
+	margin-block: 1.1em;
+	text-wrap: pretty;
 }
 
 strong {
-	font-weight: 650;
+	font-weight: 700;
 }
 
 em {
 	font-style: italic;
+	font-variation-settings: "slnt" -6;
 }
 
-@media screen and (max-width: 730px) {
-	main {
-		padding: 2.5rem 1.5rem;
+small {
+	font-size: 0.8125rem;
+}
+
+code,
+kbd,
+samp {
+	font-family: var(--font-mono);
+	font-size: 0.9em;
+}
+
+a {
+	color: inherit;
+	font-family: inherit;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.22em;
+	text-decoration-color: var(--line-strong);
+	transition:
+		text-decoration-color 120ms linear,
+		color 120ms linear;
+}
+
+a:hover {
+	color: var(--sky-text);
+	text-decoration-color: var(--sky-text);
+}
+
+/* Inline links inside running text keep the serif face for a calmer look. */
+p a,
+li a {
+	font-family: var(--font-mono);
+	font-size: 0.92em;
+}
+
+/* ——— Layout helpers ————————————————————————————————————————————————— */
+
+main {
+	position: relative;
+	padding-top: calc(var(--header-height) + clamp(2.5rem, 6vw, 5rem));
+	padding-bottom: clamp(5rem, 10vw, 9rem);
+	padding-inline: var(--page-padding-inline);
+}
+
+.container {
+	width: 100%;
+	max-width: var(--content-max);
+	margin-inline: auto;
+}
+
+/* Thin horizontal rule spanning the content column. */
+.rule {
+	height: 1px;
+	width: 100%;
+	background: var(--line);
+	border: 0;
+}
+
+/* Tiny pixel/mono label used for HUD-like metadata. */
+.micro {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45em;
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	font-weight: 500;
+	line-height: 1.3;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--text-soft);
+}
+
+.pixel {
+	font-family: var(--font-pixel);
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	line-height: 1;
+	font-synthesis: none;
+}
+
+.sky {
+	color: var(--sky-text);
+}
+
+.marker {
+	background: linear-gradient(transparent 62%, var(--marker) 62%, var(--marker) 92%, transparent 92%);
+}
+
+/* Small bordered label, e.g. "WEB3" chips. */
+.tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	padding: 0.3em 0.6em;
+	border: 1px solid var(--line-strong);
+	border-radius: var(--radius);
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	line-height: 1.2;
+	color: var(--text-soft);
+}
+
+/* Inverted panel — the cream-on-ink block from the reference design. */
+.panel {
+	position: relative;
+	background: var(--text);
+	color: var(--bg);
+	padding: clamp(1.5rem, 4vw, 3rem);
+	border-radius: var(--radius);
+}
+
+.panel a {
+	text-decoration-color: color-mix(in srgb, var(--bg) 40%, transparent);
+}
+
+.panel a:hover {
+	color: var(--bg);
+	text-decoration-color: var(--bg);
+}
+
+.panel::selection,
+.panel ::selection {
+	background: var(--bg);
+	color: var(--text);
+}
+
+/* Accessible skip link. */
+.skip-link {
+	position: absolute;
+	left: 1rem;
+	top: -100%;
+	z-index: 2000;
+	padding: 0.75rem 1rem;
+	background: var(--text);
+	color: var(--bg);
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.skip-link:focus {
+	top: 1rem;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Decorative pixel icon inherits the text colour for its "ink" pixels.
+   `display: inline-block` overrides the global `svg { display: block }` reset so
+   icons can sit inside running text. */
+.pixel-icon {
+	display: inline-block;
+	flex: none;
+	color: inherit;
+	image-rendering: pixelated;
+	vertical-align: -0.18em;
+	overflow: visible;
+}
+
+/* Ornamental rule with a tiny pixel star in the middle. */
+.pixel-divider {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	color: var(--text-soft);
+}
+
+.pixel-divider::before,
+.pixel-divider::after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: var(--line);
+}
+
+/* ——— Motion ————————————————————————————————————————————————————————— */
+
+@keyframes rise {
+	from {
+		opacity: 0;
+		transform: translateY(14px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes blink {
+	0%,
+	49% {
+		opacity: 1;
+	}
+	50%,
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Direct children of <main> fade up on navigation. Kept CSS-only so it costs
+   no JavaScript and can be disabled for visitors who prefer reduced motion. */
+main > * {
+	animation: rise 0.6s var(--ease-out) both;
+}
+
+main > *:nth-child(2) {
+	animation-delay: 0.07s;
+}
+
+main > *:nth-child(3) {
+	animation-delay: 0.14s;
+}
+
+main > *:nth-child(4) {
+	animation-delay: 0.2s;
+}
+
+main > *:nth-child(5) {
+	animation-delay: 0.26s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
 	}
 
-	h1 {
-		font-size: 2.5rem;
-		margin: 5rem 0;
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+	}
+}
+
+/* ——— Responsive ————————————————————————————————————————————————————— */
+
+@media screen and (max-width: 730px) {
+	:root {
+		--header-height: 3.75rem;
+	}
+
+	main {
+		padding-top: calc(var(--header-height) + 2.5rem);
+		padding-bottom: 5rem;
 	}
 }

@@ -1,23 +1,153 @@
-section.projectCard {
-	max-width: 20rem;
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
+	min-width: 0;
+}
 
-	.mobile {
-		display: none;
-	}
-	.desktop {
-		display: block;
-	}
+.media {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border: 1px solid var(--line-strong);
+	border-radius: var(--radius);
+	background: var(--surface);
+	aspect-ratio: 16 / 10;
+}
+
+.media :global(img) {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+}
+
+/* Pixelated preview sits on top until the card is hovered or focused. */
+.pixelImage {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	image-rendering: pixelated;
+	filter: contrast(1.05);
+	transition: opacity 260ms var(--ease-out);
+}
+
+.media:hover .pixelImage,
+.media:focus-visible .pixelImage {
+	opacity: 0;
+}
+
+.desktop {
+	display: block;
+}
+
+.mobile {
+	display: none;
+}
+
+.mediaLabel {
+	position: absolute;
+	right: 0.6rem;
+	bottom: 0.6rem;
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.35rem 0.5rem;
+	background: var(--text);
+	color: var(--bg);
+	font-family: var(--font-mono);
+	font-size: 0.625rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	opacity: 0;
+	transform: translateY(4px);
+	transition:
+		opacity 160ms linear,
+		transform 160ms var(--ease-out);
+}
+
+.media:hover .mediaLabel,
+.media:focus-visible .mediaLabel {
+	opacity: 1;
+	transform: none;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.title {
+	margin: 0;
+	font-family: var(--font-display);
+	font-size: 1.25rem;
+	font-stretch: 88%;
+	font-weight: 550;
+	line-height: 1.15;
+}
+
+.title a {
+	text-decoration: none;
+}
+
+.title a:hover {
+	color: var(--sky-text);
+	text-decoration: underline;
+}
+
+.description {
+	margin: 0;
+	max-width: 44ch;
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--text-soft);
+}
+
+.links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 0.15rem;
+}
+
+.links a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--text-soft);
+	border-bottom: 1px solid var(--line);
+	padding-bottom: 0.1rem;
+}
+
+.links a:hover {
+	color: var(--text);
+	border-bottom-color: var(--text);
 }
 
 @media screen and (max-width: 730px) {
-	section.projectCard {
-		margin-bottom: 1.5rem;
+	.pixelImage {
+		display: none;
+	}
 
-		.mobile {
-			display: block;
-		}
-		.desktop {
-			display: none;
-		}
+	.mediaLabel {
+		opacity: 1;
+		transform: none;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
 	}
 }

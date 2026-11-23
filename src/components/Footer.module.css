@@ -1,33 +1,187 @@
-footer.primary {
+footer.footer {
+	--footer-pad: clamp(2.5rem, 6vw, 5rem);
+	position: relative;
+	background: var(--text);
+	color: var(--bg);
+	padding: var(--footer-pad) var(--page-padding-inline) calc(var(--footer-pad) * 0.55);
+	overflow: hidden;
+}
+
+footer.footer::selection,
+footer.footer ::selection {
+	background: var(--bg);
+	color: var(--text);
+}
+
+.inner {
+	width: 100%;
+	max-width: var(--content-max);
+	margin-inline: auto;
+}
+
+.top {
+	display: grid;
+	grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, 0.8fr));
+	gap: clamp(2rem, 5vw, 4rem);
+	padding-bottom: clamp(2rem, 5vw, 3.5rem);
+	border-bottom: 1px solid color-mix(in srgb, var(--bg) 20%, transparent);
+}
+
+.about {
 	display: flex;
-	flex-flow: row;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.85rem;
+}
+
+.star {
+	color: var(--sky);
+}
+
+.note {
+	max-width: 36ch;
+	margin: 0;
+	font-size: 1.05rem;
+	line-height: 1.45;
+	font-stretch: 85%;
+}
+
+.signature {
+	margin: 0;
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: color-mix(in srgb, var(--bg) 62%, transparent);
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+}
+
+.columnTitle {
+	margin: 0;
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	font-weight: 500;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: color-mix(in srgb, var(--bg) 55%, transparent);
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	gap: 0.45rem;
+}
+
+.link {
+	display: inline-flex;
 	align-items: center;
-	justify-content: space-evenly;
-	align-self: center;
+	gap: 0.5rem;
+	font-family: var(--font-mono);
+	font-size: 0.8125rem;
+	line-height: 1.3;
+	color: var(--bg);
+	text-decoration: none;
+	transition: color 120ms linear;
+}
+
+.link:hover {
+	color: var(--sky);
+	text-decoration: none;
+}
+
+.linkIcon {
+	color: color-mix(in srgb, var(--bg) 55%, transparent);
+}
+
+.link:hover .linkIcon {
+	color: var(--sky);
+}
+
+.external {
+	color: currentColor;
+	opacity: 0.7;
+}
+
+/* ——— Giant pixel wordmark ——— */
+
+.wordmark {
+	margin: clamp(1.5rem, 4vw, 3rem) 0 clamp(1rem, 3vw, 2rem);
+	font-family: var(--font-pixel);
+	font-size: clamp(3.25rem, 13.5vw, 12rem);
+	font-weight: 600;
+	line-height: 0.78;
+	letter-spacing: -0.035em;
+	text-transform: lowercase;
+	color: var(--bg);
+	white-space: nowrap;
+	user-select: none;
+	/* Clip the wordmark slightly so it reads as a printed plate rather than
+	   a heading that happens to be large. */
+	overflow: hidden;
+}
+
+.bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 1.5rem 3rem;
-	font-family: var(--secondary-font);
-	background: var(--secondary-color);
-	color: var(--primary-color);
+	gap: 1rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid color-mix(in srgb, var(--bg) 20%, transparent);
+}
 
-	h3 {
-		font-size: 1rem;
+/* `.micro` is a global utility class, so it must be escaped from the CSS
+   module hashing — otherwise the footer meta line keeps the global soft-text
+   colour and fails contrast on the inverted panel. */
+.bottom :global(.micro) {
+	color: color-mix(in srgb, var(--bg) 62%, transparent);
+}
+
+.topLink {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--bg);
+	text-decoration: none;
+}
+
+.topLink:hover {
+	color: var(--sky);
+}
+
+.topIcon {
+	transform: rotate(180deg);
+}
+
+@media screen and (max-width: 980px) {
+	.top {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
-	a {
-		color: var(--primary-color);
+	.about {
+		grid-column: 1 / -1;
 	}
 }
 
-footer.primary::selection {
-	background: var(--primary-color);
-	color: var(--secondary-color);
-}
+@media screen and (max-width: 560px) {
+	.top {
+		grid-template-columns: minmax(0, 1fr);
+	}
 
-@media screen and (max-width: 730px) {
-	footer.primary {
-		flex-flow: column;
-		padding: 1.5rem 1.5rem;
-		gap: 1rem;
+	.wordmark {
+		font-size: clamp(2.75rem, 16vw, 5rem);
+	}
+
+	.bottom {
+		justify-content: flex-start;
 	}
 }

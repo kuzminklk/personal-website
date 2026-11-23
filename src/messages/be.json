@@ -1,0 +1,292 @@
+{
+	"metadata": {
+		"title": "Асабісты сайт Daniel Cosmo",
+		"description": "Асабісты сайт Daniel Cosmo (kuzminklk) пра распрацоўку, фатаграфію і спорт…",
+		"authors": {
+			"daniel-cosmo": "Daniel Cosmo"
+		},
+		"images": {
+			"open-graph": {
+				"alternative": "Крэмавая пласціна з піксельным лагатыпам kuzminklk і подпісам на мове сайта"
+			}
+		},
+		"pages": {
+			"about": {
+				"title": "Пра мяне",
+				"description": "Daniel Cosmo (kuzminklk) — інжынер у галіне інфармацыйных тэхналогій, засяроджаны на вэб-распрацоўцы, Web3 і штучным інтэлекце."
+			},
+			"development": {
+				"title": "Распрацоўка",
+				"description": "Вэб-інтэрфейсы, смарт-кантракты і тэхналогіі, з якімі працуе Daniel Cosmo."
+			},
+			"photography": {
+				"title": "Фатаграфія",
+				"description": "Фатаграфіі Daniel Cosmo: прырода і людзі, даступныя бясплатна на Unsplash."
+			},
+			"sports": {
+				"title": "Спорт",
+				"description": "Спорт Daniel Cosmo: трэніроўкі з уласнай вагой, барацьба, загартоўванне і відэа."
+			},
+			"books": {
+				"title": "Кнігі",
+				"description": "Кнігі, якія прачытаў Daniel Cosmo, з публічнай базай даных і канспектамі ў Notion."
+			},
+			"writings": {
+				"title": "Творы",
+				"description": "Эсэ Daniel Cosmo на стыку фізікі, біялогіі, філасофіі і матэматыкі."
+			},
+			"connect": {
+				"title": "Звязацца",
+				"description": "Спосабы звязацца з Daniel Cosmo: Telegram, электронная пошта, GitHub, сацыяльныя сеткі і творчыя платформы."
+			}
+		}
+	},
+	"common": {
+		"skip-to-content": "Перайсці да змесціва",
+		"back-to-top": "Наверх",
+		"visit-site": "Адкрыць сайт",
+		"view-source": "Зыходны код",
+		"open-in-notion": "Адкрыць у Notion",
+		"new-tab": "адкрыецца ў новай укладцы",
+		"loading": "Загрузка…"
+	},
+	"Footer": {
+		"madeBy": "Зрабіў Daniel Cosmo",
+		"source": "Зыходны код на GitHub",
+		"contact": "Напісаць мне ў Telegram",
+		"sections": "Раздзелы",
+		"elsewhere": "Іншыя платформы",
+		"note": "Асабісты архіў Daniel Cosmo: распрацоўка, фатаграфія, спорт, кнігі і пісьменства.",
+		"backToTop": "Наверх"
+	},
+	"Header": {
+		"about": "Пра мяне",
+		"development": "Распрацоўка",
+		"photography": "Фатаграфія",
+		"sports": "Спорт",
+		"books": "Кнігі",
+		"writings": "Творы",
+		"connect": "Звязацца",
+		"menu": "Адкрыць меню",
+		"close": "Закрыць меню",
+		"navigation": "Асноўная навігацыя",
+		"home": "kuzminklk — на галоўную"
+	},
+	"ThemeToggle": {
+		"switchToDark": "Пераключыць на цёмную тэму",
+		"switchToLight": "Пераключыць на светлую тэму",
+		"light": "Светлая",
+		"dark": "Цёмная"
+	},
+	"LanguageSwitcher": {
+		"title": "Мова",
+		"switch": "Пераключыць мову"
+	},
+	"about": {
+		"hero": {
+			"kicker": "Асабісты архіў · індэкс 00",
+			"photo": "Піксельны партрэт Daniel Cosmo",
+			"tagsLabel": "Сферы інтарэсаў"
+		},
+		"greet": {
+			"hi": "Прывітанне!",
+			"introduction": "Я — Данііл",
+			"photo": "Я ў жоўтай куртцы"
+		},
+		"dossier": "Дас'е",
+		"facts": {
+			"labels": {
+				"role": "Роля",
+				"aliases": "Імёны",
+				"languages": "Мовы",
+				"activities": "Заняткі"
+			},
+			"role": "<strong>Інжынер у галіне інфармацыйных тэхналогій</strong>, цяпер засяроджаны на Web3, фронтэндзе і AI",
+			"aliases": "Магчыма, ты ведаеш мяне як <emphasize>Daniel Cosmo</emphasize>, <emphasize>Данііл Кузьмін</emphasize> або <emphasize>kuzminklk</emphasize>",
+			"activities": "Таксама <sportsLink>займаюся спортам<emoji>💪</emoji></sportsLink>, <photographyLink>фатаграфую<emoji>📸</emoji></photographyLink> і <booksLink>чытаю шмат кніг<emoji>📚</emoji></booksLink> (ад Докінза да Юваля Ноя Харары, ад Талстога да Сюнь-цзы)!",
+			"languages": "Размаўляю на трох мовах: англійскай, рускай, беларускай"
+		},
+		"explore": "Ты можаш даведацца больш пра мае заняткі ў раздзелах <scroll>навігацыйнага меню<emoji>🧭</emoji></scroll>"
+	},
+	"development": {
+		"introduction": {
+			"header": "Уступ",
+			"fields": "Я ўжо некалькі гадоў самастойна вывучаю інфарматыку і навуку ў цэлым. Вучуся з дапамогай AI, курсаў, кніг, навучальных праграм і дакументацыі…",
+			"curriculum": "Я стварыў <curriculumLink>крутую структуру навучання ў Notion<emoji>📔</emoji></curriculumLink>, якая ўключае навучальную праграму, матэрыялы для навучання, рабочыя сшыткі і г.д.",
+			"practice": "Распрацоўваю вэб-інтэрфейсы, праграмы, смарт-кантракты…",
+			"github": "Ты можаш паглядзець мой <githubLink>GitHub<emoji>👀</emoji></githubLink>"
+		},
+		"skills": {
+			"header": "Навыкі",
+			"skills": {
+				"fundamentals": "<strong>Асновы</strong>: C, аперацыйныя сістэмы (Windows, Linux, Android), алгарытмы, структуры даных, вэб (IP/TCP, HTTPS), апаратнае забеспячэнне",
+				"front-end": "<strong>Фронтэнд</strong>: HTML, CSS, JavaScript → React, TypeScript, Tailwind, Next.js, Playwright, ESLint",
+				"back-end": "<strong>Бэкенд</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
+				"blockchain": "<strong>Блокчейн</strong>: Solidity, Foundry, Hardhat, Chainlink",
+				"web-3-front-end": "<strong>Web-3 фронтэнд</strong>: Viem, Wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
+				"deployment": "<strong>Разгортванне</strong>: Vercel, Husky, lint-staged, Open Graph, пошукавая аптымізацыя",
+				"tools": "<strong>Інструменты</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, Prettier",
+				"artificial-intelligence": "<strong>Штучны інтэлект</strong>: вялікія моўныя мадэлі (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
+				"soft-skills": "<strong>Гнуткія навыкі</strong>: камунікацыя, дысцыпліна, адукацыя, здароўе і актыўнасць, пагружэнне ў інфармацыю",
+				"additional": "<emphasize><strong>Дадаткова</strong>: дызайн → фатаграфія, вэб-дызайн, маляванне; музыка → гітара; спорт → барацьба; пісьменства → паэзія, філасофскія эсэ</emphasize>"
+			}
+		},
+		"projects": {
+			"header": "Праекты",
+			"explore": "<emphasize>Усе праекты ты можаш паглядзець у маім <githubLink>GitHub<emoji>👀</emoji></githubLink>, а тут — самыя ўлюбёныя!</emphasize>",
+			"web-interfaces": {
+				"header": "Вэб-інтэрфейсы",
+				"cosmos-company": {
+					"title": "Cosmo's Company",
+					"description": "Тэхналагічная кампанія",
+					"image-alternative": "Здымак сайта"
+				},
+				"central-park": {
+					"title": "Central Park",
+					"description": "Кафэ ў парку",
+					"image-alternative": "Здымак сайта"
+				},
+				"belarus-digital": {
+					"title": "Belarus Digital",
+					"description": "Праект па распрацоўцы праграмнага забеспячэння",
+					"image-alternative": "Здымак сайта"
+				},
+				"strawberry-vendor": {
+					"title": "Strawberry Token",
+					"description": "Купіць Strawberry на Ethereum",
+					"image-alternative": "Здымак сайта"
+				},
+				"buy-me-a-coffee": {
+					"title": "Купі мне кавы!",
+					"description": "Падтрымай аўтара на Ethereum",
+					"image-alternative": "Здымак сайта"
+				},
+				"moby-dick": {
+					"title": "Moby-Dick",
+					"description": "Электронная кніга",
+					"image-alternative": "Здымак сайта"
+				},
+				"tsender": {
+					"title": "Эфектыўны адпраўнік аірдропаў",
+					"description": "Вэб-інтэрфейс для ўзаемадзеяння з эфектыўным смарт-кантрактам для рассылкі аірдропаў",
+					"image-alternative": "Здымак сайта для рассылкі аірдропаў"
+				}
+			}
+		}
+	},
+	"photography": {
+		"introduction": {
+			"header": "Уступ",
+			"objects": "Я фатаграфую прыроду <emoji>🌿</emoji> і людзей <emoji>🧘🏻</emoji> <emphasize>(звычайна сваіх сяброў)</emphasize>",
+			"share": "Загружаю на <unsplashLink>Unsplash</unsplashLink> <emphasize>(там ты можаш бясплатна выкарыстоўваць мае фатаграфіі для любога праекта)</emphasize> і ў мой <telegramChannelLink>Telegram-канал</telegramChannelLink>"
+		},
+		"gallery": {
+			"header": "Галерэя",
+			"hint": "Выберы фатаграфію, каб паглядзець яе ў павялічаным выглядзе",
+			"photos": {
+				"asya": {
+					"image-alternative": "Ася ў лесе"
+				},
+				"spring-flowers": {
+					"image-alternative": "Вясновыя кветкі"
+				},
+				"natasha": {
+					"image-alternative": "Наташа ў ружовым адзенні"
+				},
+				"asya-at-fall": {
+					"image-alternative": "Ася ўвосень"
+				},
+				"vova": {
+					"image-alternative": "Вова ў лесе"
+				},
+				"flowers": {
+					"image-alternative": "Фіялетавыя кветкі"
+				},
+				"dasha": {
+					"image-alternative": "Даша з гітарай"
+				},
+				"dasha-at-night": {
+					"image-alternative": "Даша ўначы"
+				},
+				"misha": {
+					"image-alternative": "Міша з гітарай"
+				},
+				"anya": {
+					"image-alternative": "Аня ў акулярах"
+				}
+			}
+		},
+		"lightbox": {
+			"close": "Закрыць фатаграфію",
+			"next": "Наступная фатаграфія",
+			"previous": "Папярэдняя фатаграфія",
+			"counter": "{current} / {total}"
+		},
+		"ending": "Больш маіх фатаграфій ты знойдзеш на <unsplashLink>Unsplash</unsplashLink> і ў маім <telegramChannelLink>Telegram-канале</telegramChannelLink>!"
+	},
+	"sports": {
+		"introduction": {
+			"header": "Уступ",
+			"workout": "Звычайна я трэніруюся на вуліцы на спартыўных пляцоўках, выконваючы практыкаванні з уласнай вагой, і ў лясах — з камянямі і бервянамі… <emoji>🌲</emoji>",
+			"hardening": "Я загартоўваюся халодным душам і плаваннем у халоднай вадзе нават зімой <emoji>🧊</emoji>",
+			"games": "Я гуляю ў валейбол, займаюся барацьбой, плаваю, бягаю, ныраю ў ваду, раблю расцяжку… <emoji>🏃🏻</emoji>",
+			"share": "Здымаю відэа сваіх трэніровак і дзялюся імі ў <tiktokLink>Tik-Tok</tiktokLink>, <telegramLink>Telegram</telegramLink>, <instagramLink>Instagram</instagramLink> і <youtubeLink>YouTube<emoji>🎥</emoji></youtubeLink>"
+		},
+		"activities": {
+			"header": "Актыўнасці",
+			"play": "Прайграць відэа",
+			"pause": "Прыпыніць відэа",
+			"videos": {
+				"stone": "Падняцце каменя ў лесе",
+				"boxing": "Трэніроўка па боксе",
+				"push-ups": "Адцісканні на вуліцы",
+				"pull-ups": "Падцягванні на турніку",
+				"power-lift": "Паўэрліфтынг"
+			}
+		},
+		"ending": "Больш ты знойдзеш у маім <tiktokLink>Tik-Tok</tiktokLink>"
+	},
+	"books": {
+		"introduction": {
+			"header": "Уступ",
+			"books": "Я чытаю шмат кніг!",
+			"database": "Я стварыў <notionBooksDatabaseLink>базу даных у Notion з прачытаных кніг</notionBooksDatabaseLink>. Там ёсць канспекты, водгукі і г.д. <emoji>📑</emoji>",
+			"below": "Таксама ты можаш паглядзець яе ніжэй!"
+		},
+		"books": {
+			"header": "Кнігі"
+		},
+		"embed-title": "База даных кніг, прачытаных Daniel Cosmo, у Notion"
+	},
+	"writings": {
+		"introduction": {
+			"header": "Уступ",
+			"topics": "Я пішу артыкулы на стыку фізікі, біялогіі, філасофіі і матэматыкі… <emoji>👨🏻‍🔬</emoji>",
+			"share": "Ты можаш знайсці іх у <notionBooksDatabaseLink>базе даных у Notion<emoji>📝</emoji></notionBooksDatabaseLink>",
+			"below": "Таксама ты можаш паглядзець яе ніжэй!"
+		},
+		"essays": {
+			"header": "Эсэ"
+		},
+		"embed-title": "База даных эсэ Daniel Cosmo ў Notion"
+	},
+	"connect": {
+		"messaging": {
+			"header": "Паведамленні",
+			"telegram": "<telegramLink>Telegram</telegramLink> — хуткая перапіска, сацыяльныя актыўнасці <emoji>🥰</emoji>",
+			"email": "<emailLink>Email</emailLink> (kuzminkdk@gmail.com) — для грунтоўных размоў <emoji>📝</emoji>"
+		},
+		"social-media": {
+			"header": "Сацыяльныя сеткі",
+			"telegram-channel": "<telegramChannelLink>Telegram Channel</telegramChannelLink> — фатаграфіі <emoji>📸</emoji>, спорт <emoji>💪</emoji>, кнігі <emoji>📚</emoji>",
+			"tiktok-and-instagram-and-youtube": "<tiktokLink>Tik-Tok</tiktokLink> & <instagramLink>Instagram</instagramLink> <youtubeLink>YouTube</youtubeLink> — спорт <emoji>🏃🏻</emoji>",
+			"linkedin": "<linkedinLink>LinkedIn</linkedinLink> — прафесійная дзейнасць <emoji>🛠️</emoji>",
+			"dev-and-farcaster": "<devLink>DEV</devLink> & <farcasterLink>Farcaster</farcasterLink> — вэб- і блокчейн-распрацоўка <emoji>🧰</emoji>"
+		},
+		"creations": {
+			"header": "Творчасць",
+			"github": "<githubLink>GitHub</githubLink> — праекты, навыкі, рабочыя сшыткі, код… <emoji>🧑🏻‍💻</emoji>",
+			"unsplash-and-pixabay": "<unsplashLink>Unsplash</unsplashLink> & <pixabayLink>Pixabay</pixabayLink> — фатаграфіі <emoji>📸</emoji>"
+		}
+	}
+}

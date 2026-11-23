@@ -1,1 +1,292 @@
-{}
+{
+	"metadata": {
+		"title": "Osobista strona Daniela Cosmo",
+		"description": "Osobista strona Daniela Cosmo (kuzminklk) o programowaniu, fotografii, sporcie…",
+		"authors": {
+			"daniel-cosmo": "Daniel Cosmo"
+		},
+		"images": {
+			"open-graph": {
+				"alternative": "Kremowa plansza z pikselowym napisem kuzminklk i podtytułem w języku strony"
+			}
+		},
+		"pages": {
+			"about": {
+				"title": "O mnie",
+				"description": "Daniel Cosmo (kuzminklk) — inżynier informatyki skupiony na tworzeniu stron internetowych, Web3 i sztucznej inteligencji."
+			},
+			"development": {
+				"title": "Programowanie",
+				"description": "Interfejsy webowe, smart kontrakty i technologie, z którymi pracuje Daniel Cosmo."
+			},
+			"photography": {
+				"title": "Fotografia",
+				"description": "Fotografia Daniela Cosmo: przyroda i ludzie, dostępne bezpłatnie na Unsplash."
+			},
+			"sports": {
+				"title": "Sport",
+				"description": "Sport Daniela Cosmo: treningi z masą własnego ciała, zapasy, hartowanie i filmy."
+			},
+			"books": {
+				"title": "Książki",
+				"description": "Książki, które przeczytał Daniel Cosmo, z publiczną bazą danych i streszczeniami w Notion."
+			},
+			"writings": {
+				"title": "Teksty",
+				"description": "Eseje Daniela Cosmo na styku fizyki, biologii, filozofii i matematyki."
+			},
+			"connect": {
+				"title": "Kontakt",
+				"description": "Sposoby kontaktu z Danielem Cosmo: Telegram, e-mail, GitHub, media społecznościowe i platformy twórcze."
+			}
+		}
+	},
+	"common": {
+		"skip-to-content": "Przejdź do treści",
+		"back-to-top": "Do góry",
+		"visit-site": "Odwiedź stronę",
+		"view-source": "Kod źródłowy",
+		"open-in-notion": "Otwórz w Notion",
+		"new-tab": "otwiera się w nowej karcie",
+		"loading": "Ładowanie…"
+	},
+	"Footer": {
+		"madeBy": "Stworzone przez Daniela Cosmo",
+		"source": "Kod źródłowy na GitHubie",
+		"contact": "Napisz do mnie na Telegramie",
+		"sections": "Sekcje",
+		"elsewhere": "Inne platformy",
+		"note": "Osobiste archiwum Daniela Cosmo: programowanie, fotografia, sport, książki i teksty.",
+		"backToTop": "Do góry"
+	},
+	"Header": {
+		"about": "O mnie",
+		"development": "Programowanie",
+		"photography": "Fotografia",
+		"sports": "Sport",
+		"books": "Książki",
+		"writings": "Teksty",
+		"connect": "Kontakt",
+		"menu": "Otwórz menu",
+		"close": "Zamknij menu",
+		"navigation": "Główna nawigacja",
+		"home": "kuzminklk — strona główna"
+	},
+	"ThemeToggle": {
+		"switchToDark": "Przełącz na ciemny motyw",
+		"switchToLight": "Przełącz na jasny motyw",
+		"light": "Jasny",
+		"dark": "Ciemny"
+	},
+	"LanguageSwitcher": {
+		"title": "Język",
+		"switch": "Przełącz język"
+	},
+	"about": {
+		"hero": {
+			"kicker": "Osobiste archiwum · indeks 00",
+			"photo": "Portret pixel-art Daniela Cosmo",
+			"tagsLabel": "Obszary zainteresowań"
+		},
+		"greet": {
+			"hi": "Cześć!",
+			"introduction": "Jestem Daniel",
+			"photo": "Ja w żółtej kurtce"
+		},
+		"dossier": "Dossier",
+		"facts": {
+			"labels": {
+				"role": "Rola",
+				"aliases": "Aliasy",
+				"languages": "Języki",
+				"activities": "Zajęcia"
+			},
+			"role": "<strong>Inżynier informatyki</strong>, obecnie skupiony na Web3, front-endzie i AI",
+			"aliases": "Możesz mnie znać jako <emphasize>Daniel Cosmo</emphasize>, <emphasize>Даниил Кузьмин</emphasize> lub <emphasize>kuzminklk</emphasize>",
+			"activities": "Poza tym <sportsLink>uprawiam sport<emoji>💪</emoji></sportsLink>, <photographyLink>robię zdjęcia<emoji>📸</emoji></photographyLink> i <booksLink>czytam dużo książek<emoji>📚</emoji></booksLink> (od Dawkinsa do Noaha Harariego, od Tołstoja do Xunzi)!",
+			"languages": "Mówię trzema językami: po angielsku, rosyjsku i białorusku"
+		},
+		"explore": "Więcej o moich zajęciach możesz dowiedzieć się z sekcji <scroll>menu nawigacji<emoji>🧭</emoji></scroll>"
+	},
+	"development": {
+		"introduction": {
+			"header": "Wstęp",
+			"fields": "Od kilku lat samodzielnie uczę się informatyki i szeroko rozumianej nauki. Uczę się od AI, z kursów, książek, programów nauczania, dokumentacji…",
+			"curriculum": "Zbudowałem <curriculumLink>świetną strukturę nauki w Notion<emoji>📔</emoji></curriculumLink>, która obejmuje program nauczania, materiały do nauki, zeszyty ćwiczeń itd.",
+			"practice": "Tworzę interfejsy webowe, aplikacje, smart kontrakty…",
+			"github": "Możesz zajrzeć na mój <githubLink>GitHub<emoji>👀</emoji></githubLink>"
+		},
+		"skills": {
+			"header": "Umiejętności",
+			"skills": {
+				"fundamentals": "<strong>Podstawy</strong>: C, systemy operacyjne (Windows, Linux, Android), algorytmy, struktury danych, internet (IP/TCP, HTTPS), sprzęt",
+				"front-end": "<strong>Front-end</strong>: HTML, CSS, JavaScript → React, TypeScript, Tailwind, Next.js, Playwright, ESLint",
+				"back-end": "<strong>Back-end</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
+				"blockchain": "<strong>Blockchain</strong>: Solidity, Foundry, Hardhat, Chainlink",
+				"web-3-front-end": "<strong>Front-end Web3</strong>: Viem, Wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
+				"deployment": "<strong>Wdrażanie</strong>: Vercel, Husky, lint-staged, Open Graph, optymalizacja pod kątem wyszukiwarek",
+				"tools": "<strong>Narzędzia</strong>: Docker, Git, GitHub, Notion, Visual Studio Code, Prettier",
+				"artificial-intelligence": "<strong>Sztuczna inteligencja</strong>: LLM-y (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
+				"soft-skills": "<strong>Umiejętności miękkie</strong>: komunikacja, dyscyplina, edukacja, zdrowie i aktywność, zgłębianie informacji",
+				"additional": "<emphasize><strong>Dodatkowo</strong>: projektowanie → zdjęcia, web design, rysunek; muzyka → gitara; sport → zapasy; pisanie → poezja, eseje filozoficzne</emphasize>"
+			}
+		},
+		"projects": {
+			"header": "Projekty",
+			"explore": "<emphasize>Wszystkie projekty możesz przejrzeć na moim koncie <githubLink>GitHub<emoji>👀</emoji></githubLink>, a tutaj są moje ulubione!</emphasize>",
+			"web-interfaces": {
+				"header": "Interfejsy webowe",
+				"cosmos-company": {
+					"title": "Cosmo's Company",
+					"description": "Firma technologiczna",
+					"image-alternative": "Zrzut ekranu strony internetowej"
+				},
+				"central-park": {
+					"title": "Central Park",
+					"description": "Kawiarnia w parku",
+					"image-alternative": "Zrzut ekranu strony internetowej"
+				},
+				"belarus-digital": {
+					"title": "Belarus Digital",
+					"description": "Projekt tworzenia oprogramowania",
+					"image-alternative": "Zrzut ekranu strony internetowej"
+				},
+				"strawberry-vendor": {
+					"title": "Strawberry Token",
+					"description": "Kup Strawberry na Ethereum",
+					"image-alternative": "Zrzut ekranu strony internetowej"
+				},
+				"buy-me-a-coffee": {
+					"title": "Postaw mi kawę!",
+					"description": "Wesprzyj autora na Ethereum",
+					"image-alternative": "Zrzut ekranu strony internetowej"
+				},
+				"moby-dick": {
+					"title": "Moby-Dick",
+					"description": "Książka cyfrowa",
+					"image-alternative": "Zrzut ekranu strony internetowej"
+				},
+				"tsender": {
+					"title": "Wydajny nadawca airdropów",
+					"description": "Interfejs webowy do wydajnych interakcji ze smart kontraktem wysyłającym airdropy",
+					"image-alternative": "Zrzut ekranu strony wydajnego nadawcy airdropów"
+				}
+			}
+		}
+	},
+	"photography": {
+		"introduction": {
+			"header": "Wstęp",
+			"objects": "Fotografuję przyrodę <emoji>🌿</emoji> i ludzi <emoji>🧘🏻</emoji> <emphasize>(zazwyczaj moich znajomych)</emphasize>",
+			"share": "Publikuję na <unsplashLink>Unsplash</unsplashLink> <emphasize>(tam możesz bezpłatnie wykorzystać moje zdjęcia w dowolnym projekcie)</emphasize> i na moim <telegramChannelLink>kanale Telegram</telegramChannelLink>"
+		},
+		"gallery": {
+			"header": "Galeria",
+			"hint": "Wybierz zdjęcie, aby je powiększyć",
+			"photos": {
+				"asya": {
+					"image-alternative": "Asya w lesie"
+				},
+				"spring-flowers": {
+					"image-alternative": "Wiosenne kwiaty"
+				},
+				"natasha": {
+					"image-alternative": "Natasha w różowych ubraniach"
+				},
+				"asya-at-fall": {
+					"image-alternative": "Asya jesienią"
+				},
+				"vova": {
+					"image-alternative": "Vova w lesie"
+				},
+				"flowers": {
+					"image-alternative": "Fioletowe kwiaty"
+				},
+				"dasha": {
+					"image-alternative": "Dasha z gitarą"
+				},
+				"dasha-at-night": {
+					"image-alternative": "Dasha nocą"
+				},
+				"misha": {
+					"image-alternative": "Misha z gitarą"
+				},
+				"anya": {
+					"image-alternative": "Anya w okularach"
+				}
+			}
+		},
+		"lightbox": {
+			"close": "Zamknij zdjęcie",
+			"next": "Następne zdjęcie",
+			"previous": "Poprzednie zdjęcie",
+			"counter": "{current} / {total}"
+		},
+		"ending": "Więcej moich zdjęć znajdziesz na <unsplashLink>Unsplash</unsplashLink> i na moim <telegramChannelLink>kanale Telegram</telegramChannelLink>!"
+	},
+	"sports": {
+		"introduction": {
+			"header": "Wstęp",
+			"workout": "Zwykle trenuję na zewnątrz — na boiskach sportowych z ćwiczeniami z masą własnego ciała oraz w lasach z kamieniami i kłodami… <emoji>🌲</emoji>",
+			"hardening": "Hartuję ciało zimnymi prysznicami i pływaniem w zimnej wodzie, nawet zimą <emoji>🧊</emoji>",
+			"games": "Gram w siatkówkę, uprawiam zapasy, pływam, biegam, nurkuję, rozciągam się… <emoji>🏃🏻</emoji>",
+			"share": "Nagrywam filmy z moich treningów i udostępniam je na <tiktokLink>Tik-Tok</tiktokLink>, <telegramLink>Telegram</telegramLink>, <instagramLink>Instagram</instagramLink> i <youtubeLink>YouTube<emoji>🎥</emoji></youtubeLink>"
+		},
+		"activities": {
+			"header": "Aktywności",
+			"play": "Odtwórz film",
+			"pause": "Wstrzymaj film",
+			"videos": {
+				"stone": "Podnoszenie kamienia w lesie",
+				"boxing": "Trening bokserski",
+				"push-ups": "Pompki na zewnątrz",
+				"pull-ups": "Podciąganie na drążku",
+				"power-lift": "Trening trójboju siłowego"
+			}
+		},
+		"ending": "Więcej znajdziesz na moim profilu <tiktokLink>Tik-Tok</tiktokLink>"
+	},
+	"books": {
+		"introduction": {
+			"header": "Wstęp",
+			"books": "Czytam dużo książek!",
+			"database": "Stworzyłem <notionBooksDatabaseLink>bazę danych przeczytanych książek w Notion</notionBooksDatabaseLink>. Znajdziesz tam streszczenia itp. <emoji>📑</emoji>",
+			"below": "Możesz też zobaczyć ją poniżej!"
+		},
+		"books": {
+			"header": "Książki"
+		},
+		"embed-title": "Baza danych przeczytanych książek Daniela Cosmo w Notion"
+	},
+	"writings": {
+		"introduction": {
+			"header": "Wstęp",
+			"topics": "Piszę artykuły na styku fizyki, biologii, filozofii i matematyki… <emoji>👨🏻‍🔬</emoji>",
+			"share": "Znajdziesz je w <notionBooksDatabaseLink>bazie danych w Notion<emoji>📝</emoji></notionBooksDatabaseLink>",
+			"below": "Możesz też zobaczyć je poniżej!"
+		},
+		"essays": {
+			"header": "Eseje"
+		},
+		"embed-title": "Baza danych esejów Daniela Cosmo w Notion"
+	},
+	"connect": {
+		"messaging": {
+			"header": "Wiadomości",
+			"telegram": "<telegramLink>Telegram</telegramLink> — szybka komunikacja, sprawy towarzyskie <emoji>🥰</emoji>",
+			"email": "<emailLink>E-mail</emailLink> (kuzminkdk@gmail.com) — do dłuższej korespondencji <emoji>📝</emoji>"
+		},
+		"social-media": {
+			"header": "Media społecznościowe",
+			"telegram-channel": "<telegramChannelLink>Kanał Telegram</telegramChannelLink> — zdjęcia <emoji>📸</emoji>, sport <emoji>💪</emoji>, książki <emoji>📚</emoji>",
+			"tiktok-and-instagram-and-youtube": "<tiktokLink>Tik-Tok</tiktokLink> i <instagramLink>Instagram</instagramLink>, <youtubeLink>YouTube</youtubeLink> — sport <emoji>🏃🏻</emoji>",
+			"linkedin": "<linkedinLink>LinkedIn</linkedinLink> — działalność zawodowa <emoji>🛠️</emoji>",
+			"dev-and-farcaster": "<devLink>DEV</devLink> i <farcasterLink>Farcaster</farcasterLink> — tworzenie stron internetowych i rozwiązań blockchain <emoji>🧰</emoji>"
+		},
+		"creations": {
+			"header": "Twórczość",
+			"github": "<githubLink>GitHub</githubLink> — projekty, umiejętności, zeszyty ćwiczeń, kod… <emoji>🧑🏻‍💻</emoji>",
+			"unsplash-and-pixabay": "<unsplashLink>Unsplash</unsplashLink> i <pixabayLink>Pixabay</pixabayLink> — zdjęcia <emoji>📸</emoji>"
+		}
+	}
+}

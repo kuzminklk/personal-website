@@ -1,0 +1,486 @@
+<!doctype html>
+<!--
+  Open Graph image template — 1200 × 630 (Telegram-safe, ~1.91:1).
+
+  Placeholders are substituted by scripts/generate-og.mjs:
+    {{LANG}}          BCP-47 lang attribute for the document (e.g. "en", "ru")
+    {{FONT_SERIF}}    absolute file:// URL of public/amstelvar.woff2
+    {{FONT_PIXEL_LATIN}}      absolute file:// URL of the latin Pixelify Sans subset
+    {{FONT_PIXEL_LATIN_EXT}}  absolute file:// URL of the latin-ext subset (Polish)
+    {{FONT_PIXEL_CYRILLIC}}   absolute file:// URL of the cyrillic subset (ru/by)
+    {{WORDMARK}}      the big wordmark text (always "kuzminklk")
+    {{TAGLINE}}       localized metadata.description, HTML-escaped
+    {{TAGLINE_SIZE_PX}}  tagline font-size in px, auto-fitted by the generator (2 lines max)
+    {{LOCALE_CODE}}   uppercase locale code shown in the footer chip (EN / RU / BY / PL)
+
+  Design ("observatory archive"): cream paper, ink, sky-blue HUD kicker, marker
+  yellow accents, high-contrast editorial serif, giant pixel wordmark, mono HUD,
+  hairline rules, print corner ticks, pixel star stamp, subtle film grain.
+  All critical content sits at least 64 px from every edge.
+-->
+<html lang="{{LANG}}">
+	<head>
+		<meta charset="utf-8" />
+		<title>kuzminklk — open graph</title>
+		<style>
+			/* ——— Self-hosted fonts (file:// URLs injected by the generator) ——— */
+
+			@font-face {
+				font-family: "Amstelvar OG";
+				src: url("{{FONT_SERIF}}") format("woff2-variations");
+				font-weight: 100 900;
+				font-stretch: 75% 125%;
+				font-style: normal;
+				font-display: block;
+			}
+
+			@font-face {
+				font-family: "Pixelify OG";
+				src: url("{{FONT_PIXEL_LATIN}}") format("woff2");
+				font-weight: 400 700;
+				font-style: normal;
+				font-display: block;
+				unicode-range:
+					U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F,
+					U+20AC, U+2122, U+2212, U+2215;
+			}
+
+			@font-face {
+				font-family: "Pixelify OG";
+				src: url("{{FONT_PIXEL_LATIN_EXT}}") format("woff2");
+				font-weight: 400 700;
+				font-style: normal;
+				font-display: block;
+				unicode-range:
+					U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF,
+					U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+			}
+
+			@font-face {
+				font-family: "Pixelify OG";
+				src: url("{{FONT_PIXEL_CYRILLIC}}") format("woff2");
+				font-weight: 400 700;
+				font-style: normal;
+				font-display: block;
+				unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+			}
+
+			/* ——— Design tokens ——— */
+
+			:root {
+				--paper: #f2ecdb;
+				--ink: #050310;
+				--sky: #9fb9d9;
+				--marker: #d8c97a;
+
+				--serif: "Amstelvar OG", Georgia, "Times New Roman", serif;
+				--pixel: "Pixelify OG", "Courier New", monospace;
+				--mono: "Red Hat Mono", "Noto Sans Mono", "DejaVu Sans Mono", "Liberation Mono", monospace;
+
+				--edge: 64px; /* safe margin for critical content: Telegram crop protection */
+				--hairline: rgba(5, 3, 16, 0.28);
+			}
+
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			html,
+			body {
+				width: 1200px;
+				height: 630px;
+				overflow: hidden;
+			}
+
+			body {
+				background: var(--paper);
+				color: var(--ink);
+				font-family: var(--mono);
+				-webkit-font-smoothing: antialiased;
+				text-rendering: geometricPrecision;
+			}
+
+			.canvas {
+				position: relative;
+				width: 1200px;
+				height: 630px;
+				overflow: hidden;
+				background:
+					radial-gradient(120% 90% at 0% 0%, rgba(159, 185, 217, 0.2) 0%, rgba(159, 185, 217, 0) 52%), var(--paper);
+			}
+
+			/* ——— Subtle film grain over the whole plate ——— */
+
+			.grain {
+				position: absolute;
+				inset: 0;
+				width: 1200px;
+				height: 630px;
+				opacity: 0.055;
+				mix-blend-mode: multiply;
+				pointer-events: none;
+			}
+
+			/* ——— Print-style corner ticks (decoration, 40 px inset) ——— */
+
+			.tick {
+				position: absolute;
+				width: 22px;
+				height: 22px;
+				border: 0 solid rgba(5, 3, 16, 0.32);
+			}
+
+			.tick-tl {
+				top: 40px;
+				left: 40px;
+				border-top-width: 1px;
+				border-left-width: 1px;
+			}
+
+			.tick-tr {
+				top: 40px;
+				right: 40px;
+				border-top-width: 1px;
+				border-right-width: 1px;
+			}
+
+			.tick-bl {
+				bottom: 40px;
+				left: 40px;
+				border-bottom-width: 1px;
+				border-left-width: 1px;
+			}
+
+			.tick-br {
+				bottom: 40px;
+				right: 40px;
+				border-bottom-width: 1px;
+				border-right-width: 1px;
+			}
+
+			/* ——— HUD rows ——— */
+
+			.hud {
+				position: absolute;
+				left: var(--edge);
+				right: var(--edge);
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.hud-top {
+				top: var(--edge);
+				height: 27px;
+			}
+
+			.kicker {
+				display: inline-flex;
+				align-items: center;
+				padding: 8px 13px 7px;
+				background: var(--sky);
+				color: var(--ink);
+				font-family: var(--mono);
+				font-size: 11px;
+				font-weight: 600;
+				line-height: 1;
+				letter-spacing: 0.3em;
+				text-transform: uppercase;
+				white-space: nowrap;
+			}
+
+			.hud-note {
+				font-size: 11px;
+				line-height: 1;
+				letter-spacing: 0.3em;
+				text-transform: uppercase;
+				color: rgba(5, 3, 16, 0.52);
+			}
+
+			/* ——— Hairline rules ——— */
+
+			.rule {
+				position: absolute;
+				left: var(--edge);
+				right: var(--edge);
+				height: 1px;
+				background: var(--hairline);
+			}
+
+			.rule-top {
+				top: 113px;
+			}
+
+			.rule-bottom {
+				top: 516px;
+			}
+
+			/* ——— Hero: giant pixel wordmark ——— */
+
+			.wordmark {
+				position: absolute;
+				left: 58px;
+				top: 122px;
+				font-family: var(--pixel);
+				font-weight: 700;
+				font-size: 200px;
+				line-height: 0.82;
+				letter-spacing: -0.018em;
+				color: var(--ink);
+				white-space: nowrap;
+			}
+
+			/* Pixel star "archive stamp" (inverted ink panel) */
+
+			.stamp {
+				position: absolute;
+				right: var(--edge);
+				top: 137px;
+				width: 104px;
+				height: 104px;
+				background: var(--ink);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.stamp svg {
+				width: 66px; /* 11 cells × 6 px — keeps every pixel uniform */
+				height: 66px;
+				color: var(--marker);
+			}
+
+			.stamp-index {
+				position: absolute;
+				right: 8px;
+				bottom: 6px;
+				font-family: var(--mono);
+				font-size: 9px;
+				font-weight: 600;
+				line-height: 1;
+				letter-spacing: 0.22em;
+				color: rgba(242, 236, 219, 0.62);
+			}
+
+			/* ——— Serif tagline ——— */
+
+			.accent {
+				position: absolute;
+				left: var(--edge);
+				top: 331px;
+				width: 164px;
+				height: 7px;
+				background: var(--marker);
+			}
+
+			/* The tagline is auto-fitted to exactly ≤ 2 lines by the page script:
+			   the generator bakes the resulting px size into --tagline-size. */
+			.tagline {
+				position: absolute;
+				left: var(--edge);
+				top: 361px;
+				width: 1010px;
+				font-family: var(--serif);
+				font-weight: 700;
+				font-stretch: 88%;
+				font-size: var(--tagline-size, 46px);
+				line-height: 1.13;
+				letter-spacing: -0.016em;
+				color: var(--ink);
+				text-wrap: balance;
+			}
+
+			/* ——— Footer ——— */
+
+			.hud-bottom {
+				top: 530px;
+				height: 38px;
+				align-items: center;
+			}
+
+			.domain {
+				font-family: var(--mono);
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1;
+				letter-spacing: 0.12em;
+				color: var(--ink);
+				white-space: nowrap;
+			}
+
+			.archive-label {
+				font-family: var(--mono);
+				font-size: 11px;
+				font-weight: 400;
+				line-height: 1;
+				letter-spacing: 0.3em;
+				text-transform: uppercase;
+				color: rgba(5, 3, 16, 0.5);
+			}
+
+			/* Locale code lives in the mono HUD language: pixel type gets muddy at tag size. */
+			.locale-chip {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				min-width: 54px;
+				height: 34px;
+				padding: 0 13px;
+				background: var(--ink);
+				color: var(--marker);
+				font-family: var(--mono);
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 1;
+				letter-spacing: 0.18em;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="canvas" id="canvas">
+			<!-- Grain: fractal noise, multiplied over the cream paper -->
+			<svg class="grain" width="1200" height="630" viewBox="0 0 1200 630" aria-hidden="true" focusable="false">
+				<filter id="grain-filter" x="0" y="0" width="100%" height="100%">
+					<feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="3" stitchTiles="stitch" />
+					<feColorMatrix type="saturate" values="0" />
+					<feComponentTransfer>
+						<feFuncA type="linear" slope="0.55" />
+					</feComponentTransfer>
+				</filter>
+				<rect width="1200" height="630" filter="url(#grain-filter)" />
+			</svg>
+
+			<!-- Registration ticks -->
+			<span class="tick tick-tl"></span>
+			<span class="tick tick-tr"></span>
+			<span class="tick tick-bl"></span>
+			<span class="tick tick-br"></span>
+
+			<!-- Top HUD -->
+			<header class="hud hud-top">
+				<span class="kicker" id="kicker">Observatory Archive</span>
+				<span class="hud-note" id="hud-note">Personal plate — og</span>
+			</header>
+
+			<div class="rule rule-top"></div>
+
+			<!-- Hero: wordmark + inverted pixel-star stamp -->
+			<div class="wordmark" id="wordmark">{{WORDMARK}}</div>
+
+			<div class="stamp" id="stamp" aria-hidden="true">
+				<!-- 8-bit 4-point star drawn on an 11 × 11 pixel grid -->
+				<svg viewBox="0 0 11 11" shape-rendering="crispEdges" fill="currentColor">
+					<rect x="5" y="0" width="1" height="2" />
+					<rect x="4" y="2" width="3" height="2" />
+					<rect x="3" y="4" width="5" height="1" />
+					<rect x="1" y="5" width="9" height="1" />
+					<rect x="3" y="6" width="5" height="1" />
+					<rect x="4" y="7" width="3" height="2" />
+					<rect x="5" y="9" width="1" height="2" />
+				</svg>
+				<span class="stamp-index">OG</span>
+			</div>
+
+			<!-- Marker accent + localized serif tagline -->
+			<div class="accent" id="accent"></div>
+			<p class="tagline" id="tagline" lang="{{LANG}}" style="--tagline-size: {{TAGLINE_SIZE_PX}}px">{{TAGLINE}}</p>
+
+			<div class="rule rule-bottom"></div>
+
+			<!-- Footer HUD -->
+			<footer class="hud hud-bottom">
+				<span class="domain" id="domain">kuzminklk.vercel.app</span>
+				<span class="archive-label" id="archive-label">Personal Archive</span>
+				<span class="locale-chip" id="locale-chip" lang="en">{{LOCALE_CODE}}</span>
+			</footer>
+		</div>
+
+		<!--
+			Tagline auto-fit + layout audit.
+
+			The tagline is sized so that it always occupies at most two lines
+			inside its 1010 px column — Latin and Cyrillic descriptions have
+			very different widths, so a fixed size would break one of them.
+			The generator reads the fitted size via `#audit` (document.title)
+			and bakes it into the template before the real screenshot, which
+			keeps rendering deterministic.
+		-->
+		<script>
+			;(() => {
+				const TAGLINE_MAX_PX = 56
+				const TAGLINE_MIN_PX = 30
+				const LINE_HEIGHT = 1.13
+
+				const tagline = document.getElementById("tagline")
+
+				/** Shrink the tagline until it fits two lines / the column width. */
+				const fitTagline = () => {
+					const lineHeightPx = () => parseFloat(getComputedStyle(tagline).fontSize) * LINE_HEIGHT
+					let fitted = TAGLINE_MIN_PX
+					for (let size = TAGLINE_MAX_PX; size >= TAGLINE_MIN_PX; size -= 0.5) {
+						tagline.style.setProperty("--tagline-size", `${size}px`)
+						const rect = tagline.getBoundingClientRect()
+						const lines = Math.round(rect.height / lineHeightPx())
+						const overflows = tagline.scrollWidth > tagline.clientWidth + 1
+						if (lines <= 2 && !overflows) {
+							fitted = size
+							break
+						}
+					}
+					tagline.style.setProperty("--tagline-size", `${fitted}px`)
+					return fitted
+				}
+
+				const measure = () => {
+					const fitted = fitTagline()
+					const box = (id) => {
+						const el = document.getElementById(id)
+						if (!el) return null
+						const r = el.getBoundingClientRect()
+						const cs = getComputedStyle(el)
+						return {
+							x: Math.round(r.x),
+							y: Math.round(r.y),
+							w: Math.round(r.width),
+							h: Math.round(r.height),
+							font: cs.fontSize + " / " + cs.fontFamily,
+							lines: el.getClientRects().length,
+						}
+					}
+					const ids = [
+						"kicker",
+						"hud-note",
+						"wordmark",
+						"stamp",
+						"accent",
+						"tagline",
+						"domain",
+						"archive-label",
+						"locale-chip",
+					]
+					const boxes = {}
+					for (const id of ids) boxes[id] = box(id)
+					return {
+						fittedTaglinePx: fitted,
+						taglineLines: Math.round(
+							tagline.getBoundingClientRect().height / (parseFloat(getComputedStyle(tagline).fontSize) * LINE_HEIGHT),
+						),
+						documentHeight: document.documentElement.scrollHeight,
+						documentWidth: document.documentElement.scrollWidth,
+						boxes,
+						fonts: [...document.fonts].map((font) => [font.family, font.status]),
+					}
+				}
+
+				// Always fit; report details only in audit mode.
+				document.fonts.ready.then(() => {
+					const result = measure()
+					if (location.hash.includes("audit")) document.title = JSON.stringify(result)
+				})
+			})()
+		</script>
+	</body>
+</html>

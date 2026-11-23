@@ -1,61 +1,100 @@
 main.development {
-	> section {
-		margin-bottom: 5rem;
-
-		> div.grid {
-			display: flex;
-			flex-flow: row;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-			gap: 2.5rem;
-		}
-	}
-
-	img {
-		flex: auto;
-		max-width: 100%;
-		height: auto;
-		border-radius: 0.5rem;
-		border: 4px solid var(--secondary-color);
-		filter: drop-shadow(0 0 0.5rem var(--secondary-color));
-		transition: filter 1s ease;
-	}
-
-	img:hover {
-		filter: drop-shadow(0 0 1.5rem var(--secondary-color));
-	}
-
-	h1 {
-		margin-bottom: 4rem;
-		span.emoji {
-			display: inline-block;
-			animation: moving 5s ease infinite;
-		}
-	}
-
-	li {
-		margin: 0.75rem 0;
-	}
+	display: flex;
+	flex-direction: column;
+	gap: var(--section-gap);
 }
 
-@keyframes moving {
-	0% {
-		transform: translateY(-0.25rem);
-	}
-	50% {
-		transform: translateY(0.25rem);
-	}
-	100% {
-		transform: translateY(-0.25rem);
-	}
+main.development > header {
+	max-width: var(--content-max);
+	margin-inline: auto;
+}
+
+.intro {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0 clamp(2rem, 5vw, 4rem);
+	max-width: none;
+	margin-top: 0.75rem;
+}
+
+.intro p {
+	margin: 0 0 1rem;
+	max-width: 52ch;
+	font-size: 0.95rem;
+}
+
+.intro p:last-child {
+	margin-bottom: 0;
+}
+
+.section {
+	width: 100%;
+	max-width: var(--content-max);
+	margin-inline: auto;
+}
+
+/* ——— Skills ——— */
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	counter-reset: skill;
+}
+
+.skill {
+	display: grid;
+	grid-template-columns: 3rem minmax(0, 1fr);
+	gap: clamp(0.75rem, 2vw, 1.5rem);
+	padding: clamp(0.85rem, 2vw, 1.15rem) 0;
+	border-bottom: 1px solid var(--line);
+}
+
+.skill:first-child {
+	border-top: 0;
+}
+
+.skillNumber {
+	font-family: var(--font-pixel);
+	font-size: 0.6875rem;
+	line-height: 1.6;
+	color: var(--sky-text);
+}
+
+.skillText {
+	margin: 0;
+	max-width: 80ch;
+	font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.075rem);
+	line-height: 1.5;
+}
+
+.skillText strong {
+	font-weight: 700;
+}
+
+.skillText em {
+	color: var(--text-soft);
+}
+
+/* ——— Projects ——— */
+
+.projectsIntro {
+	max-width: 58ch;
+	margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
+	font-size: 0.95rem;
+}
+
+.projectsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+	gap: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 2.5vw, 1.75rem);
 }
 
 @media screen and (max-width: 730px) {
-	main.development {
-		padding: 2.5rem 1.5rem;
+	.intro {
+		grid-template-columns: minmax(0, 1fr);
+	}
 
-		div.grid {
-			gap: 1rem;
-		}
+	.skill {
+		grid-template-columns: 2.25rem minmax(0, 1fr);
 	}
 }

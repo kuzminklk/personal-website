@@ -1,78 +1,297 @@
-header.primary {
+header.header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background: color-mix(in srgb, var(--bg) 94%, transparent);
+	border-bottom: 1px solid var(--line);
+	transition: border-color 160ms linear;
+}
+
+header.header[data-scrolled] {
+	border-bottom-color: var(--line-strong);
+}
+
+@supports (backdrop-filter: blur(1px)) {
+	header.header {
+		backdrop-filter: blur(10px) saturate(1.1);
+	}
+}
+
+.inner {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
-	gap: 1.75rem;
-	padding: 1.5rem 3rem;
-	background: var(--secondary-color);
-	color: var(--primary-color);
+	gap: clamp(1rem, 2.5vw, 2.5rem);
+	width: 100%;
+	max-width: var(--content-max);
+	margin-inline: auto;
+	height: var(--header-height);
+	padding-inline: var(--page-padding-inline);
+}
 
-	h3.title {
-		white-space: nowrap;
-	}
+/* ——— Brand ——— */
 
-	nav {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		gap: 1rem;
+.brand {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.5rem;
+	flex: none;
+	color: var(--text);
+	text-decoration: none;
+}
 
-		h3 {
-			a {
-				font-size: 1rem;
-				color: var(--primary-color);
-			}
-		}
+.brand:hover {
+	color: var(--text);
+}
 
-		h3.active {
-			a {
-				padding: 0.25rem;
-				border-radius: 0.25rem;
-				background-color: var(--primary-color);
-				color: var(--secondary-color);
-				animation: glowing 5s ease infinite;
-				text-decoration: none;
-			}
-			a::selection {
-				background: var(--secondary-color);
-				color: var(--primary-color);
-			}
-		}
+.brandStar {
+	align-self: center;
+	color: var(--sky-text);
+	transition: transform 220ms var(--ease-out);
+}
+
+.brand:hover .brandStar {
+	transform: rotate(90deg);
+}
+
+.wordmark {
+	font-family: var(--font-pixel);
+	font-size: 1.15rem;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	line-height: 1;
+	text-transform: lowercase;
+}
+
+.brandMeta {
+	display: none;
+	font-family: var(--font-mono);
+	font-size: 0.625rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--text-soft);
+}
+
+/* ——— Desktop navigation ——— */
+
+.desktopNav {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	min-width: 0;
+}
+
+.desktopNav ul {
+	display: flex;
+	align-items: center;
+	gap: clamp(0.5rem, 1.2vw, 1.25rem);
+}
+
+.navLink {
+	display: inline-flex;
+	align-items: baseline;
+	gap: 0.35rem;
+	padding: 0.4rem 0.15rem;
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	letter-spacing: 0.1em;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: var(--text-soft);
+	text-decoration: none;
+	white-space: nowrap;
+	border-bottom: 1px solid transparent;
+	transition:
+		color 120ms linear,
+		border-color 120ms linear;
+}
+
+.navNumber {
+	display: none;
+	font-family: var(--font-pixel);
+	font-size: 0.625rem;
+	color: var(--line-strong);
+	transition: color 120ms linear;
+}
+
+/* Numbers are a nice detail but they cost horizontal space; long Russian and
+   Belarusian labels need it more, so show them only on wide screens. */
+@media screen and (min-width: 1500px) {
+	.navNumber {
+		display: inline;
 	}
 }
 
-header.primary::selection {
-	background: var(--primary-color);
-	color: var(--secondary-color);
+.navLink:hover {
+	color: var(--text);
+	border-bottom-color: var(--line-strong);
 }
 
-@keyframes glowing {
-	0% {
-		filter: drop-shadow(0 0 0.25rem var(--primary-color));
+.navLink[data-active] {
+	color: var(--text);
+	border-bottom-color: var(--text);
+}
+
+.navLink[data-active] .navNumber {
+	color: var(--sky-text);
+}
+
+/* ——— Controls ——— */
+
+.controls {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex: none;
+}
+
+.desktopLanguage {
+	display: flex;
+}
+
+.menuButton {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	background: transparent;
+	color: var(--text);
+	border: 1px solid var(--line-strong);
+	border-radius: var(--radius);
+	cursor: pointer;
+	transition:
+		background-color 120ms linear,
+		color 120ms linear;
+}
+
+.menuButton:hover {
+	background: var(--text);
+	color: var(--bg);
+}
+
+/* ——— Mobile menu ——— */
+
+.mobileMenu {
+	position: fixed;
+	inset: var(--header-height) 0 0;
+	z-index: 99;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: clamp(1.5rem, 5vw, 3rem) var(--page-padding-inline) 2rem;
+	overflow-y: auto;
+	background: var(--bg);
+	border-top: 1px solid var(--line);
+	animation: menu-in 200ms var(--ease-out);
+}
+
+@keyframes menu-in {
+	from {
+		opacity: 0;
+		transform: translateY(-8px);
 	}
-	50% {
-		filter: drop-shadow(0 0 0.5rem var(--primary-color));
+	to {
+		opacity: 1;
+		transform: none;
 	}
-	100% {
-		filter: drop-shadow(0 0 0.25rem var(--primary-color));
+}
+
+.mobileList {
+	display: flex;
+	flex-direction: column;
+}
+
+.mobileLink {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.85rem 0;
+	border-bottom: 1px solid var(--line);
+	font-family: var(--font-display);
+	font-size: clamp(1.5rem, 1.2rem + 2vw, 2.4rem);
+	font-stretch: 82%;
+	line-height: 1;
+	color: var(--text);
+	text-decoration: none;
+}
+
+.mobileLink:hover {
+	color: var(--sky-text);
+}
+
+.mobileLink[data-active] {
+	color: var(--sky-text);
+}
+
+.mobileNumber {
+	font-family: var(--font-pixel);
+	font-size: 0.75rem;
+	letter-spacing: 0.05em;
+	color: var(--text-soft);
+}
+
+.mobileLabel {
+	flex: 1;
+}
+
+.mobileIcon {
+	color: var(--text-soft);
+}
+
+.mobileLink[data-active] .mobileIcon {
+	color: var(--sky-text);
+}
+
+.mobileFoot {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--line);
+}
+
+.mobileMeta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+/* ——— Responsive ——— */
+
+@media screen and (min-width: 1280px) {
+	.brandMeta {
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.desktopNav {
+		display: none;
+	}
+
+	.menuButton {
+		display: inline-flex;
+	}
+
+	.inner {
+		justify-content: space-between;
 	}
 }
 
 @media screen and (max-width: 730px) {
-	header.primary {
-		flex-direction: column;
-		padding: 3rem 1.5rem;
-		gap: 2.5rem;
-
-		nav {
-			order: 1;
-		}
+	.desktopLanguage {
+		display: none;
 	}
 
-	html[lang="ru"] {
-		header.primary {
-			padding: 3rem 0.75rem;
-		}
+	.menuButton {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	.mobileMenu {
+		padding-bottom: 1.5rem;
 	}
 }

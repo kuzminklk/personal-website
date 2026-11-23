@@ -2,19 +2,9 @@ import createNextIntlPlugin from "next-intl/plugin"
 import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-	typescript: {
-		ignoreBuildErrors: true /* For quick prototyping… */,
-	},
 	reactCompiler: true,
-	async redirects() {
-		return [
-			{
-				source: "/",
-				destination: "/about",
-				permanent: true,
-			},
-		]
-	},
+	// Localized redirects (`/` → About) live in `src/app/[locale]/page.tsx` so
+	// the visitor's language is preserved instead of always redirecting to /about.
 }
 
 const withNextIntl = createNextIntlPlugin()

@@ -1,35 +1,30 @@
 main.writings {
-	h1 {
-		span.emoji {
-			display: inline-block;
-			animation: moving 5s ease infinite;
-		}
-	}
+	display: flex;
+	flex-direction: column;
+	gap: var(--section-gap);
 }
 
-@keyframes moving {
-	0% {
-		transform: translateX(-0.25rem);
-	}
-	50% {
-		transform: translateX(0.25rem);
-	}
-	100% {
-		transform: translateX(-0.25rem);
-	}
+main.writings > header {
+	max-width: var(--content-max);
+	margin-inline: auto;
 }
 
-@media screen and (max-width: 730px) {
-	main.writings {
-		padding-bottom: 5rem;
-		section.database {
-			iframe {
-				width: 125%;
-				margin: 0 -1.5rem;
-				border-left: none;
-				border-right: none;
-				border-radius: 0%;
-			}
-		}
-	}
+.intro {
+	margin-top: 0.75rem;
+}
+
+.intro p {
+	margin: 0 0 0.75rem;
+	max-width: 60ch;
+	font-size: 0.95rem;
+}
+
+.intro p:last-child {
+	margin-bottom: 0;
+}
+
+.section {
+	width: 100%;
+	max-width: var(--content-max);
+	margin-inline: auto;
 }

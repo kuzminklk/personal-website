@@ -1,0 +1,49 @@
+.toggle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	background: transparent;
+	color: var(--text);
+	border: 1px solid var(--line-strong);
+	border-radius: var(--radius);
+	cursor: pointer;
+	transition:
+		background-color 120ms linear,
+		color 120ms linear,
+		border-color 120ms linear;
+}
+
+.toggle:hover {
+	background: var(--text);
+	color: var(--bg);
+	border-color: var(--text);
+}
+
+.toggle[data-with-label] {
+	width: auto;
+	height: 2rem;
+	padding-inline: 0.65rem;
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.label {
+	line-height: 1;
+}
+
+@media screen and (max-width: 730px) {
+	.toggle {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	.toggle[data-with-label] {
+		height: 2.5rem;
+	}
+}

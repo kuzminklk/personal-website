@@ -1,5 +1,62 @@
 main.connect {
-	> section {
-		margin-bottom: 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: var(--section-gap);
+}
+
+main.connect > header {
+	max-width: var(--content-max);
+	margin-inline: auto;
+}
+
+.section {
+	width: 100%;
+	max-width: var(--content-max);
+	margin-inline: auto;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid var(--line);
+}
+
+.links li {
+	display: flex;
+	align-items: flex-start;
+	gap: clamp(0.85rem, 2.5vw, 1.5rem);
+	padding: clamp(1rem, 2.5vw, 1.35rem) 0.5rem;
+	border-bottom: 1px solid var(--line);
+	transition: background-color 140ms linear;
+}
+
+.links li:hover {
+	background: var(--bg-soft);
+}
+
+.icon {
+	margin-top: 0.3rem;
+	color: var(--text-soft);
+}
+
+.links li:hover .icon {
+	color: var(--sky-text);
+}
+
+.links p {
+	margin: 0;
+	max-width: 70ch;
+	font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.1rem);
+	line-height: 1.5;
+}
+
+.links p :global(a) {
+	font-family: var(--font-mono);
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 730px) {
+	.links li {
+		padding-inline: 0;
 	}
 }
